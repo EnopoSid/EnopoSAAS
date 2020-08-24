@@ -1,0 +1,61 @@
+<ngx-spinner
+bdColor="rgba(227,227,227,0.8)"
+size="medium"
+color="#ffb4b4"
+ opacity="0.5"
+loadingText="Loading..."
+type="ball-scale-multiple">
+</ngx-spinner>
+<div class="page-wrap height-100 mat-bg-primary">
+    <div class="session-form-hold">
+        <h3>Sign In</h3>
+        <mat-card>
+            <mat-card-content>
+                <div class="error-message" *ngIf="showErrorMsg">
+                    {{'INVALID_CREDENTIALS' | translate:param}}
+                </div>
+                <form [formGroup]="signInForm" novalidate (ngSubmit)="signin()">
+                    <div class="sign_form">
+                        <mat-form-field class="full-width">
+                            <input matInput type="email"
+                                   id="username"
+                                   formControlName="usernameFC"
+                                   [(ngModel)]="signinData.username"
+                                   placeholder="Email Id"
+                                   value="" required/> 
+                                   <mat-error *ngFor="let validation of validation_messages.usernameFC" >
+                                   <mat-error *ngIf="signInForm.get('usernameFC').hasError(validation.type)">
+                                    {{ validation.message | translate:param }}
+                                </mat-error>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="">
+                        <mat-form-field class="full-width">
+                            <input type="password"
+                                   name="password"
+                                   formControlName="passwordFC"
+                                   matInput
+                                   [(ngModel)]="signinData.password"
+                                   placeholder="Password"
+                                   value="" required />
+                                   <mat-error *ngFor="let validation of validation_messages.passwordFC">
+                                    <mat-error *ngIf="signInForm.get('passwordFC').hasError(validation.type)">
+                                        {{ validation.message | translate:param }}
+                                    </mat-error>
+                                </mat-error>
+                        </mat-form-field>
+                       
+                    </div>
+                    <br>
+                    <button mat-button  class="mat-button cyan"> Sign In  </button> 
+                    
+                    <div class="text-center1">
+                        <a [routerLink]="['/sessions/forgot-password']" class="mat-primary ">Forgot Password</a>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

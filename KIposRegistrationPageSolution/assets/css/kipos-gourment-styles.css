@@ -1,0 +1,392 @@
+
+
+.container-fluid-padding { padding:0px 7vw;}
+.clearfix{clear:both; display:block;}
+.btn-gourmet { padding:8px 24px; color:#fff; background:#08cbc7; border-radius:10px; font-weight:600; text-transform:uppercase; }
+.btn-gourmet:hover { background-color: #d75498 !important;
+	border-color: #d75498 !important;
+}
+.section-hading { color:#c3f1cf; font-family:'Avenir Next LT Pro', 'Roboto', sans-serif !important;}
+
+.landing-banner { position:relative; }
+
+/*.landing-banner .banner-img {height: 100%; background:url(../images/kipos-gourment-banner.jpg);  }*/
+.banner-section { width:100vw; height:85vh; background-color: #00646d;}
+.landing-banner .banner-img { position:absolute; width: 100%;}
+.landing-banner .banner-img img{ width:100%; }
+.landing-banner .banner-content{ position:relative; top:15vh; width:45vw; padding-left: 5vw;}
+.landing-banner .banner-content .kipos-logo{ display:block; width:100%; text-align:center;}
+.landing-banner .banner-section .banner-content .kipos-logo img {     width: 200px; }
+.landing-banner .banner-section .kipos-tagline { position:relative; top:7vh; }
+.landing-banner .banner-section .kipos-tagline p{ font-size:3em;  color: #00646d; font-weight:600; line-height: normal;}
+.landing-banner .banner-section .discount-info { position:relative;  width:45vw; padding-left: 7vw; }
+.landing-banner .banner-section .discount-info .discount-val{ text-align:center; display:inline-block; vertical-align: top; }
+.landing-banner .banner-section .discount-info .get-start { display: inline-block; font-weight:500; padding-left: 40px; vertical-align: top; padding-top: 35px; }
+
+.about-kipos { margin-top:10%; position:relative;}
+.about-kipos .about-img{ display:block;}
+.about-kipos .about-conent { padding-top: 7em; padding-left:5em; margin: 0px auto; }
+.about-kipos .about-conent p{ line-height:24px; }
+
+.organic-block { margin-top:5%; background:#c3f1cf; padding:3em;}
+.sponser-block{     background: #13646b;margin-top: -12px !important; z-index: 99;position: relative }
+.testimonial-block { margin-top:5%;}
+.testimonial-items .testimonial-text { color:#00646d; font-weight:600; margin-bottom:15px;}
+/*.testimonial-block .testimonial-items { padding:2em 3em;}*/
+.testimonial-block .client-name { font-weight:600; color: #00646d;}
+
+section.footer-bowles img {
+    cursor: pointer;
+}
+@media screen and (max-width: 1920px) , screen and (max-height: 1080px) {
+	.landing-banner .banner-section .discount-info{
+		top: 42vh;
+	}
+}
+
+
+
+@media screen and (max-width:1600px) , screen and (max-height: 1400px) {
+	.banner-section { height:80vh;} 
+}
+
+@media screen and (max-width:1366px) , screen and (max-height: 1024px) {
+	.banner-section { height:85vh;} 
+	.landing-banner .banner-section .discount-info {
+		top: 34vh ;
+	}
+	
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 900px)  {
+	.banner-section {
+		height: 40vh ;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 18vh ;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+
+}
+
+
+@media screen and (max-width:1600px) , screen and (max-height: 900px) {
+	.landing-banner .banner-section .discount-info{
+		top: 38vh;
+	}
+	.about-kipos {
+		margin-top: 10%;
+	}
+}
+
+@media (max-width:1600px) {
+	.about-kipos {
+		margin-top: 10%;
+	}
+}
+
+@media (max-width:1500px) {
+	.landing-banner .banner-content {
+    	top: 7vh;
+	}
+
+}
+
+@media screen and (max-width: 1440px) , screen and (max-height: 900px) {
+	.about-kipos {
+		margin-top: 3%;
+	}
+}
+
+@media (max-width:1440px) {
+
+	.landing-banner .banner-content {
+    	top: 5vh;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 33vh;
+		width: 100%;
+	}
+	.about-kipos {
+		margin-top: 2%;
+	}
+	.banner-section { height:85vh;} 
+}
+@media (max-width:1400px) {
+
+	.about-kipos {
+		margin-top: 2%;
+	}
+}
+
+
+@media (max-width:1366px) {
+	.landing-banner .banner-section .discount-info {
+		top: 35vh;
+		width: 100%;;
+	}
+	.about-kipos {
+		margin-top: 5%;
+	}
+	
+	
+}
+
+
+
+
+@media (max-width:1200px) {
+	.landing-banner .banner-section .kipos-tagline p {
+		font-size: 2em;
+	}
+	.banner-section {
+		height: 70vh;
+	}
+	.about-kipos .about-conent {
+		padding-top: 3em;
+		padding-left: 5em;
+		margin: 0px auto;
+	}
+
+}
+
+@media (max-width:1024px) {
+	.landing-banner .banner-section .banner-content .kipos-logo img {
+		width: 150px;
+	}
+	.landing-banner .banner-section .kipos-tagline p {
+		font-size: 1.8em;
+	}
+
+	.landing-banner .banner-content .kipos-logo{
+		width: 80%;
+		text-align: center;
+		margin: 0px auto;
+	}
+	.landing-banner .banner-content {
+		top: 6vh;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 28vh;
+		width: 100%;
+	}
+}
+
+/*@media screen and (max-width: 1024px) , screen and (max-height: 1366px) {
+	.banner-section {
+		height: 40vh;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 20vh;
+		width: 100%;
+	}
+	.landing-banner .banner-section .kipos-tagline {
+		position: relative;
+		top: 2vh;
+	}
+}
+
+ 
+@media screen and (min-width: 1366px) and (orientation: landscape){
+	.banner-section {
+		height: 60vh;
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape){
+	.banner-section {
+		height: 70vh;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 28vh;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) , screen and (max-height: 768px) {
+	.landing-banner .banner-img img {
+		height: auto !important;
+	}
+	}
+ */
+@media (max-width:991px) {
+	.landing-banner .banner-content .kipos-logo{
+		width: 80%;
+
+	}
+	.landing-banner .banner-section .kipos-tagline p{
+		font-size: 2.2em;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 25vh;
+		width: 100%;
+	}
+	.about-kipos {
+		 margin-top: 0%;
+	}
+	.banner-section {
+		height: 65vh;
+	}
+
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+	.landing-banner .banner-img img {
+		height: auto;
+	}
+}
+
+
+@media (max-width:768px) {
+	.landing-banner{ height: auto; min-height: auto;}
+
+	.banner-section {
+		height: 40vh;
+		min-height: auto;
+	}
+	.landing-banner .banner-img img {
+		height: auto;
+	}
+
+	.landing-banner .banner-content {
+		top: 0vh;
+	}
+	.landing-banner .banner-section .discount-info {
+		top: 15vh;
+	}
+	.about-kipos {
+		margin-top: 15%;
+	}
+	.about-kipos .about-conent {
+		padding-top: 1em;
+		 padding-left: 0em;
+		margin: 0px auto;
+	}
+	.landing-banner .banner-section .kipos-tagline p {
+		font-size: 1.8em;
+	}
+	
+}
+
+@media (max-width:730px) {
+
+	.landing-banner{ min-height: 320px;}
+	h1, .h1 {
+		font-size: 1.5rem;
+	}
+	h4, .h4 {
+		font-size: 1.0rem;
+	}
+	.landing-banner .banner-section .discount-info .get-start{
+		padding-top: 10px;
+	}
+	
+}
+
+@media (max-width:600px) {
+
+	.landing-banner .banner-section .kipos-tagline p {
+		font-size:1em;
+	}
+	h1, .h1 {
+		font-size: 1.0rem;
+	}
+	h4, .h4 {
+		font-size: 0.7rem;
+	}
+	.banner-section {
+		height: 35vh;
+	}
+
+	
+
+@media (max-width:500px) {
+.landing-banner{ min-height: 280px;}
+.landing-banner .banner-section .discount-info {
+    top: 8vh;
+}
+.landing-banner .banner-section .kipos-tagline {
+    top: 5vh;
+}
+}
+
+
+@media screen and (max-width: 735px) , screen and (max-height: 812px) {
+	.banner-section {
+		height: 35vh;
+		min-height: auto;
+	}
+	
+}
+
+@media (max-width:430px) {
+
+	.landing-banner{ min-height: 240px;}
+	.landing-banner .banner-section .discount-info .get-start {
+		display: block;
+		font-weight: 500;
+		padding-left: 0px;
+		vertical-align: top;
+		padding-top: 10px;
+	}
+	.btn-gourmet {
+		padding: 5px 15px;
+		font-size: 12px;
+	}
+	.about-kipos {
+		margin-top: 5%;
+	}
+}
+
+
+@media (max-width:400px) {
+
+	.landing-banner{ min-height: 230px;}
+	.landing-banner .banner-section .discount-info .get-start {
+		display: block;
+		font-weight: 500;
+		padding-left: 0px;
+		vertical-align: top;
+		padding-top: 7px;
+	}
+
+	.about-kipos {
+		margin-top: 3%;
+	}
+}
+
+@media (max-width:360px) {
+.landing-banner .banner-section .banner-content .kipos-logo img { width: 150px; }
+.banner-section {
+    height: 37vh;
+}
+
+.landing-banner .banner-content .kipos-logo {
+    width: 60%;
+}
+.about-kipos {
+    margin-top: 0%;
+}
+.landing-banner .banner-section .discount-info .get-start {
+	padding-top: 0px;
+}	
+.slick-slide {
+ margin: 0px 40px;
+}
+
+
+}
+
+@media (max-width:330px) {
+.landing-banner .banner-section .discount-info {
+    top: 6vh;
+}
+}
+
+
+.footer-bg {
+    border-top: 0px solid #0d646d;
+}

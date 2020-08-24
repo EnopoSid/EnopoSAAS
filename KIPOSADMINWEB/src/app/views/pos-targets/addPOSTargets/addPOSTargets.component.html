@@ -1,0 +1,81 @@
+<ngx-spinner bdColor="rgba(227,227,227,0.8)" size="medium" color="#ffb4b4" opacity="0.5" loadingText="Loading..."
+    type="ball-scale-multiple">
+</ngx-spinner>
+<mat-card>
+    <div class="container">
+        <div class="page_content">
+
+            <h3> {{ title }}</h3>
+            <div class="height-20"></div>
+
+            <form [formGroup]="posTargetsFormGroup" novalidate (ngSubmit)="onFeaturedArticlesSubmit()">
+
+                <div>
+                    <mat-form-field class=" input-flex-50">
+                        <mat-select placeholder=" Select Store *" [formControl]="posTargetsFormGroup.controls['store']"
+                            style="width: 100%;" name="store">
+                            <mat-option *ngFor="let store of storeList" [value]="store.Id">
+                                {{ store.Name | uppercase }}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error
+                            *ngIf="posTargetsFormGroup.controls['store'].hasError('required') && posTargetsFormGroup.controls['store'].touched"
+                            class="alert alert-danger">
+                            Store Name is required!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="clear-both"></div>
+                <mat-form-field class="input-flex-50">
+                    <input (click)="clkFromDate(picker)" matInput
+                        [formControl]="posTargetsFormGroup.controls['startDate']" [matDatepicker]="picker"
+                        uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event)" onkeypress="return false"
+                        placeholder=" Target Start Date*" readonly>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field class="input-flex-50">
+                    <input (click)="clkToDate(picker2)" matInput [formControl]="posTargetsFormGroup.controls['endDate']"
+                        [matDatepicker]="picker2" [(ngModel)]="endDate" uib-datepicker-popup="only" [min]="minDate"
+                        onkeypress="return false" placeholder="Target End Date*" readonly>
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="number" placeholder="Target Bowls Count" id="targetBowlsCount"
+                        onKeyPress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"
+                        value="" [formControl]="posTargetsFormGroup.controls['targetBowlsCount']" required>
+                    <mat-error
+                        *ngIf="posTargetsFormGroup.controls['targetBowlsCount'].hasError('required') && posTargetsFormGroup.controls['targetBowlsCount'].touched"
+                        class="alert alert-danger">Target Bowls Count is required</mat-error>
+
+                </mat-form-field>
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="number" id="targetSalesAmt" placeholder="Target Sales Amount"
+                        onKeyPress="return (event.charCode == 8 || event.charCode == 0) ? null : (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46"
+                        value="" [formControl]="posTargetsFormGroup.controls['targetSalesAmt']" required>
+                    <mat-error
+                        *ngIf="posTargetsFormGroup.controls['targetSalesAmt'].hasError('required') && posTargetsFormGroup.controls['targetSalesAmt'].touched"
+                        class="alert alert-danger">Target Sales Amount is required</mat-error>
+
+                </mat-form-field>
+
+
+
+
+
+                <div class="clear-both"></div>
+                <mat-card-footer>
+                    <mat-dialog-actions>
+                        <button mat-button class="mat-button" *ngIf="saveUser">Save</button>&nbsp;
+                        <button mat-button class="mat-button orange" *ngIf="updateUser && !isOnView">Update</button>
+                        <button mat-button class="mat-button skyblue" (click)="onGoBack()">Back</button>
+                    </mat-dialog-actions>
+                    <div class="clear-both"></div>
+                </mat-card-footer>
+            </form>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>

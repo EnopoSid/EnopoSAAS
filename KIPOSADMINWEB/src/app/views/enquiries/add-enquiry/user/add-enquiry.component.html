@@ -1,0 +1,165 @@
+
+<ngx-spinner
+bdColor="rgba(227,227,227,0.8)"
+size="medium"
+color="#ffb4b4"
+ opacity="0.5"
+loadingText="Loading..."
+type="ball-scale-multiple">
+</ngx-spinner>
+        <div class="container">
+            <div class="page_content">
+                    <h3 *ngIf="!isFromConsumer"> {{title}} </h3>
+                    <h3 *ngIf="isFromConsumer">Fill the Enquiry form</h3>
+    <mat-card>
+        <form [formGroup]="EnquiryForm"  (ngSubmit)="onEnquiryFormSubmit()">
+    <mat-card-content>
+       
+                <fieldset>
+                        <legend>User Details</legend>
+                    
+                        <mat-form-field class="input-flex-50">
+                                <input matInput cmsRestrictInput="onlyAlphabetsWithoutSpaces" placeholder="First Name" size="50" maxlength="50" [formControl]="EnquiryForm.controls['firstName']"required>
+                                <mat-error *ngIf="EnquiryForm.controls['firstName'].hasError('required') && EnquiryForm.controls['firstName'].touched" class="alert alert-danger">Enter FirstName</mat-error>
+                                <mat-error *ngIf="EnquiryForm.controls['firstName'].hasError('pattern') && EnquiryForm.controls['firstName'].touched" class="alert alert-danger">Please enter Alphabets without Spaces</mat-error>
+                        </mat-form-field>   
+                        <mat-form-field class="input-flex-50">
+                                <input matInput cmsRestrictInput="onlyAlphabetsWithoutSpaces" placeholder="Last Name" size="50" maxlength="50" [formControl]="EnquiryForm.controls['lastName']"required>
+                                <mat-error *ngIf="EnquiryForm.controls['lastName'].hasError('required') && EnquiryForm.controls['lastName'].touched" class="alert alert-danger">Enter LastName.</mat-error>
+                                <mat-error *ngIf="EnquiryForm.controls['lastName'].hasError('pattern') && EnquiryForm.controls['lastName'].touched" class="alert alert-danger">Please enter Alphabets without Spaces</mat-error>
+                        </mat-form-field>  
+                        <mat-form-field class="input-flex-50">
+                                <input matInput placeholder="Email"  [readonly]="checkInput" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" formControlName="email" [formControl]="EnquiryForm.controls['email']" required >
+                                <mat-error *ngIf="EnquiryForm.controls['email'].hasError('required') && EnquiryForm.controls['email'].touched"  class="alert alert-danger">
+                                        Email is required
+                                </mat-error>
+                                <mat-error *ngIf="EnquiryForm.controls['email'].hasError('pattern')  && EnquiryForm.controls['email'].touched">
+                                         Please enter a valid email address
+                                </mat-error>
+                                <mat-error *ngIf="EnquiryForm.controls['email'].hasError('emailValidation')">
+                                        Email already exits
+                                </mat-error>
+                        </mat-form-field>   
+                        <mat-form-field class="input-flex-50">
+                            <input matInput placeholder="Mobile number"  mask="+000-000-000-000" (keyup)="countrycode($event)"
+                            size= "16" maxlength="16" type = "text"  [formControl]="EnquiryForm.controls['mobilenum']" required >
+                         <mat-error *ngIf="EnquiryForm.controls['mobilenum'].hasError('required') && EnquiryForm.controls['mobilenum'].touched" class="alert alert-danger">Enter Mobile Number</mat-error>
+                         <mat-error *ngIf="EnquiryForm.controls['mobilenum'].hasError('minlength') && EnquiryForm.controls['mobilenum'].touched" class="alert alert-danger">Mobile Number should be 9 digits</mat-error>
+                        </mat-form-field>  
+                        <mat-form-field class="input-flex-50">
+                                <input matInput placeholder="Alternate number" mask="+000-000-000-000" (keyup)="countryscode($event)"
+                                size= "16" maxlength="16" type = "text"  [formControl]="EnquiryForm.controls['alternatenum']">
+                                <mat-error *ngIf="EnquiryForm.controls['alternatenum'].hasError('minlength') && EnquiryForm.controls['alternatenum'].touched" class="alert alert-danger">Mobile Number Should be 9 digits</mat-error>
+                        </mat-form-field>   
+                        <div class="clear-both"></div>
+                        <mat-form-field class="input-flex-50">
+                                <textarea matInput placeholder="Postal Address" 
+                                type = "text"  [formControl]="EnquiryForm.controls['postalAddress']" required></textarea>
+                                <mat-error *ngIf="EnquiryForm.controls['postalAddress'].hasError('required') && EnquiryForm.controls['postalAddress'].touched" class="alert alert-danger">Enter Postal Adress</mat-error>
+                        </mat-form-field>   
+                        <mat-form-field class="input-flex-50">
+                                <textarea matInput placeholder="Residential Address" 
+                                type = "text"  [formControl]="EnquiryForm.controls['residentialAddress']" ></textarea>
+                                <mat-error *ngIf="EnquiryForm.controls['residentialAddress'].hasError('required') && EnquiryForm.controls['residentialAddress'].touched" class="alert alert-danger">Enter Residential Adress</mat-error>
+                        </mat-form-field> 
+                </fieldset>
+                <div class="clear-both"></div>
+                <fieldset>
+                    <legend>Enquiry  Details</legend> 
+                    <mat-form-field class="input-flex-100">
+                        <textarea matInput placeholder="Enquiry Details:" 
+                         type = "text"  [formControl]="EnquiryForm.controls['EnquiryDetails']" required></textarea>
+                        <mat-error *ngIf="EnquiryForm.controls['EnquiryDetails'].hasError('required') && EnquiryForm.controls['EnquiryDetails'].touched" class="alert alert-danger">Enter the Enquiry Details</mat-error>
+                        </mat-form-field>
+                </fieldset>
+                <fieldset  *ngIf="!isOnView">
+                        <legend>Enquiry Files</legend>
+                                <input  [formControl]="EnquiryForm.controls['File']" type="file" placeholder="select File" multiple  (change)="selectFile($event)" name="file"  />
+                    </fieldset>
+                    <mat-card *ngIf="isOnView">
+                            <mat-card-title style="margin: 0px !important; background: #676767;  color: #fff;">
+                              Complainant Files
+                            </mat-card-title>
+                         
+                          <mat-card-content>
+                                <div class="mat-elevation-z8">
+                                        <div class="mat-datagrid">
+                                        <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+                                          <ng-container matColumnDef="sno">
+                                            <th mat-header-cell *matHeaderCellDef>
+                                              <label mat-sort-header>
+                                                S.No  
+                                              </label>
+                                            </th>
+                                            <td mat-cell *matCellDef="let row"> 
+                                                {{row.FileId}}
+                                            </td>
+                                          </ng-container>
+                                          <ng-container matColumnDef="FileName">
+                                              <th mat-header-cell *matHeaderCellDef>
+                                                  <label mat-sort-header>
+                                                    File Name
+                                                  </label>
+                                                </th>
+                                            <td mat-cell *matCellDef="let row"> {{row.FileName | uppercase}}</td>
+                                          </ng-container>
+                                          <ng-container matColumnDef="Actions">
+                                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
+                                            <td mat-cell *matCellDef="let row" > 
+                                                <a mat-icon-button matTooltip="Download" (click)="downloadImage(row)" >
+                                                    <mat-icon  style="color: rgb(0, 145, 234); padding: 3px 7px;">archive</mat-icon>
+                                                </a>
+                                            </td>
+                                        </ng-container>
+                                          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                                          </tr>
+                                        </table>
+                                      </div>
+                                        <p *ngIf="messageFlag1">No Data to Display</p>
+                                        <p *ngIf="messageFlag2">No Matches Found</p>
+                                        <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+                                      </div>
+                                    </mat-card-content>
+                                </mat-card>
+                <fieldset *ngIf="isFromConsumer" >
+                    <legend>Verification</legend>
+                    <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto">
+                        <re-captcha id="recaptcha" name="recaptcha" (resolved)="resolved($event)" class="g-recaptcha" siteKey="6LdmqlUUAAAAALBfPf9knTbMbN7VPRK9drTTsrTr" required ></re-captcha>
+                    </div>
+                </fieldset>
+                <div class="content p-12">   
+                               
+                </div>
+    </mat-card-content>
+    <mat-card-footer>
+            <div class="end-complaint-form-footer">
+        <mat-dialog-actions>
+            <div *ngIf="formStage ==1">                                              
+                <button mat-button class="mat-button green" *ngIf="!isOnView" type="button" [disabled]="EnquiryForm.invalid" (click)="onSave()">
+                  Save and View Details
+                </button>
+                &nbsp;
+                <button mat-button class="mat-button red" type="button" (click)="onGoBack()">
+                    Cancel
+                </button>  
+                <div class="clear-both"></div>
+            </div> 
+            <div *ngIf="formStage ==2">
+                <button mat-button class="mat-button green" (click)="onEditClick()">
+                 Edit
+                </button>
+                <button mat-button class="mat-button red"  [disabled]="EnquiryForm.invalid" type="submit">
+                    Submit
+                </button> 
+            </div>             
+        </mat-dialog-actions>
+        <div class="clear-both"></div>
+    </div>
+    </mat-card-footer>
+    </form>
+    </mat-card>
+    <div class="clear-both"></div>
+    </div>
+    <div class="clear-both"></div>
+    </div>

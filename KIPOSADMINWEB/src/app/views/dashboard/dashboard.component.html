@@ -1,0 +1,147 @@
+<ngx-spinner
+   bdColor="rgba(227,227,227,0.8)"
+   size="medium"
+   color="#ffb4b4"
+   opacity="0.5"
+   loadingText="Loading..."
+   type="ball-scale-multiple">
+</ngx-spinner>
+
+
+
+<div class="container">
+
+   <div class="page_content" style="border: none;">
+      <h3>Dashboard</h3>
+      <button class="mat-button gray mat-button-base opacity-5 " [ngClass]="{'dashboard-active':!!TotalOrdersSales}" (click)="onDashboardMenuClk(1)">Total Sales</button>
+      <button class="mat-button gray mat-button-base opacity-5" [ngClass]="{'dashboard-active':!!StoreOrdersSales}" (click)="onDashboardMenuClk(2)">POS Store Sales</button>
+      <button class="mat-button gray mat-button-base opacity-5" [ngClass]="{'dashboard-active':!!OnlineOrderSalesShipping}" (click)="onDashboardMenuClk(3)">Online Sales</button>
+      <div *ngIf="!!TotalOrdersSales">
+         <mat-card >
+                <form [formGroup]="OrdersAndSalesForm" (ngSubmit)="OrdersAndSalesFormSubmit()">
+          <mat-card-title>
+                Sales 
+        </mat-card-title>  
+        <mat-card-content>
+                        <div class="input-flex-100" style="margin-bottom: 25px;">
+                        <mat-form-field class="input-flex-33">  
+                           <input (click)="clkFromDate(picker)" matInput autocomplete="off" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false"
+                            [formControl]="OrdersAndSalesForm.controls['fromDate']"
+                             [matDatepicker]="picker" uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event,1)" [max]="maxDate"
+                              onkeypress="return false" placeholder="From Date"> 
+                           <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                           <mat-datepicker #picker></mat-datepicker>
+                   </mat-form-field>   
+                   <mat-form-field class="input-flex-31">
+                     <input (click)="clkToDate(picker2)" matInput autocomplete="off"
+                     onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false"  [formControl]="OrdersAndSalesForm.controls['toDate']"
+                      [matDatepicker]="picker2" uib-datepicker-popup="only"  (ngModelChange)="onChangeToDate($event,1)" [min]="minDate" [max]="maxDate"
+                      onkeypress="return false" placeholder="To Date">
+                     <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                     <mat-datepicker #picker2></mat-datepicker>
+                 </mat-form-field>
+                      
+                                        <div class="clearfix"></div>
+                                        <div class="input-flex-100" style="margin-bottom: 25px;">
+                                          <div class="input-flex-25 db-tails-info" *ngFor="let total of TotalOrders" >
+                                                          <div class="dashboard" >
+                                                               <div class="dashboard-bottom">
+                                                                  <h6><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;&nbsp;{{total.StoreName}}</h6>
+                                                              </div>
+                                                             <div class="dashboard-inner">
+                                                                <h4>#Sales: SG$ {{total.TotalSales}}</h4>
+                                                                <h4>#Orders: {{total.TotalOrders}}</h4>
+                                                             </div>
+                                                             <div class="clearfix"></div>
+                                                          </div>
+                                                          <div class="clearfix"></div>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                  </div>  
+                                  <h3 *ngIf="!OrdersAndSalesSubmittedFlag"><b>Note:</b> By default it displays the 30 days Orders data.</h3>  
+                        </div>
+        </mat-card-content>
+</form>
+         </mat-card>
+      </div>
+      <div *ngIf="!!StoreOrdersSales">
+      <mat-card>
+         <form [formGroup]="StoreSalesOrdersForm"  (ngSubmit)="getCatogeryPiechartFromSubmit()">
+            <mat-card-title>
+               No of orders and Sales based on Customer Roles
+            </mat-card-title>
+            <mat-card-content>
+               <div class="input-flex-100" style="margin-bottom: 25px;">
+                  <mat-form-field class="input-flex-33">  
+                     <input (click)="clkFromDate(picker)" matInput  [formControl]="StoreSalesOrdersForm.controls['fromDateForStore']"
+                       [matDatepicker]="picker" uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event,2)" [max]="maxDate"
+                        onkeypress="return false" placeholder="From Date"
+                        autocomplete="off" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false"> 
+                     <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                     <mat-datepicker #picker></mat-datepicker>
+             </mat-form-field>   
+             <mat-form-field class="input-flex-31">
+               <input (click)="clkToDate(picker2)" matInput   [formControl]="StoreSalesOrdersForm.controls['toDateForStore']"
+                [matDatepicker]="picker2" uib-datepicker-popup="only"  (ngModelChange)="onChangeToDate($event,2)" [min]="minDate" [max]="maxDate"
+                onkeypress="return false" placeholder="To Date"
+                autocomplete="off" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false">
+               <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+               <mat-datepicker #picker2></mat-datepicker>
+           </mat-form-field>
+                
+               <div class="clearfix"></div>
+               <div class="input-flex-50">
+                  <div id="statuschart" [style.width.%]="100" [style.height.px]="300">
+                  </div>
+               </div>
+               <div class="input-flex-50">
+                  <div id="saleschart" [style.width.%]="100" [style.height.px]="300">
+                  </div>
+               </div>
+               <h3 *ngIf="!StoreSalesOrdersFormSubmitedFlag"><b>Note:</b> By default it displays the 30 days Orders data.</h3>  
+               </div>
+            </mat-card-content>
+         </form>
+      </mat-card>
+      </div>
+      <div *ngIf="!!OnlineOrderSalesShipping"> 
+      <mat-card>
+         <div class="input-flex-100">
+            <form [formGroup]="PickUpDeliveryForm"  (ngSubmit)="onPickUpDeliveryFormSubmit()" style="border:1px solid #ddd;">
+            <mat-card-title>
+              Online Orders and Sales By Shipping Type
+            </mat-card-title>
+            <mat-card-content>
+               <mat-form-field class="input-flex-33">  
+                  <input (click)="clkFromDate(picker)" matInput  [formControl]="PickUpDeliveryForm.controls['fromDateForOnline']"
+                    [matDatepicker]="picker" uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event,3)" [max]="maxDate"
+                     onkeypress="return false" placeholder="From Date"
+                     autocomplete="off" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false"> 
+                  <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>   
+          <mat-form-field class="input-flex-31">
+            <input (click)="clkToDate(picker2)" matInput   [formControl]="PickUpDeliveryForm.controls['toDateForOnline']"
+             [matDatepicker]="picker2" uib-datepicker-popup="only"  (ngModelChange)="onChangeToDate($event,3)" [min]="minDate" [max]="maxDate"
+             onkeypress="return false" placeholder="To Date"
+             autocomplete="off" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+               <div>
+                  <div id="categorychart" [style.width.%]="100" [style.height.px]="500">
+               </div>
+         </div>
+         </mat-card-content>
+         </form>
+         <h3 *ngIf="!PickUpDeliveryFormSubitedFlag"><b>Note:</b> By default it displays the 30 days Orders data.</h3>  
+   </div>
+   </mat-card>  
+</div>
+</div>
+
+
+</div>
+
+
+

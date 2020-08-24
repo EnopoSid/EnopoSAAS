@@ -1,0 +1,70 @@
+<ngx-spinner bdColor="rgba(227,227,227,0.8)" size="medium" color="#ffb4b4" opacity="0.5" loadingText="Loading..."
+    type="ball-scale-multiple">
+</ngx-spinner>
+<mat-card>
+    <div class="container">
+        <div class="page_content">
+            <h3> {{ title }}</h3>
+            <div class="height-20"></div>
+            <form [formGroup]="AddReferral" (ngSubmit)="onAddReferralSubmit()">
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="text" placeholder="Title Name" id="titlename" size="50" maxlength="50"
+                        value="" [formControl]="AddReferral.controls['titleName']" required>
+                    <mat-error
+                        *ngIf="AddReferral.controls['titleName'].hasError('required') && AddReferral.controls['titleName'].touched"
+                        class="alert alert-danger">Enter Title</mat-error>
+                    <mat-error
+                        *ngIf="AddReferral.controls['titleName'].hasError('pattern') && AddReferral.controls['titleName'].touched"
+                        class="alert alert-danger">Please enter Alphabets</mat-error>
+                </mat-form-field>
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="text" id="subtitle" placeholder="Sub Title" size="50" maxlength="50" value=""
+                        [formControl]="AddReferral.controls['subTitle']" required>
+                    <mat-error
+                        *ngIf="AddReferral.controls['subTitle'].hasError('required') && AddReferral.controls['subTitle'].touched"
+                        class="alert alert-danger">Enter Sub Title.</mat-error>
+                    <mat-error
+                        *ngIf="AddReferral.controls['subTitle'].hasError('pattern') && AddReferral.controls['subTitle'].touched"
+                        class="alert alert-danger">Please enter Alphabets </mat-error>
+                </mat-form-field>
+                <div class="clear-both"></div>
+                <div>
+                    <div>
+                        <angular-editor [formControl]="AddReferral.controls['shortDescription']" [(ngModel)]="shortDescription"
+                            [config]="subDescriptionEditor"></angular-editor>
+                    </div>
+                    <div class="html" *ngIf="dfd" [innerHTML]="shortDescription">
+                    </div>
+                    <div *ngIf="submitted && f.shortDescription.errors" class="alert alert-danger">
+                        <div >This field is required</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <angular-editor [formControl]="AddReferral.controls['fullDescription']" [(ngModel)]="fullDescription"
+                            [config]="fullDescriptionEditor"></angular-editor>
+                    </div>
+                    <div class="html" *ngIf="dfd">
+                        {{ fullDescription }}
+                    </div>
+                    <div *ngIf="submitted && f.fullDescription.errors" class="alert-danger">
+                        <div >This field is required</div>
+                    </div>
+                </div>
+                <div class="clear-both"></div>
+                <div class="clear-both"></div>
+                <mat-card-footer>
+                    <mat-dialog-actions>
+                        <button mat-button class="mat-button orange" 
+                            *ngIf="saveUser">Save</button>&nbsp;
+                        <button mat-button class="mat-button orange" 
+                            *ngIf="updateUser && !isOnView">Update</button>
+                        <button mat-button class="mat-button skyblue" (click)="onGoBack()">Back</button>
+                    </mat-dialog-actions>
+                    <div class="clear-both"></div>
+                </mat-card-footer>
+            </form>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>

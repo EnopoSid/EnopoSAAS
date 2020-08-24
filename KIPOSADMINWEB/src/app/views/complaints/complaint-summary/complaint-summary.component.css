@@ -1,0 +1,15 @@
+.mat-select-placeholder.mat-floating-placeholder{
+    top:-16px !important;
+}
+
+.comments-box  {
+    line-height: 15px !important;
+    
+}
+
+@media (max-width:600px){
+app-complaint-summary .input-flex-33 {
+    width: 96% !important;
+    margin-right: 4%;
+}
+}

@@ -1,0 +1,1116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta http-equiv="content-security-policy" content="upgrade-insecure-requests">-->
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Organic and natural health products at the cheapest prices. Shop a wide range of paleo, gluten free, vegan, fitness supplements, eco friendly and natural beauty products at the lowest prices in singapore!" />
+    <meta name="keywords" content="Keto, organic tea, paleo, Plant base, vegan, protein, calories count, truffle, health food, healthy meals, lunch, dinner, takeway, delivery, CBD, Tanjong Pagar, Raffles place, sustainability, eco-friendly, tasty grourmet, grocer, meal prep membership" />
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Kipos Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v3.0.1/dist/bootstrap-float-label.min.css" />
+    <link href="assets/fonts/font-stylesheet.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/magic-check.css" />
+    <link href="assets/css/tooltip.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dhtmlxcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery.webui-popover.css" rel="stylesheet" type="text/css" />
+    <link href="node_modules/angularjs-datepicker/dist/angular-datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/toaster.css" rel="stylesheet" />
+    <!-- Modified by surakshith to clear cache issue after build movement start  -->
+    <link href="assets/css/custom.css?r=<%= session.getId()%" rel="stylesheet" />
+    <!-- Modified by surakshith to clear cache issue after build movement end  -->
+    <link href="assets/css/kipos-gourment-styles.css" rel="stylesheet" />
+
+
+    <link href="../assets/images/Favicon.ico" rel="shortcut icon" />
+    <!--<link href="assets/css/responsive-styles.css" rel="stylesheet" />-->
+    <!-- Slick Slider added for Product slider in product page 19/1 -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+    <!-- Bootstrap core JavaScript -->
+    <!-- Jquery and angular js scripts loaded in header instead of footer -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- Ended Jquery and angular js scripts loaded in header instead of footer -->
+
+    <style>
+        /*.field {
+            display: flex;
+            flex-flow: column-reverse;
+            margin-bottom: 1em;
+        }
+        label, input {
+            transition: all 0.2s;
+            touch-action: manipulation;
+        }
+
+        input {
+            font-size: 1.5em;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            font-family: inherit;
+            -webkit-appearance: none;
+            border-radius: 0;
+            padding: 0;
+            cursor: text;
+        }
+
+            input:focus {
+                outline: 0;
+                border-bottom: 1px solid #666;
+            }
+
+        label {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        input:placeholder-shown + label {
+            cursor: text;
+            max-width: 66.66%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transform-origin: left bottom;
+            transform: translate(0, 2.125rem) scale(1.5);
+        }
+        ::-webkit-input-placeholder {
+            opacity: 0;
+            transition: inherit;
+        }
+
+
+
+        input:focus::-webkit-input-placeholder {
+            opacity: 1;
+        }
+
+        input:not(:placeholder-shown) + label,
+        input:focus + label {
+            transform: translate(0, 0) scale(1);
+            cursor: pointer;
+        }
+
+        input:not(:placeholder-shown) {
+            padding: 28px 0px 12px 0px
+        }*/
+
+        /*input:not(:placeholder-shown) + label {
+                transform: translateY(-10px);
+                opacity: .7;
+            }*/
+
+
+        .meshim_widget_components_chatButton_ButtonBar > .button_text {
+            background: red !important;
+        }
+
+        .highlighted {
+            font-weight: 600;
+            color: #1ba1fc;
+        }
+
+        .helpbutton {
+            top: 90%;
+            position: fixed;
+            z-index: 9999;
+            right: 0;
+            float: right;
+            margin-top: -30px;
+            min-width: 50px;
+            max-width: 150px;
+            height: 45px;
+ 
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            margin: 0 auto 0 auto;
+            background: #25d366;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+            .helpbutton a {
+                color: #fff;
+            }
+
+        @media(max-width:768px) {
+            .helpbutton {
+                display: none
+            }
+        }
+    </style>
+
+
+    <!-- Start of kiposcollective Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ae2bcc8d-ce7a-4b27-9488-6a3de9937386"></script>
+    <!-- End of kiposcollective Zendesk Widget script -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119997560-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119997560-1');
+    </script>
+
+
+
+
+</head>
+
+<body id="fpws" ng-app="app" ng-controller="HomeController as vm" ng-cloak ng-click="vm.globalSearchDivClose()">
+
+    <style>
+        .meshim_widget_components_chatButton_Button .button_bar, .meshim_widget_components_chatButton_ButtonBar {
+            background: red;
+        }
+    </style>
+    <lazy-loader></lazy-loader>
+    <toaster-container toaster-options="{'time-out':2000}"></toaster-container>
+
+
+    <!-- Navigation -->
+
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- <span><i class="fa fa-truck" aria-hidden="true"></i> free shipping over SG${{globalShippingMinLimit}}</span>-->
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+        <div class="top-navigation">
+            <nav class="navbar bg-kiposnavbar navbar-expand-lg navbar-dark bg-dark  bg-kipos" id="myHeader">
+                <div class="container">
+                    <div class="desktop-header">
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-6 col-md-12 logo-block navbar-left order-aline-1" ng-if="currentState !='POSLogin'" ng-hide="currentState =='AutoRenewal'">
+                                <a class="navbar-brand"> <img ng-click="vm.showPages()" src="assets/images/kipos-logo1.png" alt="kipos" /> </a>
+
+                            </div>
+
+
+                            <div class="col-lg-5 col-xl-5 col-md-4 col-sm-4 col-12" ng-if="currentState !='POSLogin'" ng-hide="currentState =='AutoRenewal'">
+                                <div ng-if="!posUser" class="globel_search order-aline-3">
+                                    <div class="form-group">
+                                        <!--<input type="text" class="form-control" id="exampleInputsearch" aria-describedby="searchHelp" ng-model="globalSearch" ng-keyup="vm.clikGlobalSearch(globalSearch)" placeholder="Search..." />
+                                         <div class="btn-search" ng-click="vm.clikGlobalSearch(globalSearch)"><i class="fa fa-search" aria-hidden="true"></i></div>-->
+                                        <div ng-if="vm.noData">Sorry, nothing found for "{{vm.searchData}}"</div>
+
+                                        <div class="global_search-result" ng-if="vm.showProducts">
+                                            <div class="gs-total-pro">Products &nbsp;&nbsp; (<span ng-if="vm.allSearchProducts.length >0">{{vm.allSearchProducts.length}}</span>)</div>
+
+                                            <div class="searh-result">
+
+                                                <ul class="list-group" ng-repeat="serachedItem in vm.allSearchProducts | limitTo:5">
+                                                    <li>
+
+                                                        <div class="search-title" ng-click="vm.clk_SearchProduct(serachedItem.ProductId)">
+                                                            <span><img ng-src="{{serachedItem.DefaultPictureModel.ThumbImageUrl}}" alt="" onerror="this.src = 'assets/images/default-image.JPG'" /></span>
+                                                            <a href="" ng-bind-html="serachedItem.ProductName | highlight:globalSearch" ng-click="vm.clk_SearchProduct(serachedItem.ProductId)">{{serachedItem.ProductName}}</a>
+                                                        </div>
+                                                        <div class="search-price"><b>SG${{serachedItem.Price.toFixed(2)}}</b></div>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            <!-- <div class="show-search-result"> <a href="#/products?searchValue={{globalSearch}}" ng-click="vm.search('show')">Show all {{vm.allSearchProducts.length}} results</a></div> -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-xl-4 col-md-5 col-sm-4 col-8 sign-right order-aline-2" ng-if="currentState !='POSLogin'" ng-hide="currentState =='AutoRenewal'">
+                                <div class="float-right login-buttons" ng-if="!IsAuthenticated">
+                                    <!--<span class="btn btn-login" data-toggle="modal" data-target="#modal-signup" ng-click="vm.clkSignupButton()"> Signup321 </span> &nbsp;
+                                    <span class="btn btn-sign" data-toggle="modal" data-target="#modal-signin" ng-click="vm.clkResetAllModals()"> Login123 </span> &nbsp;-->
+                                    <!--<span class="cart-mobile-items d-inline-block">
+                                        <a class="text-cart cart-icon text-kipos d-block" style="line-height:18px;" ng-click="vm.validate('cart')"> <i class="fa fa-cart-arrow-down text-kipos"> </i> <span class="caret"></span> </a>
+                                        <span ng-if="vm.gourmetAndGrocery" class="item-number small"> <b> {{ !globalCartInformation.Items ? 0 : globalCartInformation.Items.length }} </b> Items </span>
+                                        <span ng-if="vm.freshItems" class="item-number1 small1"> <b> {{ !globalCartInformation_Fresh ? 0 : globalCartInformation_Fresh.length }} </b> Items </span>
+                                    </span>-->
+                                    <div class="clear"></div>
+
+                                </div>
+                                <div ng-if="IsAuthenticated">
+                                    <span class="dropdown pull-right signup-user">
+                                        <a class="dropdown-toggle text-cart" data-toggle="dropdown">
+                                            {{globalMemberDetails.FullName}} <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a ui-sref="profile"> My Account </a></li>
+                                            <li ng-if="!posUser"><a href="" ui-sref="wishlist"> My Favorites </a></li>
+                                            <li><a ui-sref="order"> My Orders </a></li>
+                                            <li><a ui-sref="kpoints"> My KPoints </a></li>
+                                            <li><a data-toggle="modal" data-target="#modal-changePassword" ng-click="vm.clkResetAllModals()"> Change Password </a></li>
+                                            <li><a ng-click="vm.signout()"> Logout </a></li>
+                                        </ul>
+                                    </span> &nbsp; &nbsp;
+                                    <!--<div class="float-right top-nav">
+                                        <ul class="nav navbar-nav">
+                                            <span class="cart-mobile-items">
+                                                <a class="text-cart cart-icon text-kipos" ui-sref="cart"> <i class="fa fa-cart-arrow-down text-kipos"> </i> <span class="caret"></span> </a> &nbsp; &nbsp; </br>
+                                                <span ng-if="vm.gourmetAndGrocery" class="item-number">
+                                                    <b> {{ !globalCartInformation.Items ? 0 : globalCartInformation.Items.length }} </b> Items
+                                                </span>
+                                                <span ng-if="vm.freshItems" class="item-number1 small1"> <b> {{ !globalCartInformation_Fresh ? 0 : globalCartInformation_Fresh.length }} </b> Items </span>
+                                            </span>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+
+                    </div><!----desktop header close-->
+                    <!---------mobile view------>
+                    <div class="mobile-view-header" ng-if="currentState !='POSLogin'" ng-hide="currentState =='AutoRenewal'">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-6 col-md-12 logo-block navbar-left order-aline-1">
+                                    <a class="navbar-brand"> <img ng-click="vm.showPages()" src="assets/images/kipos-logo1.png" alt="kipos" /> </a>
+                                </div>
+
+                                <div class="col-lg-6 col-xl-6 col-md-7 col-sm-8 col-8 sign-right order-aline-2">
+                                    <div class="float-right login-buttons" ng-if="!IsAuthenticated">
+                                        <!--<span class="btn btn-login" data-toggle="modal" data-target="#modal-signup" ng-click="vm.clkSignupButton()"> Signup </span> &nbsp;
+                                        <span class="btn btn-sign" data-toggle="modal" data-target="#modal-signin" ng-click="vm.clkResetAllModals()"> Login </span> &nbsp;-->
+                                        <div class="clear"></div>
+
+                                    </div>
+
+                                    <div ng-if="IsAuthenticated" style="display:none;">
+                                        <span class="dropdown pull-right signup-user">
+                                            <a class="dropdown-toggle text-cart" data-toggle="dropdown">
+                                                {{globalMemberDetails.FullName}} <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a ui-sref="profile"> My Account </a></li>
+                                                <li><a href="" ui-sref="wishlist"> My Favorites </a></li>
+                                                <li><a ui-sref="order"> My Orders </a></li>
+                                                <li><a ui-sref="kpoints"> My KPoints </a></li>
+                                                <li><a data-toggle="modal" data-target="#modal-changePassword" ng-click="vm.clkResetAllModals()"> Change Password </a></li>
+                                                <li><a ng-click="vm.signout()"> Logout </a></li>
+                                            </ul>
+                                        </span> &nbsp; &nbsp;
+                                        <div class="float-right top-nav">
+                                            <ul class="nav navbar-nav"></ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+
+                            <div class="row" style="display:none;">
+                                <div class="col-lg-10 col-xl-10 col-md-10 col-sm-10 col-9">
+                                    <div class="globel_search order-aline-3">
+                                        <div class="form-group">
+                                            <!--<input type="text" class="form-control gbl-search" id="exampleInputsearch" aria-describedby="searchHelp" ng-model="globalSearch" ng-keyup="vm.clikGlobalSearch(globalSearch)" placeholder="Search..." />
+                                            <div class="btn-search  gbl-search-btn" ng-click="vm.clikGlobalSearch(globalSearch)"><i class="fa fa-search" aria-hidden="true"></i></div>-->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="global_search-result" ng-if="vm.showProducts">
+                                    <div class="gs-total-pro">Products &nbsp;&nbsp; (<span ng-if="vm.allSearchProducts.length >0">{{vm.allSearchProducts.length}}</span>)</div>
+
+                                    <div class="searh-result">
+
+                                        <ul class="list-group" ng-repeat="serachedItem in vm.allSearchProducts | limitTo:5">
+                                            <li>
+
+                                                <div class="search-title">
+                                                    <a href="#">  <img ng-src="{{serachedItem.DefaultPictureModel.ThumbImageUrl}}" alt="" onerror="this.src = 'assets/images/default-image.JPG'" />{{serachedItem.ProductName}}</a>
+                                                </div>
+                                                <div class="search-price"><b>${{serachedItem.Price}}</b></div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="show-search-result"> <a href="#/products?searchValue={{globalSearch}}" ng-click="vm.search('show')">Show all {{vm.allSearchProducts.length}} results</a></div>
+
+                                </div>
+
+                                <!--<div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-3">
+                                    <div class="float-right top-nav">
+                                        <ul class="nav navbar-nav">
+                                            <span class="cart-mobile-items">
+                                                <a class="text-cart cart-icon text-kipos" ui-sref="cart"> <i class="fa fa-cart-arrow-down text-kipos"> </i> <span class="caret"></span> </a> &nbsp; &nbsp; </br>
+                                                <span ng-if="vm.gourmetAndGrocery" class="item-number">
+                                                    <b> {{ !globalCartInformation.Items ? 0 : globalCartInformation.Items.length }} </b> Items
+                                                </span>
+                                                <span ng-if="vm.freshItems" class="item-number1 small1"> <b> {{ !globalCartInformation_Fresh ? 0 : globalCartInformation_Fresh.length }} </b> Items </span>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                </div>-->
+                            </div>
+
+                        </div>
+                    </div><!----mobile-view-header close-->
+
+
+
+
+
+
+                </div>
+                <div class="clearfix"> </div>
+            </nav>
+            <div class="clearfix"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="category desktop-menu" ng-if="currentState =='products' || currentState =='productDetails' ">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-dark row">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">All products</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Best Sellers</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">What's New</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Vegan</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Gluten Free</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Babies</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Raw</a> </li>
+                        <li class="nav-item"> <a class="nav-link menu-text" href="#">Paleo</a> </li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+
+        <div class="mobile-menu pt-20" ng-show="currentState =='products' || currentState =='productDetails' ">
+            <div class="bstimeslider">
+                <div id="rightArrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                <div id="viewContainer">
+                    <div id="tslshow">
+                        <div class="bktibx">
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">All products</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li><a class="nav-link menu-text" href="#">Best Sellers</a> </li>
+                                <li><a class="nav-link menu-text" href="#">What's New</a> </li>
+                                <li><a class="nav-link menu-text" href="#">Vegan</a> </li>
+                                <li><a class="nav-link menu-text" href="#">Gluten Free</a> </li>
+                                <li><a class="nav-link menu-text" href="#">Babies</a> </li>
+                                <li><a class="nav-link menu-text" href="#">Row</a> </li>
+                                <li><a class="nav-link menu-text" href="#">Paleo</a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="leftArrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <div ui-view="">
+
+    </div>
+
+
+
+
+    <!--<div class="news-letter mt-5 pt-50 pb-50 bg-light" ng-if="currentState !='POSLogin' && !posUser && currentState !='home'  " ng-hide="currentState =='AutoRenewal'">
+        <div class="container">-->
+    <!--<div class="join-community">
+        <h4 class="my-2 text-center text-uppercase text-white" style=" position: relative; top: -40px;"> <span style="background:#60cbc8; padding:20px;"> Join the Community </span></h4>
+        <h5 class="text-center pt-3 pb-30 text-uppercase" style="color: #6d6d6d;">Get free e-recipe book and health tips from expert for free</h5>
+        <div class="row">
+            <div class="col-md-3 news-letter-pic">
+                <img src="assets/images/healthy-mind.png">
+            </div>
+            <div class="col-md-9 newsletter-sec">
+                <form id="formvalidation" name="formvalidation" style="width:100%;">
+                    <div class="form-group pt-20">
+                        <div class="input-group">
+                            <input type="text" class="form-control join-textbox email-textfield" id="emailNewsLetter" name="emailNewsLetter" placeholder="Join our mailing list" ng-model="vm.globalEmailForNewsLetter" required ng-pattern="myConstants.ValidationPatterns.Email"
+                                   style="border-radius:0px; font-style: italic;">
+                        </div>
+                        <div class="text-danger small text-center" ng-if="formvalidation.emailNewsLetter.$error.pattern && $root.isGlobalNewsLetterClicked">
+                            Invalid Email
+                        </div>
+                        <div class="shownow-reviews">
+                            <div class="btn btn-sign" style="padding: 8px 40px; font-size: 20px; letter-spacing: 2px; font-weight: 500;" ng-click="vm.getnewsletter(formvalidation);$root.isGlobalNewsLetterClicked =true"> JOIN NOW </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>-->
+    <!--</div>
+    </div>-->
+    <!-- News letter  -->
+    <!--<div class="news-letter p-5" style="background:#c1c1c1; display:none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pb-5">
+                    <h5 class="text-center pb-3">
+                        <b>
+                            Ready to get your Organic and healthy food
+                            at discount rates?
+                        </b>
+                    </h5>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <form id="formvalidation" name="formvalidation" style="width:100%;">
+                                <div class="input-group">
+                                    <input type="text" id="emailNewsLetter" name="emailNewsLetter" class="form-control email-textfield" placeholder="Enter email address" ng-model="vm.getdata.Email" required ng-pattern="myConstants.ValidationPatterns.Email" style="border-radius:8px 0px 0px 8px;">
+                                    <button class="btn btn-primary" id="buttton" ng-click="vm.getnewsletter(formvalidation);vm.isGlobalNewsLetterClicked =true"> Go </button>
+                                    <div class="clearfix"> </div> <br />
+
+                                </div>
+                                <div class="text-danger small" ng-if="formvalidation.emailNewsLetter.$error.pattern && vm.isGlobalNewsLetterClicked">
+                                    Invalid Email
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <p class="text-center"> <small class="font-size-100"> We guarantee 100% privacy! Your info will not be shared. </small> </p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Footer -->
+    
+    <footer class="footer-bg pb-0" ng-if="currentState !='POSLogin' && !posUser" ng-hide="currentState =='AutoRenewal'">
+        <!--<div class="container" ng-if="currentState !='home'">
+            <div class="row footer-links">
+                <div class="col-sm-6 col-md-3 ">
+                    <h5 class="my-3">Company</h5>
+                    <ul>
+
+                        <li><a ui-sref="ourStory"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;OUR STORY</a> </li>
+                        <li><a ui-sref="foodEthos"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;FOOD ETHOS </a> </li>
+                        <li><a ui-sref="ComingsoonGrocery"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;BLOG</a> </li>-->
+        <!--<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;ETC</a></li>-->
+        <!--</ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3 ">
+            <h5 class="my-3"> Help </h5>
+            <ul>
+                <li><a ui-sref="buildOwnBowl"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;HOW TO BYOB</a> </li>
+                <li><a ui-sref="faqs"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;JOIN US NOW</a> </li>
+                <li><a ui-sref="menu"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;MENU</a> </li>
+
+                <!--<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;ETC </a> </li>-->
+        <!--</ul>
+        </div>-->
+        <!--<div class="col-md-2 col-sm-6 ml-2">
+            <h5 class="my-3"> Account </h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;Order History</a></li>
+                <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;ETC</a></li>
+            </ul>
+        </div>-->
+        <!--<div class="col-sm-6 col-md-3 ">
+            <h5 class="my-3">Links</h5>
+            <ul>
+                <li><a ui-sref="careers"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;CAREERS</a></li>-->
+        <!--<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;PRESS</a></li>-->
+        <!--<li><a ui-sref="contactUs"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;CONTACT</a> </li>-->
+        <!--<li><a ui-sref="vendorEnquiry"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;VENDOR INQUIRY</a></li>-->
+        <!--<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;&nbsp;MY WALLET</a></li>-->
+        <!--</ul>
+        </div>
+        <div class=" col-sm-6 col-md-3 footer-social ">
+            <h5 class="my-3">Get to know us  </h5>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Kipos-Collective-1778529992454099/" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                    </a>
+                </li>
+                <li><a href="https://www.instagram.com/kiposcollective/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram </a></li>
+                <li><a ui-sref="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location </a></li>-->
+        <!-- <li><a href="https://www.google.com/maps/place/kipos+gourmet/@1.2770512,103.8433588,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x26626e903dbf68d5!8m2!3d1.2770512!4d103.8455475" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> location </a></li> -->
+        <!--   <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>Google+</a></li>-->
+        <!--</ul>
+
+                </div>
+            </div>
+        </div>-->
+        <!-- /.container -->
+        <div class="footer-bottom w-100">
+            <p class="text-white text-center p-3 m-0">
+                ©2018 by KIPOS Gourmet. &nbsp; All rights reserved &nbsp;  |
+                <a class="text-white text-underline" ui-sref="termsAndConditions">Terms and Conditions  </a> |
+                <a class="text-white text-underline" ui-sref="termsAndConditions"> Privacy Policy &nbsp;</a> |
+                <a class="text-white text-underline" ui-sref="disclaimer"> Disclaimer </a> &nbsp;
+            </p>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="modal-signin" tabindex="-1" style="padding:0px 10px !important; width:100%; margin-left:7px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">New Customer </h5>
+
+                    <span class="pull-right btn btn-sign" data-toggle="modal" data-target="#modal-signup" ng-click="vm.clkSignupButton()"> Signup </span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="account-wall">
+                        <form class="form-signin" id="vm.frmLogin" name="vm.frmLogin" ng-submit="vm.clkLogin(vm.frmLogin)" novalidate>
+                            <h5 class="modal-title pt-2">Login </h5>
+                            <br>
+                            <div class="form-group">
+                                <label for="login-email">Email  <span class="required">*</span></label>
+                                <input class="form-control" id="email" name="email" required type="email" ng-pattern="myConstants.ValidationPatterns.Email" placeholder="email@example.com" ng-model="vm.loginData.EmailId" />
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmLogin.email.$touched && vm.frmLogin.email.$invalid && !vm.frmLogin.email.$error.pattern">Enter your Email</span>
+                            <span class="text-danger small" ng-if="vm.frmLogin.email.$error.pattern">Invalid Email</span>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group ">
+                                <label for="password"> Password  <span class="required">*</span></label>
+                                <input class="form-control" id="password_login" name="password_login" required type="password" placeholder="********" ng-model="vm.loginData.Password" />
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmLogin.password_login.$touched && vm.frmLogin.password_login.$invalid  && !vm.frmLogin.password_login.$error.pattern">Enter your Password</span>
+                            <!--<span class="text-danger small" ng-if="vm.frmLogin.password.$error.pattern">Invalid Password Pattern</span>-->
+                            <div class="clearfix"></div>
+                            <br>
+                            <a href="#" class="need-help" data-toggle="modal" data-target="#modal-forgotpwd" data-dismiss="modal" Forgot my password ng-click="vm.gotoForgotPassword()">Forgot my password </a><span class="clearfix"></span>
+                            <div class="form-group pt-20">
+                                <button class="pull-right btn-action btn btn-cart btn-kipos " type="submit" data-toggle="modal"> Submit </button>
+                                <!--<span class="pull-right btn btn-kipos" data-toggle="modal"> Submit </span>-->
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Modal footer -->
+                <!--<div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal signup-popup fade" id="modal-signup" tabindex="-1" style="padding:0px 10px !important; width:100%; margin-left:7px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-block">
+                    <h5 class="modal-title d-block w-100">
+                        Account
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </h5>
+                    <p class="d-block"> Sign up as a Loyalty Member today to get 10% cashback on all purchases!  </p>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="account-wall">
+                        <form class="form-signin" id="vm.frmSignup" name="vm.frmSignup" ng-submit="vm.signup(vm.frmSignup)" novalidate>
+                            <div class=" pt-2" ng-if="vm.formStage==1">
+                                <div class="form-group ">
+                                    <label for="signup-fullname">Name<span class="required">*</span></label>
+                                    <input class="form-control" type="text" placeholder="Name"
+                                           name="fullname" required ng-model="vm.userData.UserName" maxlength="60" check-pattern=myConstants.ValidationPatterns.Alphabets id="signup-fullname" />
+                                </div>
+                                <span class="text-danger small" ng-if="vm.frmSignup.fullname.$touched && vm.frmSignup.fullname.$invalid">Enter your Full Name</span>
+                                <div class="clearfix"></div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="email">Email<span class="required">*</span></label>
+                                    <input class="form-control" type="email" placeholder="email@example.com"
+                                           name="email" required ng-pattern="myConstants.ValidationPatterns.Email" ng-model="vm.userData.EmailId" maxlength="60" id="signup-email" />
+
+                                </div>
+                                <span class="text-danger small" ng-if="vm.frmSignup.email.$touched && vm.frmSignup.email.$invalid && !vm.frmSignup.email.$error.pattern">Enter your Email</span>
+                                <span class="text-danger small" ng-if="vm.frmSignup.email.$error.pattern">Invalid Email</span>
+                                <div class="clearfix"></div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label for="number">Phone Number <span class="required">*</span></label><br>
+                                    <div class="select-country" style="padding:0;width:80px; display:inline-block;">
+                                        <select class="form-control btn-sec bg-gray" name="country_code" id="exampleSelect1" ng-model="vm.selectedCountryCode" ng-options="globalCountryCode as globalCountryCode.Value for globalCountryCode in vm.globalCountryCodes" style="font-size:0.75rem; padding: 0px !important; height:30px;" ng-change="vm.validateMobileNumber(vm.selectedCountryCode,vm.userData.PhoneNumber)"></select>
+                                    </div>
+
+                                    <div class="center-sel-phone has-float-label" style="position:relative;display:inline-block; width:69%;">
+                                        <!--<label for="number">Phone Number <span class="required">*</span></label>-->
+                                        <input class="form-control" type="text" placeholder="Phone Number"
+                                               name="telephone" id="telephone" required ng-model="vm.userData.PhoneNumber" maxlength="8" ng-minlength="8" check-pattern=myConstants.ValidationPatterns.Numbers ng-keyup="vm.validateMobileNumber(vm.selectedCountryCode, vm.userData.PhoneNumber)" />
+
+                                        <!--<span style="width:100%;">
+                                            <a href="" id="send_opt_id" ng-click="vm.clkGenerateOTP(vm.frmSignup)" class="btn btn-sm" style=" background: #1a646d; font-size: 12px !important; color:#fff; min-width: 60px !important; line-height: normal; padding: 7px 7px !important;  box-shadow: none; position: absolute;  right: 0px; top: 20px; line-height: normal; height: 30px;  font-weight: 600;">
+                                                Send OTP
+                                            </a>
+                                        </span>-->
+                                    </div>
+                                    <span class="text-danger small" ng-if="!!vm.patternError">The No.of Digits should be {{vm.maxdigits}}</span>
+                                </div>
+                                <!-- <span class="text-danger small" ng-if="vm.frmSignup.telephone.$touched && vm.frmSignup.telephone.$invalid && !vm.frmSignup.telephone.$error.minlength">Enter your Phone</span>
+                                <span class="text-danger small" ng-if="vm.frmSignup.telephone.$touched && vm.frmSignup.telephone.$error.minlength">Phone Number should contain 8-10 digits</span> -->
+                                <!-- <div class="clearfix"></div>
+                                <br>
+                                <div class="form-group has-float-label" ng-if="vm.IsOTPButtonClicked && !vm.IsOTPValidated">
+                                    <input class="form-control" id="otp" name="otp" type="text" ng-required="true" ng-model="vm.userData.OTP" placeholder="Enter OTP" maxlength="6" ng-minlength="6" ng-blur=" vm.ValidateOTP()" />
+                                    <label for="number">OTP</label>
+                                </div>
+                                <span class="text-danger small" ng-if="vm.frmSignup.otp.$touched && vm.frmSignup.otp.$invalid && !vm.frmSignup.otp.$error.minlength">Enter OTP</span>
+                                <span class="text-danger small" ng-if="vm.frmSignup.otp.$touched && vm.frmSignup.otp.$error.minlength">Invalid OTP</span>
+                                <div class="clearfix"></div> -->
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="singnup-password"> Password <span class="required">*</span> </label>
+                                <input class="form-control" id="password" type="password" placeholder="" name="password" required ng-model="vm.userData.Password"
+                                       ng-keyup="vm.validatepassword()" ng-pattern="myConstants.ValidationPatterns.UserPassword" />
+
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmSignup.password.$touched && vm.frmSignup.password.$invalid  && !vm.frmSignup.password.$error.pattern">Enter your Password</span>
+                            <span class="text-danger small" ng-if="vm.frmSignup.password.$error.pattern">Invalid Password Pattern (Password should be min of 8 characters and must contain a numeric)</span>
+                            <div class="clearfix"></div>
+                            <div class="form-group">
+                                <label for="singnup-password"> Confirm Password <span class="required">*</span> </label>
+                                <input class="form-control" type="password" placeholder="" name="confirmpassword" required ng-model="vm.userData.NewPassword" ng-keyup="vm.validatepassword()" ng-pattern="myConstants.ValidationPatterns.UserPassword" id="changepwd-confirm-password" />
+
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmSignup.confirmpassword.$touched && vm.frmSignup.confirmpassword.$invalid  && !vm.frmSignup.confirmpassword.$error.pattern">Renter your Password</span>
+                            <span class="text-danger small" ng-if="vm.frmSignup.confirmpassword.$error.pattern">Invalid Password Pattern (Password should be min of 8 characters and must contain a numeric)</span>
+                            <div class="clearfix"></div>
+
+                            <div class="form-group pt-20" id="signup-submit">
+                                <button class="pull-right btn-action btn btn-cart btn-kipos " type="submit" data-toggle="modal" ng-disabled="vm.frmSignup.$invalid"> Submit </button>
+                                <!--<span class="pull-right btn btn-kipos" data-toggle="modal"> Submit </span> -->
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Modal footer -->
+                <!--<div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-forgotpwd" tabindex="-1" style="padding:0px 10px !important; width:100%; margin-left:7px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-white" style="border:none;">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <!--<h5 class="modal-title">New Customer </h5>
+                    <span class="pull-right btn btn-sign"  > Register </span>-->
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="account-wall">
+                        <form class="form-signin" id="vm.frmForgotPassword" name="vm.frmForgotPassword" ng-submit="vm.forgotPassword(vm.frmForgotPassword)" novalidate>
+                            <h5 class="modal-title">Forgot my password </h5>
+                            <br>
+                            <div>
+                                <div class="form-group has-float-label">
+                                    <input class="form-control" type="text" placeholder="Enter Email Id"
+                                           name="emailForgot" required ng-model="vm.fortgotPasswordData.EmailId;" ng-pattern="myConstants.ValidationPatterns.Email" id="emailForgot" />
+                                    <label for="fpwd-telephone">Email Id <span class="required">*</span></label>
+
+                                </div>
+                                <span class="text-danger small" ng-if="vm.frmForgotPassword.emailForgot.$touched && vm.frmForgotPassword.emailForgot.$invalid && !vm.frmForgotPassword.emailForgot.$error.pattern">Enter your Email</span>
+                                <span class="text-danger small" ng-if="vm.frmForgotPassword.emailForgot.$error.pattern">Invalid Email</span>
+                                <div class="clearfix"></div>
+                                <br>
+                            </div>
+                            <div class="form-group" ng-if="vm.forgotFlow == 2">
+                                <label for="fpwd-fullname"> Mobile Number <span class="required">*</span></label>
+                                <input type="text" name="otp" required ng-model="vm.fortgotPasswordData.DOTP" maxlength="6" ng-minlength="6" check-pattern=myConstants.ValidationPatterns.Numbers placeholder="OTP" id="fpwd-fullname" class="form-control">
+                                <span class="error" ng-if="vm.frmForgotPassword.otp.$touched && vm.frmForgotPassword.otp.$invalid && !vm.frmForgotPassword.otp.$error.minlength">Enter OTP</span>
+                                <span class="error" ng-if="vm.frmForgotPassword.otp.$touched && vm.frmForgotPassword.otp.$error.minlength">OTP should 6 digits</span>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <button class="pull-right btn-action btn btn-cart btn-kipos " type="submit" data-toggle="modal"> Confirm </button>
+                                <!--<span class="pull-right btn btn-kipos" data-toggle="modal"> Submit </span>-->
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Modal footer -->
+                <!--<div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-changePassword" tabindex="-1" style="padding:0px 10px !important; width:100%; margin-left:7px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Password </h5>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <!--<span class="pull-right btn btn-sign" data-toggle="modal"> Register </span>-->
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="account-wall">
+                        <form class="form-signin" id="vm.frmChangepwd" name="vm.frmChangepwd" ng-submit="vm.changepassword(vm.frmChangepwd)" novalidate>
+                            <!--<h5 class="modal-title">Change Password </h5>
+                            <br>-->
+                            <div class="form-group ">
+                                <input class="form-control" id="old-password" type="password" placeholder="********" name="oldpassword" required ng-model="vm.userData.OldPassword" />
+                                <label for="changepwd-password">Old Password <span class="required">*</span> </label>
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmChangepwd.oldpassword.$touched && vm.frmChangepwd.oldpassword.$invalid  && !vm.frmChangepwd.oldpassword.$error.pattern">Enter your Old Password</span>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group ">
+                                <input class="form-control" id="changepwd-password" type="password" placeholder="********" name="newpassword" required ng-model="vm.userData.UserPassword" ng-keyup="vm.validatepassword()" ng-pattern="myConstants.ValidationPatterns.UserPassword" />
+                                <label for="changepwd-password"> Password <span class="required">*</span> </label>
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmChangepwd.newpassword.$touched && vm.frmChangepwd.newpassword.$invalid  && !vm.frmChangepwd.newpassword.$error.pattern">Enter your New Password</span>
+                            <span class="text-danger small" ng-if="vm.frmChangepwd.newpassword.$error.pattern">Invalid Password Pattern (Password should be min of 8 characters and must contain a numeric)</span>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group ">
+                                <input class="form-control" type="password" placeholder="********" name="confirmpassword" required ng-model="vm.userData.NewPassword" ng-keyup="vm.validatepassword()" ng-pattern="myConstants.ValidationPatterns.UserPassword" id="changepwd-confirm-password" />
+                                <label>Confirm Password: <span class="required">*</span></label>
+                            </div>
+                            <span class="text-danger small" ng-if="vm.frmChangepwd.confirmpassword.$touched && vm.frmChangepwd.confirmpassword.$invalid  && !vm.frmChangepwd.confirmpassword.$error.pattern">Enter your Password</span>
+                            <span class="text-danger small" ng-if="vm.frmChangepwd.confirmpassword.$error.pattern">Invalid Password Pattern (Password should be min of 8 characters and must contain a numeric)</span>
+                            <br>
+                            <div class="form-group pt-20">
+                                <button class="pull-right btn-action btn btn-cart btn-kipos2 " type="submit" data-toggle="modal"> Confirm </button>
+                                <!--<span class="pull-right btn btn-kipos" data-toggle="modal" ng-click="vm.changepassword(vm.frmChangepwd)"> Confirm </span>-->
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Modal footer -->
+                <!--<div class="modal-footer">
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                   </div>-->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="checkout-membershipment" tabindex="-1" style="padding:0px 10px !important; width:100%; margin-left:7px;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="close" style="padding-right:20px;" data-dismiss="modal">×</button>
+                    <div class="checkout-membershipment">
+
+                        <div class="trail">
+                            <div class="gift-icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="choose-plan">
+                            <h4 class="text-center">
+                                <br />
+                                Change Your Membership Plan
+                            </h4> <br />
+                            <div class="row choose-plan-section">
+                                <div class="col-md-6">
+                                    <div class="row choose-plan-section-l">
+                                        <div class="plan-choosed">
+                                            <h4 class="plan-title">Monthly</h4>
+                                            <h3 class="plan-title">$9.90/month</h3>
+
+                                        </div>
+                                        <div class="plan-choosed-content">
+                                            <ul>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;10% <b>OFF</b> always</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Free shipping above <b>${{globalShippingMinLimit}}</b></li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<b>Low Rate</b> Express Shipping</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<b>VIP Access</b> to new products</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Cost of Membership: <b>$9.90</b></li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Cancel anytime</li>
+                                            </ul>
+                                            <div class="choose-plan-btn" id="btnMemPlanMonthly" ng-click="vm.clkPlanPick(myConstants.MEMBERSHIP_PLANS.MONTHLY)" style="cursor: pointer;">PICK</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="row choose-plan-section-r">
+                                        <div class="plan-choosed">
+                                            <h4 class="plan-title">Loyalty Plan</h4>
+                                            <!-- <h3 class="plan-title"></h3> -->
+                                            <button type="button" class="btn-secondary">Best Value</button>
+                                        </div>
+                                        <div class="plan-choosed-content">
+                                            <ul>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<b>10% OFF</b> always</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Free shipping above <b>${{globalShippingMinLimit}}</b></li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<b>10% </b> Loyality Rewards</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<b>VIP Access</b> to New products</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Cancel anytime</li>
+                                                <!-- <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Cost of Membership: <b>$99.90</b></li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Minimum Commitment 1 year</li> -->
+
+                                            </ul>
+                                            <div class="choose-plan-btn" id="btnMemPlanYearly" ng-click="vm.clkPlanPick(myConstants.MEMBERSHIP_PLANS.Loyalty)" style="cursor: pointer;">PICK</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------->
+
+    <script src="bower_components/angular/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.0/angular-ui-router.js"></script>
+    <script src="bower_components/angular-material/angular-messages.min.js"></script>
+    <script src="bower_components/angular-material/svg-assets-cache.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+
+
+    <!-- For Stripe -->
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+    <!-- For Stripe - End -->
+    <!-- Modified by surakshith to clear cache issue after build movement start  -->
+    <script src="app/app.js?r=<%= session.getId()%>"></script>
+    <!-- Modified by surakshith to clear cache issue after build movement end  -->
+    <script src="app/app.route.js"></script>
+    <script src="app/services/app.service.js"></script>
+    <script src="app/services/authenticate.service.js"></script>
+    <script src="app/services/authenticateInterceptor.service.js"></script>
+    <script src="app/app.directive.js"></script>
+    <script src="app/app.filter.js"></script>
+    <script src="app/app.constants.js"></script>
+    <script src="assets/js/tooltip.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/dhtmlxcalendar.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.webui-popover.min.js" type="text/javascript"></script>
+    <script src="node_modules/angularjs-datepicker/dist/angular-datepicker.js"></script>
+    <script src="assets/js/toaster.js"></script>
+    <!-- Fleax slider pulgin added 19/1/2019 KK -->
+    <script defer src="assets/slick/slick.min.js" type="text/javascript"></script>
+    <!--Controllers-->
+    <script src="app/components/home/homecontroller.js"></script>
+    <script src="app/components/registration/registrationcontroller.js"></script>
+    <script src="app/components/terms/TermsAndConditionsController.js"></script>
+    <script src="app/components/disclaimer/DisclaimerController.js"></script>
+    <!--<script src="app/components/cart/cartcontroller.js"></script>
+    <script src="app/components/comingsoon/comingsooncontroller.js"></script>
+    <script src="app/components/membership/membershipcontroller.js"></script>
+    <script src="app/components/productDetails/productDetailscontroller.js"></script>
+    <script src="app/components/registration/registrationcontroller.js"></script>-->
+    <!--<script src="app/components/thankyou/thankyoucontroller.js"></script>
+    <script src="app/components/products/productscontroller.js"></script>
+    <script src="app/components/account/accountcontroller.js"></script>
+    <script src="app/components/wishlist/wishlistcontroller.js"></script>
+    <script src="app/components/Address/AddressController.js"></script>
+    <script src="app/components/Order/orderController.js"></script>
+    <script src="app/components/KPoints/KPointsController.js"></script>
+    <script src="app/components/OrderDetails/orderDetailscontroller.js"></script>
+    <script src="app/components/AddReview/addReviewController.js"></script>
+    <script src="app/components/viewReviews/viewReviewscontroller.js"></script>
+    <script src="app/components/passwordRecovery/PasswordRecoveryController.js"></script>
+    <script src="app/components/newCheckout/newcheckoutcontroller.js"></script>
+    <script src="app/components/gourmetProductDetails/gourmetProductDetails.js"></script>
+    <script src="app/components/gourmetProducts/gourmetproductscontroller.js"></script>
+    <script src="app/components/ourStory/ourStoryController.js"></script>
+    <script src="app/components/vendorEnquiry/vendorEnquiryController.js"></script>
+    <script src="app/components/contactUs/contactUsController.js"></script>
+    <script src="app/components/location/LocationController.js"></script>
+    <script src="app/components/blog/blogController.js"></script>
+    <script src="app/components/careers/careersController.js"></script>
+    <script src="app/components/FAQS/FAQSController.js"></script>
+    <script src="app/components/foodEthos/foodEthosController.js"></script>
+    <script src="app/components/buildOwnBowl/buildOwnBowlController.js"></script>
+    <script src="app/components/menu/menuController.js"></script>
+      <script src="app/components/comingsoongrocery/comingsoonGrocerycontroller.js"></script>
+    <script src="app/components/newProduct/ProductController.js"></script>
+    <script src="app/components/setPassword/setPasswordcontroller.js"></script>
+    <script src="app/components/Fresh_module/freshMeal/FreshMealController.js"></script>
+    <script src="app/components/Fresh_module/freshPlanChoose/freshPlanController.js"></script>
+    <script src="app/components/Fresh_module/freshPlanCustomize/FreshPlanCustomController.js"></script>
+    <script src="app/components/Fresh_module/freshLogistic/freshLogisticController.js"></script>
+    <script src="app/components/Fresh_module/freshOrderSummary/freshOrderSumController.js"></script>
+    <script src="app/components/Fresh_module/freshShipping/freshShipController.js"></script>
+    <script src="app/components/Fresh_module/freshCart/freshCartController.js"></script>
+    <script src="app/components/Fresh_module/freshThankPage/FreshThankController.js"></script>
+    <script src="app/components/POS_Module/POSLogin/POSLoginController.js"></script>
+    <script src="app/components/POS_Module/POSCheckout/POSCheckoutController.js"></script>
+    <script src="app/components/AutoRenewal/AutoRenewalController.js"></script>-->
+    <!--End Controllers-->
+    <!-- Bootstrap core JavaScript -->
+    <!--<script>
+        var myCalendar;
+        function doOnLoad() {
+            myCalendar = new dhtmlXCalendarObject({ button: "calendar_icon" });
+            myCalendar.setMinutesInterval(15);
+            myCalendar.attachEvent("onClick", function () {
+                document.getElementById("date_here").innerHTML = myCalendar.getFormatedDate();
+            });
+        }
+    </script>-->
+    <script>
+        var view = $("#tslshow");
+        var move = "100px";
+        var sliderLimit = -750
+
+        $("#rightArrow").click(function () {
+
+            var currentPosition = parseInt(view.css("left"));
+            if (currentPosition >= sliderLimit) view.stop(false, true).animate({ left: "-=" + move }, { duration: 400 })
+
+        });
+
+        $("#leftArrow").click(function () {
+
+            var currentPosition = parseInt(view.css("left"));
+            if (currentPosition < 0) view.stop(false, true).animate({ left: "+=" + move }, { duration: 400 })
+
+        });
+    </script>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- <div class="helpbutton">
+    <a href="https://web.whatsapp.com/send?phone=6592326073&amp;text=" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank">
+    <i style="font-size: 24px;line-height: 24px; vertical-align: middle;" class="fa">&#xf232;</i>
+    <span> help? </span></a></div> -->
+    <div class="helpbutton">
+        <div onclick="myFunc()">
+            <i style="font-size: 24px; line-height: 24px; vertical-align: middle;" class="fa">&#xf232;</i>
+            <span> Help? </span>
+        </div>
+    </div>
+    <script>
+        function myFunc() {
+            debugger
+            var deviceType = checkDeviceType();
+            console.log(deviceType);
+            !deviceType ? window.open("https://web.whatsapp.com/send?phone=6592326073&amp;text=", "_blank") : window.open("https://api.whatsapp.com/send?phone=6592326073&text=&source=&data=");
+        }
+        function checkDeviceType() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            return isMobile;
+        }
+    </script>
+</body>
+</html>
+

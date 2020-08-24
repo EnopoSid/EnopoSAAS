@@ -1,0 +1,277 @@
+{
+    "ADMIN_TEMPLATE": {
+        "TOOLBAR": {
+            "HEADING": "KIpos Admin",
+            "APP_TITLE": "KIpos Admin Portal"
+        }
+    },
+    "CHANGE_PASSWORD": {
+        "FORM": {
+            "SUBMIT_BUTTON": "Change Password"
+        },
+        "ERRORS": {
+            "OLDPASSWORD": {
+                "BLANK": "Password cannot be blank. Please enter valid password.",
+                "PASSWORD_MISMATCH.LABEL": "Old password does not match."
+            },
+            "NEWPASSWORD": {
+                "BLANK": "Password cannot be blank. Please enter valid password.",
+                "MIN_LENGTH": "Password should be minimum 6 characters.",
+                "MAX_LENGTH": "Password should be maximum 20 characters.",
+                "PATTERN": "Password is not valid",
+                "INVALID_PASSWORD.LABEL": "Invalid Password",
+                "PASSWORD_UPDATE_FAILED": "Password update failed"
+            },
+            "CONFIRMPASSWORD": {
+                "BLANK": "Password cannot be blank. Please enter valid password.",
+                "MIN_LENGTH": "Password should be minimum 6 characters.",
+                "MAX_LENGTH": "Password should be maximum 20 characters.",
+                "PATTERN": "Password is not valid",
+                "PASSWORD_MISMATCH.LABEL": "Confirm password does not match"
+            }
+        },
+        "PASSWORD_SUCCESSFULLY_CHANGED.LABEL":  "Password has been successfully changed, please relogin with new password."
+    },
+    "FORGOT_PASSWORD.PASSWORD_SENT_TO_EMAIL.LABEL": "Password is sent to your logged in Email ID.",
+    "FORGOT_PASSWORD.ERRORS.INVALID_EMAIL.LABEL": "Invalid Email",
+    "LOGIN": {
+        "TITLE": "Sign into KIpos Admin Portal",
+        "FORGOT_PASSWORD.LINK_LABEL": "Forgot Password",
+        "FORM": {
+            "USERNAME": "Email Id",
+            "PASSWORD": "Password",
+            "SUBMIT_BUTTON": "Sign in"
+        },
+        "ERRORS": {
+            "USERNAME": {
+                "BLANK": "Email Id cannot be blank. Please enter valid Email Id.",
+                "MIN_LENGTH": "Email id should be minimum 6 characters.",
+                "MAX_LENGTH": "Email id should be maximum 50 characters.",
+                "INVALID": "Email id is invalid. Please enter valid Email Id.",
+                "PATTERN": "Email is not valid"
+            },
+            "PASSWORD": {
+                "BLANK": "Password cannot be blank. Please enter valid Password.",
+                "MIN_LENGTH": "Password should be minimum 6 characters.",
+                "MAX_LENGTH": "Password should be maximum 20 characters.",
+                "PATTERN": "Password is not valid"
+            },
+            "INVALID_EMAIL": "Invalid Email ID"
+        }
+    },
+    "DIALOG_INPUT.ERRORS.INPUT.BLANK": "Cannot be blank. Please enter valid detail.",
+    "DIALOG_INPUT.ERRORS.INPUT.MIN_LENGTH": "Please enter minimum of 3 characters.",
+    "DIALOG_INPUT.ERRORS.INPUT.MAX_LENGTH": "Exceeding characters limit.",
+    "DIALOG_INPUT.ERRORS.INPUT.PATTERN": "Invalid Entry",
+
+
+    "SYSTEM_MAINTENANCE": {
+        "PLANNED": {
+            "LABEL": "System is under Maintenance. Please try after sometime. Sorry for inconvenience.",
+            "DESCRIPTION": "We are enhancing our system now.System will not be available for a while. Please try after sometime. Sorry for the inconvenience.",
+            "BUTTON": "OK"
+        },
+        "UNPLANNED": {
+            "LABEL": "We are enhancing our system now. System will not be available for a while. Please try after sometime. Sorry for the inconvenience.",
+            "DESCRIPTION": "System is not available at this moment. Please try again later. Sorry for the inconvenience.",
+            "BUTTON": "OK"
+        }
+    },
+    "LOGOUT": {
+        "CONFIRMATION": {
+            "MESSAGE_LABEL": "Are you sure you want to Logout?",
+            "CANCEL_BUTTON": "Cancel",
+            "CONFIRM_BUTTON": "Confirm"
+        }
+    },
+    "USER_COMPONENT": {
+        "GRID_LABELS":{
+            "S_no": "S.NO",
+            "User_Id": "User ID",
+            "FIRSTNAME": "First Name",
+            "FULLNAME": "Full Name",
+            "LASTNAME": "Last Name",
+            "Active_Button": "Active Button"
+        },
+        "Add": "Add User",
+        "FORM": {
+            "ADD_BUTTON": "Save",
+            "UPDATE_BUTTON":"Update",
+            "CANCEL_BUTTON": "Back"
+        },
+        "ERRORS": {
+            "FIRSTNAME": {
+                "REQUIRED": "FIRST NAME cannot be blank. Please enter valid FIRST NAME.",
+                "MIN_LENGTH": "FIRSTNAME should be minimum 6 characters.",
+                "MAX_LENGTH": "FIRST NAME should be maximum 50 characters.",
+                "PATTERN": "FIRST NAME is not valid"
+            },
+            "EMAIL": {
+                "REQUIRED": "EMAIL cannot be blank. Please enter valid FIRST NAME.",
+                "MIN_LENGTH": "EMAIL should be minimum 6 characters.",
+                "MAX_LENGTH": "EMAIL should be maximum 50 characters.",
+                "PATTERN": "EMAIL is not valid",
+                "DUPLICATE": "DUPLICATE EMAIL ID"
+            }
+        },
+        "ALERTS":{
+            "ADD": "ADDED SUCCESSFULLY",
+            "UPDATE": "UPDATED SUCCESSFULLLY",
+            "DELETE": "DELETED SUCCESSFULLY"
+        }
+    },
+    "INVALID_EMAIL": "Invalid Credentials",
+    "INVALID_PASSWORD": "Invalid Credentials",
+    "EMAIL_DOES_NOT_EXIST": "Email does not exist",
+    "NO_PASSWORD_OBTAINED": "No password obtained",
+    "USER_DOES_NOT_EXIST": "User does not exist",
+    "WRONG_PASSWORD": "Wrong Password",
+    "INVALID_CREDENTIALS": "Invalid Credentials",
+    "DELETED_USER": "Deleted User",
+    "SESSION_EXPIRED": "Session Expired",
+    "UNKNOWN_ERROR": "Error in Service.. Contact support team",
+    "SEQUENCE_CHECK": "Sequence Check",
+    "DO_YOU_WANT_TO_DELETE_USER": "Do you want to delete this user ?",
+    "DO_YOU_WANT_TO_DELETE_BANK": "Do you want to delete this bank ?",
+    "DO_YOU_WANT_TO_DELETE_TECHNOLOGY": "Do you want to delete this Technology ?",
+    "DO_YOU_WANT_TO_DELETE_PRICING_LEVEL": "Do you want to delete this Pricing Level ?",
+    "DO_YOU_WANT_TO_DELETE_RATING_CATEGORY": "Do you want to delete this Rating Category ?",
+    "DO_YOU_WANT_TO_DELETE_INTERVIEW_LEVEL": "Do you want to delete this Interview Level ?",
+    "CONFIRM_YES": "Yes",
+    "CONFIRM_NO": "No",
+    "DB_EXCEPTION": "Database Exception",
+    "INVALID_REQUEST": "Invalid Request",
+    "INVALID_MOBILE_NUMBER": "Invalid Mobile Number",
+    "ERROR_OCCURRED": "Error occurred, contact support team.",
+    "EMPTY_INTERVIEWS_LIST": "Empty Interviews List",
+    "EMPTY_JOB_SEEKER_DETAILS_LIST": "Empty Job Seekers List",
+    "EMPTY_INTERVIEWER_DETAILS_LIST": "Empty Interviewers List",
+    "EMPTY_USER_DETAILS_LIST": "Empty User Details List",
+    "CONFIRM_DONE": "DONE",
+    "BANKDETAILS.ADD_BANK.BUTTON": "Add Bank",
+    "BANKDETAILS.BANK_NAME.LABEL": "Bank Name",
+    "BANKDETAILS.ERRORS.DUPLICATE_BANK": "Bank name already exists",
+    "BANKDETAILS.ERRORS.BANK_ALREADY_IN_USE": "Selected bank is already in use, cannot be deleted.",
+    "BANKDETAILS.ERRORS.INVALID_BANK_NAME": "Invalid Bank Name",
+    "BANKDETAILS.EDIT_SUCCESS.LABEL": "Bank name is edited successfully.",
+    "BANKDETAILS.DELETE_SUCCESS.LABEL": "Bank name is deleted successfully.",
+    "BANKDETAILS.ADD_SUCCESS.LABEL": "Bank name is added successfully.",
+    "BANKDETAILS.UPDATED_SAME_AS_OLD.LABEL": "Bank name updated is same as old.",
+    "TECHONOLOGY.ADD_TECHO.BUTTON": "Add Technology",
+    "TECHONOLOGY.TECHNO_NAME.LABEL": "Technology Name",
+    "TECHNOLOGY.ERRORS.DUPLICATE_TECHNOLOGY": "Technology name already exists",
+    "TECHNOLOGY.ERRORS.TECHNOLOGY_ALREADY_IN_USE": "Selected technology is already in use, cannot be deleted.",
+    "TECHNOLOGY.ERRORS.INVALID_TECHNOLOGY_NAME": "Invalid Technology Name",
+    "TECHNOLOGY.EDIT_SUCCESS.LABEL": "Technology is edited successfully.",
+    "TECHNOLOGY.DELETE_SUCCESS.LABEL": "Technology is deleted successfully.",
+    "TECHNOLOGY.ADD_SUCCESS.LABEL": "Technology is added successfully.",
+    "TECHNOLOGY.UPDATED_SAME_AS_OLD.LABEL": "Technology updated is same as old.",
+    "DASHBOARD.USERS_HEADER.LABEL": "Users",
+    "DASHBOARD.INTERVIEWS_HEADER.LABEL": "Interviews",
+    "DASHBOARD.JOBSEEKER_HEADER.LABEL": "Job Seeker",
+    "DASHBOARD.INTERVIEWER_HEADER.LABEL": "Interviewer",
+    "DASHBOARD.USERS_DESCRIPTION.LABEL": "This shows all the users in the application. <br>These users can be deleted by clicking delete icon displayed at the end of each row in table.",
+    "DASHBOARD.INTERVIEWS_DESCRIPTION.LABEL": "Scheduled Interviews date and time can be seen here. It also shows the details of Jobseeker and Interviewer",
+    "DASHBOARD.JOBSEEKER_DESCRIPTION.LABEL" : "Jobseeker details are shown here. Job Seeker is the one who wants to get a job.",
+    "DASHBOARD.INTERVIEWER_DESCRIPTION.LABEL" : "Interviewer details are shown here. Interviewer is the one who evaluates the candidates.",
+    "DASHBOARD.TOTAL_INTERVIEWS.LABEL": "Total Interviews",
+    "DASHBOARD.TOTAL_USERS.LABEL" : "Total Users",
+    "DASHBOARD.TOTAL_INTERVIEWERS.LABEL" : "Total Interviewers",
+    "DASHBOARD.TOTAL_JOBSEEKERS.LABEL" : "Total JobSeekers",
+    "DASHBOARD.RECENT_USERS_HEADER.LABEL" : "Recent Users (Registered in last 3 days)",
+    "DASHBOARD.RECENT_USERS_FOUND.LABEL": "No Recent Users Found!!",
+    "DASHBOARD.RECENT_USERS_MOBILE_NUMBER_HEADER.LABEL": "Mobile Number",
+    "DASHBOARD.RECENT_USERS_REGISTERED_DATE_HEADER.LABEL": "Registered Date",
+    "DASHBOARD.RECENT_USERS_EMAIL_HEADER.LABEL": "Email",
+    "DASHBOARD.RECENT_VIEW_ALL_USERS.LABEL": "View all Users",
+    "USERS_NAME_HEADER.LABEL": "Registered User",
+    "USERS_MOBILE_NUMBER_HEADER.LABEL": "Mobile No.",
+    "USERS_REGISTERED_DATE_HEADER.LABEL": "Registered Date",
+    "USERS_LOCATION_HEADER.LABEL": "Location",
+    "USERS_EMAIL_HEADER.LABEL": "Email",
+    "USERS_DESIGNATION_HEADER.LABEL": "Designation",
+    "USERS_EXPERIENCE_HEADER.LABEL": "Experience",
+    "USERS_RESUME_HEADER.LABEL": "Resume",
+    "USERS.DELETE_SUCCESS.LABEL": "User is deleted successfully.",
+    "USERS.RESUME_DOWNLOAD_SUCCESS.LABEL": "Resume is downloaded successfully.",
+    "INTERVIEWERS_NAME_HEADER.LABEL": "Interviewer",
+    "INTERVIEWERS_COMPANY_HEADER.LABEL": "Company",
+    "INTERVIEWERS_CREATED_ON_HEADER.LABEL": "Created On",
+    "INTERVIEWERS_DESIGNATION_HEADER.LABEL": "Designation",
+    "INTERVIEWERS_CONTACT_HEADER.LABEL": "Contact",
+    "INTERVIEWERS_EMAIL_HEADER.LABEL": "Email",
+    "INTERVIEWERS_EXPERIENCE_HEADER.LABEL": "Experience",
+    "INTERVIEWERS_LOCATION_HEADER.LABEL": "Location",
+    "INTERVIEWERS_BANK_DETAILS_HEADER.LABEL": "Bank Details",
+    "INTERVIEWERS_RESUME_HEADER.LABEL": "Resume",
+    "INTERVIEWERS_BANK_DETAILS_DIALOG_POPUP_HEADER.LABEL": "Bank Details",
+    "INTERVIEWER_IS_NOT_AVAILABLE": "Interviewer is not available",
+    "INTERVIEWER_TECHNOLOGIES_HEADER.LABEL": "Technology",
+    "JOBSEEKER_NAME_HEADER.LABEL": "JobSeeker",
+    "JOBSEEKER_CREATED_ON_HEADER.LABEL": "Created On",
+    "JOBSEEKER_CONTACT_HEADER.LABEL": "Contact",
+    "JOBSEEKER_DESIGNATION_HEADER.LABEL": "Designation",
+    "JOBSEEKER_POSITION_HEADER.LABEL": "Designation",
+    "JOBSEEKER_EXPERIENCE_HEADER.LABEL": "Experience",
+    "JOBSEEKER_LOCATION_HEADER.LABEL": "Location",
+    "JOBSEEKER_EMAIL_HEADER.LABEL": "Email",
+    "JOBSEEKER_RESUME_HEADER.LABEL": "Resume",
+    "JOBSEEKER_EDUCATION_HEADER.LABEL": "Qualification",
+    "JOBSEEKER_TECHNOLOGIES_HEADER.LABEL": "Technology",
+    "INTERVIEWS_SCHEDULED.LABEL": "Scheduled",
+    "INTERVIEWS_STREAM.LABEL": "Stream",
+    "INTERVIEWS_TECHNOLOGY.LABEL": "Technology",
+    "INTERVIEWS_LEVEL.LABEL": "Level",
+    "INTERVIEWS_PROFILE.LABEL": "Profile",
+    "INTERVIEWS_ASSIGNED_TO.LABEL": "Assigned To",
+    "INTERVIEWS_INTERVIEWER_FEEDBACK.LABEL": "Interviewer Feedback",
+    "INTERVIEWS_JOBSEEKER_FEEDBACK.LABEL": "Seeker Feedback",
+    "INTERVIEWS_FEEDBACK.LABEL": "Feedback",
+    "INTERVIEWS_RATINGS.LABEL": "Ratings",
+    "INTERVIEWS_SCHEDULE_BY_SEEKER_REQUEST.LABEL": "By Seeker",
+    "INTERVIEWS_SCHEDULE_BY_INTERVIEWER_REQUEST.LABEL": "By Interviewer",
+    "INTERVIEWS_SCHEDULE_INTERVIEWS.BUTTON": "Schedule",
+    "INTERVIEWS_RESCHEDULE_INTERVIEWS.BUTTON": "Re-Schedule",
+    "INTERVIEWS_RESCHEDULED_INTERVIEWS.BUTTON": "Re-Scheduled",
+    "INTERVIEWS_COMPLETED_INTERVIEWS.BUTTON": "Completed",
+    "INTERVIEWS_CANCELLED_INTERVIEWS.BUTTON": "Cancelled",
+    "INTERVIEWS_REJECTED_INTERVIEWS.BUTTON": "Rejected",
+    "INTERVIEWS_INVALID_INTERVIEW": "Invalid Interview",
+    "INTERVIEWS_SCHEDULE_STATUS.LABEL": "Interview Status",
+    "INTERVIEWER_ASSIGNED_ALREADY": "Selected interviewer is already assigned for this interview",
+    "RATING_DETAILS.RATING_NAME.LABEL": "Category",
+    "RATING_DETAILS.ADD_RATING.BUTTON": "Add Rating",
+    "RATINGS_NOT_FOUND": "Ratings not found!",
+    "RATING_DETAILS.ERRORS.RATING_ALREADY_IN_USE": "Selected rating is already in use, cannot be deleted.",
+    "RATINGDETAILS.ERRORS.DUPLICATE_RATING_CATEGORY.LABEL": "Rating already exists",
+    "RATINGDETAILS.ERRORS.INVALID_RATING_CATEGORY.LABEL": "Invalid Rating Category",
+    "RATINGDETAILS.LEVEL_EDIT_SUCCESS.LABEL": "Rating category is edited successfully.",
+    "RATINGDETAILS.LEVEL_DELETE_SUCCESS.LABEL": "Rating category is deleted successfully.",
+    "RATINGDETAILS.LEVEL_ADD_SUCCESS.LABEL": "Rating category is added successfully.",
+    "RATINGDETAILS.LEVEL_UPDATED_SAME_AS_OLD.LABEL": "Rating category updated is same as old.",
+    "INTERVIEW_LEVEL_DETAILS.LEVEL_NAME.LABEL": "Interview Level",
+    "INTERVIEW_LEVEL_DETAILS.ERRORS.DUPLICATE_LEVEL.LABEL": "Interview level already exists",
+    "INTERVIEW_LEVEL_DETAILS.ERRORS.INVALID_INTERVIEW_LEVEL.LABEL": "Invalid Interview Level",
+    "INTERVIEW_LEVEL_DETAILS.ERRORS._ALREADY_IN_USE.LABEL": "Interview level is already in use.",
+    "INTERVIEW_LEVEL_DETAILS.ADD_LEVEL.BUTTON": "Add Interview Level",
+    "INTERVIEW_LEVEL_DETAILS.LEVEL_EDIT_SUCCESS.LABEL": "Interview level is edited successfully.",
+    "INTERVIEW_LEVEL_DETAILS.LEVEL_DELETE_SUCCESS.LABEL": "Interview level is deleted successfully.",
+    "INTERVIEW_LEVEL_DETAILS.LEVEL_ADDED_SUCCESS.LABEL": "Interview level is added successfully.",
+    "INTERVIEW_LEVEL_DETAILS.LEVEL_UPDATED_SAME_AS_OLD.LABEL": "Interview level updated is same as old.",
+    "INTERVIEW_LEVEL_DETAILS.AMOUNT.LABEL": "Price",
+    "PRICING_LEVEL_DETAILS.LEVEL_NAME.LABEL": "Pricing Level",
+    "PRICING_LEVEL_DETAILS.PRICING_AMOUNT.LABEL": "Pricing Amount",
+    "PRICING_LEVEL_DETAILS.ADD_LEVEL.BUTTON": "Add Pricing Level",
+    "PRICING_LEVEL_DETAILS.ERRORS.DUPLICATE_LEVEL.LABEL": "Pricing level already exists",
+    "PRICING_LEVEL_DETAILS.ERRORS.INVALID_PRICING_LEVEL.LABEL": "Invalid Pricing Level",
+    "PRICING_LEVEL_DETAILS.LEVEL_EDIT_SUCCESS.LABEL": "Pricing level is edited successfully.",
+    "PRICING_LEVEL_DETAILS.LEVEL_DELETE_SUCCESS.LABEL": "Pricing level is deleted successfully.",
+    "PRICING_LEVEL_DETAILS.LEVEL_ADDED_SUCCESS.LABEL": "Pricing level is added successfully.",
+    "PRICING_LEVEL_DETAILS.LEVEL_UPDATED_SAME_AS_OLD.LABEL": "Pricing level updated is same as old.",
+    "DO_YOU_WANT_TO_LOGOUT.LABEL": "Are you sure you want to sign out?",
+    "CONFIRM_DIALOG_CONFIRM_TITLE": "Confirm",
+    "ACTION_BUTTON.LABEL": "Action",
+    "INTERVIEWS_COMPLETE_INTERVIEW.LABEL": "Complete Interview",
+    "INTERVIEWS_COMPLETE_INTERVIEW_SUCCESS.LABEL": "Completed Interview Successfully.",
+    "INTERVIEW_SCHEDULE_SUCCESS.LABEL": "Interview is scheduled successfully."
+}

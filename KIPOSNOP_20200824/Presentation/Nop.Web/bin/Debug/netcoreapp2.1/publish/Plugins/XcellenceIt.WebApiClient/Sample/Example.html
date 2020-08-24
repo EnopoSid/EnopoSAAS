@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Example for API Calls</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            //Normal Call
+            $("#btnNormalApi").click(function () {
+                var targetEle = $("#data");
+                $.ajax(
+                    {
+                        type: "POST",
+                        // Please modify URL to point to your store API service
+                        url: "http://localhost:15539/api/client/Login",
+                        data: '{"apiSecretKey":"x114a109g116k98a114w119q99v104","storeId":"1","userName":"admin@yourStore.com","password":"admin","isGuestCustomerId":"1"}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            targetEle.html("<pre>" + JSON.stringify(data, null, '\t') + "</pre>");
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            targetEle.html("<pre>" + xhr.responseText + "</pre>");
+                        }
+                    });
+            });
+
+
+            //JWT Call
+
+            // IMPORTANT
+            // This JWT Signature calculation should not be done using Scripting Language like JavaScript,
+            // as it makes it very easy for anyone to find how you encrypt your Request.
+            // It is used here in this example, just for demonstration purposes only.
+            // Always calculate JWT using back-end programming language before sending an API Request for Production use.
+            // Always make your call using HTTPS
+
+            $("#btnJWTApi").click(function () {
+                // Defining our token parts
+                // You can use one of these, as alg
+                // HS256, HS386, HS512
+                // Always keep type as JWT
+                var header = {
+                    "alg": "HS256",
+                    "typ": "JWT"
+                };
+
+                var tNow = KJUR.jws.IntDate.getNow();
+                var tEnd = KJUR.jws.IntDate.getNow() + 60 * 5;
+                // dynamically pass these data using a function
+                var data = {
+                    "appId": "Test",
+                    "iat": tNow,
+                    // iat (issued at time) should be set to time when request has been generated
+                    "exp": tEnd,
+                    // exp (expiration) should not be more than 5 minutes from now, this is to prevent Replay Attacks
+                    "method": "Login",
+                    "StoreId": "1",
+                    "UserName": "admin@yourStore.com",
+                    "apiSecretKey": "m110k118e115r106v100d108s113y97",
+                    "Password": "admin",
+                    "IsGuestCustomerId": "1"
+                };
+                // Secret key is used for calculating and verifying the signature.
+                // The secret signing key MUST only be accessible by the issuer and the consumer,
+                // it should not be accessible outside of these two parties.
+
+
+                // Use the Secret you set during generating API Key from the Plugin
+                var secret = btoa('Test');
+
+                function base64url(source) {
+                    // Encode in classical base64
+                    encodedSource = CryptoJS.enc.Base64.stringify(source);
+                    // Remove padding equal characters
+                    encodedSource = encodedSource.replace(/=+$/, '');
+                    // Replace characters according to base64url specifications
+                    encodedSource = encodedSource.replace(/\+/g, '-');
+                    encodedSource = encodedSource.replace(/\//g, '_');
+                    return encodedSource;
+                }
+
+                var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header));
+                var encodedHeader = base64url(stringifiedHeader);
+
+                var stringifiedData = CryptoJS.enc.Utf8.parse(JSON.stringify(data));
+                var encodedData = base64url(stringifiedData);
+
+                var signature = encodedHeader + "." + encodedData;
+                signature = CryptoJS.HmacSHA256(signature, secret);
+                signature = base64url(signature);
+
+                var targetEle = $("#data");
+                $.ajax(
+                    {
+                        type: "POST",
+                        // Please modify URL to point to your store API service
+                        url: "http://localhost:15637/api/client/SecureApi",
+                        // Use apiSecretKey(Generated API key)
+                        data: '{"token":"' + encodedHeader + "." + encodedData + "." + signature + '"}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            targetEle.html("<pre>" + JSON.stringify(data, null, '\t') + "</pre>");
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            targetEle.html("<pre>" + xhr.responseText + "</pre>");
+                        }
+                    });
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    API call without JWT token
+                </th>
+                <td>
+                    <input id="btnNormalApi" type="button" value="Normal Call" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    API call with JWT token
+                </th>
+                <td>
+                    <input id="btnJWTApi" type="button" value="JWT Call" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="data">
+    </div>
+
+</body>
+</html>

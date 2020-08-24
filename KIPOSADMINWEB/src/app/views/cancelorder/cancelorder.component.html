@@ -1,0 +1,146 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container" style="width: 1251px;">
+    <div class="page_content">
+                   <h3>Cancel Order </h3>
+                   <div style="float: right;">
+                    <button  mat-button class="mat-button green"  (click)="exportToExcel()">Export to Excel</button>
+                  </div>
+                  <br>
+                  <br>
+<div class="mat-elevation-z8">
+        <div class="mat-datagrid">
+        <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+          <ng-container matColumnDef="sno">
+            <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                S.No  
+              </label>
+              <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+            </th>
+            <td mat-cell *matCellDef="let row"> 
+              {{row.sno}} 
+            </td>
+          </ng-container> 
+          <ng-container matColumnDef="CustomerName">
+            <th mat-header-cell *matHeaderCellDef>
+                <label mat-sort-header>
+                  User Name
+                </label>   
+                <input type="text" (keyup) ="updatePagination()"   [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+              </th>
+          <td mat-cell *matCellDef="let row">
+               {{row.CustomerName | uppercase}}</td>
+        </ng-container>
+        <ng-container matColumnDef="MemberId">
+            <th mat-header-cell *matHeaderCellDef>
+                <label mat-sort-header>
+                 Member Id
+                </label>
+                <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[2].Value" [filter]="filterData"/>
+              </th>
+          <td mat-cell *matCellDef="let row"> 
+             {{row.MemberId }}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="OrderId">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                Order No
+              </label>
+              <input type="text"  (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[3].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> {{row.OrderId }} </td>
+      </ng-container>
+        <ng-container matColumnDef="PaymentTypeName">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                Payment Type
+              </label>
+              <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[4].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> {{row.PaymentTypeName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="OrderDate">
+        <th mat-header-cell *matHeaderCellDef style="width: 115px!important;">
+            <label mat-sort-header>
+                Created Date  
+            </label>
+            <input type="text"  (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[5].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> {{row.OrderDate }} </td>
+    </ng-container>
+          <ng-container matColumnDef="StoreName">
+              <th mat-header-cell *matHeaderCellDef style="width: 115px;">
+                  <label mat-sort-header>
+                    Store Name
+                  </label>
+                  <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[6].Value" [filter]="filterData"/>
+                </th>
+            <td mat-cell *matCellDef="let row"> 
+                {{row.StoreName }}
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="EmailId">
+            <th mat-header-cell *matHeaderCellDef>
+                <label mat-sort-header>
+                  EmailId
+                </label>
+                <input type="text"  (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[7].Value" [filter]="filterData"/>
+              </th>
+          <td mat-cell *matCellDef="let row"> 
+            {{row.EmailId }}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="MobileNumber">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                MobileNumber
+              </label>
+              <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[8].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> 
+          {{row.MobileNumber }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="HavingHere">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              Dining Option
+            </label>
+            <input type="text"  (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[9].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+        {{row.HavingHere }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="ModifiedDate">
+      <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            Cancel Date
+          </label>
+          <input type="text"   (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[10].Value" [filter]="filterData"/>
+        </th>
+    <td mat-cell *matCellDef="let row"> 
+         {{row.ModifiedDate | date: 'yyyy-MM-dd HH:mm'}}
+    </td>
+  </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+          </tr>
+        </table>
+        <table *ngIf="!!this.filterData.dataSource">
+            <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+          </table>
+      </div>
+        <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+      </div>
+        <div class="clear-both"></div>
+    </div>
+</div>

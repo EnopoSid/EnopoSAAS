@@ -1,0 +1,82 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<mat-card>
+     <div class="container">
+     <div class="page_content">
+       <h3> {{title}}  {{ POSUserName }}</h3>
+       <div class="height-20"></div>
+       <form  [formGroup]="UserForm" (ngSubmit)="onUserFormSubmit();">
+           <mat-form-field class=" input-flex-50">
+                <input matInput type="text" placeholder="First Name" cmsRestrictInput="onlyAlphabetsWithoutSpaces" id="firstname" size="50" maxlength="50" value="" [formControl]="UserForm.controls['firstName']"required>
+                <mat-error *ngIf="UserForm.controls['firstName'].hasError('required') && UserForm.controls['firstName'].touched" class="alert alert-danger">Enter FirstName</mat-error>
+                <mat-error *ngIf="UserForm.controls['firstName'].hasError('pattern') && UserForm.controls['firstName'].touched" class="alert alert-danger">Please enter Alphabets without Spaces</mat-error>
+            </mat-form-field>
+            <mat-form-field class=" input-flex-50">
+                    <input matInput type="text"
+                         id="lastname" placeholder="Last Name" cmsRestrictInput="onlyAlphabetsWithoutSpaces" size="50" maxlength="50" value="" [formControl]="UserForm.controls['lastName']" required>
+                         <mat-error *ngIf="UserForm.controls['lastName'].hasError('required') && UserForm.controls['lastName'].touched" class="alert alert-danger">Enter LastName.</mat-error>
+                         <mat-error *ngIf="UserForm.controls['lastName'].hasError('pattern') && UserForm.controls['lastName'].touched" class="alert alert-danger">Please enter Alphabets without Spaces</mat-error>
+                  </mat-form-field>
+                  <mat-form-field class=" input-flex-50">
+                      <input matInput type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                         id="email" placeholder="Email Id" value="" [readonly]="checkInput" [formControl]="UserForm.controls['email']" required>
+                         <mat-error *ngIf="UserForm.controls['email'].hasError('required') && UserForm.controls['email'].touched"  class="alert alert-danger">Email is required</mat-error>
+                         <mat-error *ngIf="UserForm.controls['email'].hasError('pattern')  && UserForm.controls['email'].touched">Please enter a valid email address</mat-error>
+                       <mat-error  *ngIf="UserForm.controls['email'].hasError('emailValidation')">Email already exits</mat-error>
+                  </mat-form-field>  
+                  <mat-form-field  class=" input-flex-50">
+                      <input matInput placeholder="Mobile Number" 
+                       type = "text"  [formControl]="UserForm.controls['mobilenum']" cmsRestrictInput="onlyNumbers" minlength="8" maxlength="10" required>
+                      <mat-error *ngIf="UserForm.controls['mobilenum'].hasError('required') && UserForm.controls['mobilenum'].touched" class="alert alert-danger">Enter Mobile Number</mat-error>
+                      <mat-error *ngIf="UserForm.controls['mobilenum'].hasError('minlength') && UserForm.controls['mobilenum'].touched" class="alert alert-danger">Mobile Number contain minimum  8 charecters</mat-error>
+                  </mat-form-field>             
+              <mat-form-field class=" input-flex-50" *ngIf = "!updateUser">
+                  <input type="password" name="password" matInput placeholder="Password"   [readonly]="checkInput" value=""  pattern="^[a-zA-Z0-9]+$" [formControl]="UserForm.controls['password']" required>
+                  <mat-error *ngIf="UserForm.controls['password'].hasError('required') && UserForm.controls['password'].touched" class="alert alert-danger">Enter Password</mat-error>
+                  <mat-error *ngIf="UserForm.controls['password'].hasError('pattern') && UserForm.controls['password'].touched" class="alert alert-danger">Password should contain alphaNumerics!!</mat-error>
+                </mat-form-field>
+              <mat-form-field class=" input-flex-50">
+                  <mat-select  placeholder=" Select Role *"  [formControl]="UserForm.controls['role']" (ngModelChange)="onChangeRole($event)"  style="width: 100%;" name="role">
+                      <mat-option *ngFor="let role of rolesList" [value]="role.RoleId">
+                          {{ role.RoleName | uppercase}}
+                      </mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="UserForm.controls['role'].hasError('required') && UserForm.controls['role'].touched" class="alert alert-danger">
+                      RoleType Name is required!
+                  </mat-error>
+              </mat-form-field> 
+              <div class="clear-both"></div> 
+              <mat-form-field class=" input-flex-50">
+                  <mat-select  placeholder=" Select Store *" 
+                   [formControl]="UserForm.controls['store']" style="width: 100%;" name="store">
+                      <mat-option *ngFor="let store of storeList" [value]="store.Id">
+                          {{ store.Name | uppercase }}
+                      </mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="UserForm.controls['store'].hasError('required') && UserForm.controls['store'].touched" class="alert alert-danger">
+                   Store Name is required!
+                  </mat-error>
+              </mat-form-field> 
+              <div class="clear-both"></div> 
+              <div class="clear-both"></div>
+  <mat-card-footer>
+      <mat-dialog-actions>
+          <button mat-button class="mat-button green"   [disabled]="UserForm.invalid"  *ngIf = "saveUser">Save</button>&nbsp;
+          <button mat-button class="mat-button green"   [disabled]="UserForm.invalid"  *ngIf = "updateUser && !isOnView">Update</button>
+          <button mat-button class="mat-button cyan"  (click)="onGoBack()" >Back</button>
+      </mat-dialog-actions>
+      <div class="clear-both"></div>
+  </mat-card-footer> 
+        </form>
+    </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>
+
+

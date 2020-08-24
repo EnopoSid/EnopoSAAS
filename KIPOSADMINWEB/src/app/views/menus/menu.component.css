@@ -1,0 +1,5 @@
+.mat-column-Actions {
+    flex: 0 0 100px !important;
+    white-space: unset !important;
+  }
+.mat-column-sno {width: 10px !important;}

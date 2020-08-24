@@ -1,0 +1,35 @@
+app-signin .logo-width {
+    width: 50%;
+    height: 40%
+}
+
+app-signin .page-wrap{background: #f1f1f1  !important;}
+app-signin .mat-card-title .text-muted {color: #ffffff !important;}
+app-signin .ri-default .mat-raised-button.mat-primary{background-color: #962a20;}
+app-signin .mat-card, app-signin .session-form-hold{    border: 1px solid #fff;background: #fff;}
+
+app-signin .mat-card-title {background: #559200 !important;padding: 10px !important;font-size: 21px !important;}
+app-signin .mat-card:not([class*=mat-elevation-z]) { box-shadow: none !important;}
+app-signin .login-logo {padding-bottom: 4px;border-bottom: 1px solid #e4e4e4;margin-bottom: 20px;padding-top: 5px;}
+app-signin .page-wrap {
+    background: url(../../../../assets/images/Image1-01.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+app-signin .mat-primary1{background: #962a21 !important;}
+app-signin .text-center1{
+    text-decoration: underline;
+    color: #406d04;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.close-icon {
+    margin: 0;
+}
+
+app-signin .a-home{
+    margin: auto;
+    text-align: right;
+    display: block;
+}

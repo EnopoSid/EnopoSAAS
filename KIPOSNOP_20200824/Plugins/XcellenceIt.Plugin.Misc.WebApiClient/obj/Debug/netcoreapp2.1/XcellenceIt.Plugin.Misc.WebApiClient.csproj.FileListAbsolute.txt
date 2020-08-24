@@ -1,0 +1,170 @@
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\vestidose\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\vestidose\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\Kipos_Site\KIPOSNOP\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\Kipos_NOP_8056\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\SVN\Kipos-NOP\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Localization\ResourceString\ResourceString_EN.xml
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\plugin.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Sample\Example.html
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\GenerateAPIKey.cshtml
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\Configure.cshtml
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\Views\WebApiClient\_ViewImports.cshtml
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\logo.jpg
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.deps.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\Plugins\XcellenceIt.WebApiClient\XcellenceIt.Plugin.Misc.WebApiClient.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csprojAssemblyReference.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CoreCompileInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfoInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.AssemblyInfo.cs
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.csproj.CopyComplete
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Plugins\XcellenceIt.Plugin.Misc.WebApiClient\obj\Debug\netcoreapp2.1\XcellenceIt.Plugin.Misc.WebApiClient.pdb

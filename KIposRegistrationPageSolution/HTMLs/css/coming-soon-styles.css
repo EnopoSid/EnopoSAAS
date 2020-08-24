@@ -1,0 +1,184 @@
+
+.alignleft {
+    text-align: left;
+}
+.alignright {
+    text-align: right;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.btn-theme  {
+  color: #fff;
+  background-color: #4F92AF;
+  border-color: #4F92AF;
+  transition: background 0.3s;
+}
+.btn-theme:hover  {
+  color: #fff;
+  background-color: #5cacce;
+  border-color: #5cacce;
+}
+form.signup input  {
+	height: 42px;
+	width: 300px !important;
+	border-radius: 0;
+	border: none;
+}
+form.signup button.btn {
+	font-weight: 700;
+}
+form.signup input.form-control:focus {
+	border-color: #fd680e;
+}
+
+
+/* wrapper */
+
+#wrapper {
+	text-align: center;
+	padding: 5% 0 0 0;
+	background: url(../images/main-bg.jpg);
+  background-size: cover;
+  min-height:768px;
+}
+
+#wrapper-grocery {
+    text-align: center;
+    padding: 5% 0 0 0;
+    background: url(../images/coming-soon-grocery.jpg);
+    background-size: cover;
+    min-height: 768px;
+    background-repeat:no-repeat;
+    width:100%;
+}
+.bottom-align {margin-top:300px;}
+.form-inline {margin:0px auto; margin-left:7%;}
+@media only screen and (max-width: 767px) {
+    #wrapper-grocery {
+        text-align: center;
+        margin: 47px 0 0 0;
+        background: url(../images/coming-soon-grocery.jpg);
+        background-size: contain;
+        min-height: 300px;
+        background-color: #023f54;
+        background-repeat: no-repeat;
+        width: 100%;
+
+    }
+
+    .bottom-align {
+        margin-top: 100px;
+    }
+    .form-inline  button{width:93%;}
+}
+
+
+
+#wrapper h1 {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	color: #fff;
+	font-size: 45px;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+
+h2.subtitle {
+	color: #fff;
+	font-size: 24px;
+}
+
+/* social */
+.social {
+    padding: 30px 0 0 0;
+}
+
+.social a {
+    font-size: 24px;
+    color: #fff;
+    padding: 0 5px;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    color: #5cacce;
+}
+
+/* countdown */
+#countdown {
+	font-size: 48px;
+	color: #fff;
+	line-height: 1.1em;
+	margin: 40px 0 60px;
+}
+
+.contctform {
+  margin-top: 40px;
+}
+
+.contctform h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    background: #fff;
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    background: #fff;
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+

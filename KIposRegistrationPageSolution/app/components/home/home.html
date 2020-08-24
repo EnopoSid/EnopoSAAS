@@ -1,0 +1,575 @@
+<style>
+    .fa-star,
+    .fa-star-o {
+        color: #ffd200;
+    }
+
+    .homepagereviews {
+        font-size: 27px;
+    }
+</style>
+<!-- Page Content -->
+<div class="top-header"></div>
+<section class="landing-banner ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="banner-section">
+                <div class="banner-img">
+                    <!-- <img src="assets/images/kipos-banner-new.png" alt="kipo logo" class="img-fluid" /> -->
+                    <img  ng-src="{{vm.LandingPage}}" alt="Kipos Collective" class="img-fluid" /> 
+                   
+                </div>
+
+                <div class="banner-content ">
+                    <div class="kipos-logo">
+                        <!-- <img src="assets/images/kipos-logo-inverse.png" alt="kipo logo" class="img-fluid" /> -->
+                    </div>
+                    <div class="kipos-tagline text-center">
+                        <p> Hand Build <br /> Healthy  and Tasty  <br /> Protein Bowls </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <div class="discount-info">
+                    <div class="discount-val">
+                        <h1 class="text-white"> Get 10% Cash Back </h1>
+                        <h4 class="text-white"> For Every Purchase <br>as a KIPOS Loyalty Member </h4>
+                    </div>
+                    <div class="get-start">
+                        <button class="btn btn-gourmet" ng-click="vm.validate('gourmetproducts')"> Get Started </button>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+<div class="clearfix"> </div>
+<!-- <section class="banner-block container pt-30">
+    <h3> FRESH MEAL – MEAL PREP</h3>
+    <div id="demo" class="carousel " data-ride="carousel">
+        <div class="carousel-inner">
+         <div class="carousel-item1" ng-click="vm.validate('comingsoon')" style="cursor: pointer;">
+                    <img src="assets/images/slider-home02.jpg" alt="FRESH MEAL – MEAL PREP" width="1100" height="500" style="border: 2px solid #f2decf">
+                    <div class="carousel-caption d-none d-md-block" style="left: 0px;">
+                        <p class="pt-2">Chef-inspired warm meals freshly prepared and deliver to your doorsteps.</p>
+                        <div class="clear"></div>
+                        <p> <span class="big-font"> <strong> 10% </strong>off  </span>  for Members only </p>
+                      
+                        <p class="mt-2"> <a class="bannet-btn" ng-click="vm.validate('comingsoon')" > Shop Now </a></p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section> -->
+
+<!-- <section class="banner-block container pt-30">
+    <h3>GROCERY – GROCERY</h3>
+    <div id="demo" class="carousel " data-ride="carousel">
+
+        <div class="carousel-inner">
+             <div class="carousel-item1" ng-click="vm.validate('comingsoon')" style="cursor: pointer;">
+                    <img src="assets/images/slider-home03.jpg" alt="GROCERY – GROCERY" width="1100" height="500" style="border: 2px solid #d9f0de">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p> <span class="big-font"> <strong> 20% </strong> <span class=""> off   </span> </span>  for Members only </p>
+                        <p>Healthiest Snacks, Beauty, babies and home products</p>
+                       <p class="mt-3"> <a class="bannet-btn" ng-click="vm.validate('comingsoon')" > Shop Now </a></p>
+                        <div class="clear"></div>
+
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section> -->
+
+<!-- <div class="mobile-slider">
+    <section class="banner-block1 container pt-30">
+        <h3> GOURMET – PROTEIN BOWLS</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item1" ng-click="vm.validate('gourmetproducts')" style="cursor: pointer;">
+                        <img src="assets/images/gourmet-mobile-bg.jpg" alt="GOURMET – PROTEIN BOWLS" width="1100" height="500">
+                        <div class="carousel-caption mobile-carousel-caption d-md-block m-banner-txt">
+                            <p>Hand-build Healthy and Tasty Protein Bowls with freshest ingredients and home-made dressing</p>
+                            <div class="clear"></div>
+                            <p class="mobile-offer"> <span class="big-font "> <strong>15% </strong> off  </span>  for Members only </p>
+                            <a class="bannet-btn" ng-click="vm.validate('gourmetproducts')">Shop Now </a>
+                        </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+<!-- <section class="banner-block1 container pt-30">
+        <h3> FRESH MEAL – MEAL PREP</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item1" ng-click="vm.validate('comingsoon')" style="cursor: pointer;">
+                        <img src="assets/images/fresh-meal-mobile-bg.jpg" alt=" FRESH MEAL – MEAL PREP" width="1100" height="500">
+                        <div class="carousel-caption mobile-carousel-caption d-md-block m-banner-txt">
+                            <p>Chef-inspired warm meals freshly prepared and deliver to your doorsteps.</p>
+                            <div class="clear"></div>
+                            <p class="mobile-offer"> <span class="big-font "> <strong>10% </strong> off  </span>  for Members only </p>
+                           <a class="bannet-btn" ng-click="vm.validate('comingsoon')">Shop Now</a>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+<!-- <section class="banner-block1 container pt-30">
+        <h3>GROCERY – GROCERY</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item1" ng-click="vm.validate('comingsoon')">
+                    <a>
+                        <img src="assets/images/grocery-mobile-bg.jpg" alt="GROCERY – GROCERY" width="1100" height="500">
+                        <div class="carousel-caption mobile-carousel-caption d-md-block m-banner-txt">
+                            <p>Healthiest Snacks, Beauty, babies and home products</p>
+                            <div class="clear"></div>
+                            <p class="mobile-offer"> <span class="big-font "> <strong>20% </strong> off  </span>  for Members only </p>
+                            <a class="bannet-btn" ng-click="vm.validate('comingsoon')">Shop Now</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+<!-- <section class="banner-block1 container pt-30">
+        <h3> GOURMET – PROTEIN BOWLS</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item1">
+                    <img src="assets/images/mobile-slider-home01.jpg" alt="GOURMET – PROTEIN BOWLS" width="100%" height="300">
+
+                        <div class="carousel-caption d-md-block">
+
+                            <p>Hand-build Healthy and Tasty Protein Bowls with freshest ingredients and home-made dressing</p>
+                            <div class="clear"></div>
+                            <p> <span class="big-font"> <strong>15% </strong> off  </span>  for Members only </p>
+                            <p class="mt-2">
+                                <a  ng-click="vm.validate('gourmetproducts')"> <span class="btn btn-login btn-sm">
+                                        ShopNow </span>
+                            </a></p>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+<!-- <section class="banner-block1 container pt-30">
+        <h3> FRESH MEAL – MEAL PREP</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item1">
+                    <img src="assets/images/mobile-slider-home02.jpg" alt=" FRESH MEAL – MEAL PREP" width="1100" height="500" style="border: 2px solid #f2decf">
+
+                        <div class="carousel-caption d-md-block" style="left: 0px;">
+
+
+                            <p>Chef-inspired warm meals freshly prepared and deliver to your doorsteps.</p>
+                            <div class="clear"></div>
+                            <p> <span class="big-font"> <strong> 10% </strong>off  </span>  for Members only </p>
+                            <p class="mt-2"> <span class="btn btn-login btn-sm" ng-click="vm.validate('freshMeal')"> ShopNow </span></p>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+<!-- <section class="banner-block1 container pt-30">
+        <h3>GROCERY – GROCERY</h3>
+        <div id="demo" class="carousel " data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item1">
+                    <img src="assets/images/mobile-slider-home03.jpg" alt="Los Angeles" width="1100" height="500" style="border: 2px solid #d9f0de">
+
+                        <div class="carousel-caption carousel-caption-3 d-md-block">
+                            <p> <span class="big-font"> <strong> 20% </strong> <span class="rotate"> off   </span> </span>  for Members only </p>
+
+                            <p>Healthiest Snacks, Beauty, babies and home products</p>
+                            <div class="clear"></div>
+
+                            <p class="mt-3"> <span class="btn btn-login btn-sm" ng-click="vm.validate('product')"> ShopNow </span></p>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+<!-- </div> -->
+
+
+
+
+
+<!-- Mission Statement Row -->
+<!-- <section class="missions pt-50 pb-30 mx-auto" >
+    <div class="container" >
+        <h2 class="text-center pb-30 text-uppercase">Explore Our Products</h2>
+
+        <div class="row">
+            <div class="col-sm-4 text-center pb-4">
+                <a ui-> <img class="img-fluid" src="assets/images/diapers.jpg" alt=""> </a>
+                <h4 class="text-center p-3"> Gourmet </h4>
+                <p>Hand-build Healthy and Tasty Protein Bowls with the freshest ingredients and home-made dressing. Members enjoy <b> {{globalDiscountPercentages.Gourmet}}%</b> OFF</p>
+            </div>
+            <div class="col-sm-4 text-center pb-4">
+                <a ng-click="vm.validate(emailValidation.captureEmail,'product')"> <img class="img-fluid" src="assets/images/lovingearth.jpg" alt=""> </a>
+                <h4 class="text-center p-3"> Grocery </h4>
+                <p>Healthiest Snacks, Beauty, babies and home products. Members enjoy <b> {{globalDiscountPercentages.Grocer}}% </b> Off.</p>
+
+            </div>
+            <div class="col-sm-4 text-center pb-4">
+                <a ng-click="vm.validate(emailValidation.captureEmail,'freshMeal')"> <img class="img-fluid" src="assets/images/kleankanteen.jpg" alt=""> </a>
+                <h4 class="text-center p-3">Fresh Meal </h4>
+                <p>Chef-inspired warm meals freshly prepared and deliver to your doorsteps. Members enjoy <b>10%</b> OFF</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- How it works Row -->
+<div class="clearfix"></div>
+
+<!-- <section class="how-it-works pb-30 pt-60">
+    <div class="container">
+        <div class="">
+            <h2 class="my-3 text-center text-uppercase pb-3">How it works</h2>
+            <div class="row">
+                <div class="col-sm-4 text-center pb-2">
+                    <a ng-click="vm.validate('ModalSignup')"> <img class="img-fluid" src="assets/images/How It Works Icon 1-01.png" alt=""> </a>
+
+                    <h4 class="text-center pt-3 pb-1"> Register for free </h4>
+                    <p class="text-center"> Free to browse on the product catalog </p>
+                </div>
+
+                <div class="col-sm-4 text-center pb-2">
+                    <a ng-click="vm.validate('comingsoon')"> <img class="img-fluid" src="assets/images/how it works icon2-01.png" alt=""> </a>
+                    <h4 class="text-center pt-3 pb-1">Start Shopping </h4>
+                    <p class="text-center">
+                        Gourmet, Grocer or Fresh (Meal Prep)
+                    </p>
+                </div>
+
+                <div class="col-sm-4 text-center pb-2">
+                    <a ng-click="vm.validate('comingsoon')"> <img class="img-fluid" src="assets/images/how it works icon3-01.png" alt=""> </a>
+                    <h4 class="text-center pt-3 pb-1"> Choose to be a member </h4>
+                    <p class="text-center">
+                        Join the <b>KIPOS Community</b> for <b>$9.90 a month</b> and enjoy huge SAVINGS and REBATES
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="about-kipos">
+    <div class="container-fluid">
+        <div class="container-fluid-padding">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="about-img">
+                        
+                        <img  ng-src="{{ vm.AboutUs[0].ImagePath}}" alt="about kipos" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="about-conent">
+                        <h3 class="section-hading text-center"> About Us </h3>
+                        <h2 class="text-center"> Our Story and how we begin </h2>
+                        <p ng-bind-html="vm.AboutUs[0].ShortDescription"> 
+                            <!-- <p ng-bind-html="vm.AboutUs[0].FullDescription">  -->
+                        </p>
+                        <div class="clearfix"> </div>
+                        <div class="shop-now text-center pt-3">
+                            <!-- <button class="btn btn-gourmet" ui-sref="ourStory"> SHOW NOW </button> -->
+                            <button class="btn btn-gourmet" ng-click="vm.validate('gourmetproducts')"> SHOP NOW </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="clearfix"> </div>
+<section class="organic-block">
+    <!--/************12-02-2020 bulk orders content Start**********/-->
+    <div class="whatsapp-text">
+        <h3 style="text-align:center;padding-bottom:15px;margin:0;color:#d75498;">WhatsApp us @ +65 9232 6073 for bulk order and delivery service</h3>
+    </div>
+    <!--/************12-02-2020 bulk orders content End**********/-->
+    <div class="container-fluid">
+        <div class="container-fluid-padding">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img src="assets/images/echo-friendly.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-4 text-center">
+                    <img src="assets/images/organic-food.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-4 text-center">
+                    <img src="assets/images/support-local.png" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-block p-3">
+    <div class="container-fluid">
+        <div class="container-fluid-padding">
+            <h3 class="section-hading text-center"> Testimonials </h3>
+            <h2 class="text-center"> WHAT PEOPLE ARE SAYING </h2>
+            <div class="testmonials pt-5">
+                <div class="slider text-center">
+                    <div class="testimonial-items" ng-repeat="item in vm.SiteReviewData">
+                        <div class="testimonial-text">
+                            {{item.ReviewText}}
+                        </div>
+                        <div class="fbowle-name">
+                            <h5>Favourite bowl: </h5>
+                            <p class="section-hading"> {{item.FavouriteBowls}} </p>
+                        </div>
+                        <div class="client-name">
+                            <p>{{item.FullName}} </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            <div class="text-center p-3">
+               <a  style="text-align: right;
+               display: block;
+               color: #00646d;" ng-click="vm.validate('gourmetproducts')"><b> SHOP NOW &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </b></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-bowles pt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 p-0">
+                <div class="h-100 fb-1" ng-click="vm.locationhref(vm.TrendingImage[0].URLPath)" >
+                    <img  href="{{vm.location}}{{vm.TrendingImage[0].URLPath}}" ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[0].ImagePath}}" alt="footer-bowle-1" class="img-fluid w-100" />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 p-0">
+                        <div class="h-50 fb-2" ng-click="vm.locationhref(vm.TrendingImage[1].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[1].ImagePath}}"  alt="footer-bowle-2" class="img-fluid w-100" />
+                        </div>
+                        <div class="h-50 fb-2" ng-click="vm.locationhref(vm.TrendingImage[2].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[2].ImagePath}}"  alt="footer-bowle-3" class="img-fluid w-100" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-0">
+                        <div class="h-50  fb-2" ng-click="vm.locationhref(vm.TrendingImage[3].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[3].ImagePath}}" alt="footer-bowle-4" class="img-fluid w-100" />
+                        </div>
+                        <div class="h-50  fb-2" ng-click="vm.locationhref(vm.TrendingImage[4].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[4].ImagePath}}" alt="footer-bowle-5" class="img-fluid w-100" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-0">
+                        <div class="h-50 fb-2" ng-click="vm.locationhref(vm.TrendingImage[5].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[5].ImagePath}}" alt="footer-bowle-6" class="img-fluid w-100" />
+                        </div>
+                        <div class="h-50 fb-2" ng-click="vm.locationhref(vm.TrendingImage[6].URLPath)">
+                            <img ng-src="{{vm.membershipModuleApiURL}}/{{vm.TrendingImage[6].ImagePath}}" alt="footer-bowle-7" class="img-fluid w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sponser-block pt-5 pb-5" style="border-bottom:1px solid #1b1a15;">
+    <div class="container-fluid">
+        <div class="container-fluid-padding">
+            <div class="row">
+                <div class="col-md-4 text-center" ng-repeat="sponser in vm.Sponsers">
+                    <img ng-src="{{vm.membershipModuleApiURL}}/{{sponser.ImagePath}}" alt=""  class="img-fluid" />
+                </div>
+<!--                 
+                <div class="col-4 text-center">
+                    <img src="assets/images/vargin.png" alt=""  width="150" />
+                </div>
+                <div class="col-4 text-center">
+                    <img src="assets/images/debtos.png" alt="" width="150" />
+                </div>
+                <div class="col-4 text-center">
+                    <img src="assets/images/the-working-capital.png" alt="" width="150" />
+                </div> -->
+                <!-- <div class="col-md-4 text-center">
+                    <img src="assets/images/echo-friendly.png" alt="" width="150" />
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/organic-food.png" alt="" width="150" />
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/support-local.png" alt="" width="150" />
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="how-it-works pt-30 pb-30 ">
+    <div class="container">
+        <h1 class="my-4 text-center pb-3">Reviews<a href="" class="homepagereviews" ui-sref="viewreviews"> &nbsp;( ViewAll )</a></h1>
+
+
+        <div class="row">
+            <div class="col-sm-4 text-center pb-3" ng-repeat="item in vm.SiteReviewData">
+                <div class="star-rating">
+                    <span><i class="fa fa-2x full" ng-class="item.Rating >= 1 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-2x full" ng-class="item.Rating >= 2 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-2x full" ng-class="item.Rating >= 3 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-2x full" ng-class="item.Rating >=4  ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-2x full" ng-class="item.Rating >= 5 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></span>
+                </div>
+                <div class="clearfix"> </div>
+                <p class="text-center width-90 p-3">
+
+                    {{item.Title}}<br />
+                    {{item.ReviewText}}
+                </p>
+                <p class="text-center">- {{item.FullName}} </p>
+            </div>
+
+
+        </div>
+    </div>
+</section>-->
+<!---------Reviews scrolling---------------->
+
+<!-- <section class="review-scroll how-it-works pt-50 pb-50 bg-light ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-5 review-scroll-left">
+                <img src="assets/images/review-img.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-12 col-md-7 col-sm-7 review-scroll-right">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item" ng-class="{'active': $index == 0}" ng-repeat="item in vm.SiteReviewData">
+                            <div class="review-text">
+                                <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                                <p>
+                                    {{item.Title}}<br />
+                                    {{item.ReviewText}}
+                                </p>
+                                <div class="review-stars">
+                                    <ul>
+                                        <li><i class="fa fa-2x full" ng-class="item.Rating >= 1 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-2x full" ng-class="item.Rating >= 2 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-2x full" ng-class="item.Rating >= 3 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-2x full" ng-class="item.Rating >=4  ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-2x full" ng-class="item.Rating >= 5 ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <h3> - {{item.FullName}}</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" data-target="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon1" aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" data-target="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon1" aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="shownow-reviews"><a class="btn btn-sign" style="color:#fff;" ng-click="vm.validate('viewreviews')"><b> SHOW NOW </b></a></div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<!---review slider end---->
+<!-- Lowcost section Row -->
+
+<!-- <section class="how-it-works pt-60 pb-30 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center pb-2">
+                <a ng-click="vm.validate('#')"> <img class="img-fluid" src="assets/images/wide-selection.png" alt=""> </a>
+                <h4 class="text-center pt-3 pb-1"> Wide Selection </h4>
+                <p class="text-center"> Carefully curated value-for-money health and wellness products   </p>
+            </div>
+            <div class="col-sm-4 text-center pb-2">
+                <a ng-click="vm.validate('#')"> <img class="img-fluid" src="assets/images/lowest-price.png" alt=""> </a>
+                <h4 class="text-center pt-3 pb-1"> Lowest Price </h4>
+                <p class="text-center"> At least 20% off all product categories with Lowest Price Guarantee </p>
+            </div>
+            <div class="col-sm-4 text-center pb-2">
+                <a ng-click="vm.validate('#')"> <img class="img-fluid" src="assets/images/premium-pousebrand.png" alt=""> </a>
+                <h4 class="text-center pt-3 pb-1">  Premium Housebrand </h4>
+                <p class="text-center"> 100% natural, premium quality ingredients used without bad preservatives</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<script>
+    $('.shop-now').on('click', function (e) {
+        $("html, body").animate({ scrollTop: 300 },
+            1000);
+
+        //$('html, body').animate({
+        //    scrollTop: $("#category").offset().top;
+        //}, 1000);
+
+    })
+
+
+    $('#SR_signup_in_popup_btn').on('click', function () {
+        $("#social-form-login").find('.create').trigger("click");
+    });
+    $('#SR_Logged_in_popup_btn').on('click', function () {
+        //$("#social-form-login").find('.secondary').trigger("click");
+        $('.secondary').trigger("click");
+    });
+
+    //document.getElementById("#captureEmail").tooltip({
+    $(document).tooltip({
+        selector: "[title]",
+        placement: "bottom",
+        trigger: "focus",
+        animation: false
+    });
+
+</script>

@@ -1,0 +1,214 @@
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\Kipos_Site\KIPOSNOP\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\TEST_IIS\Kipos_NOP_9092\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\Kipos_NOP_8056\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\SVN\Kipos-NOP\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.deps.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.runtimeconfig.dev.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Tests.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CoreCompileInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfoInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.AssemblyInfo.cs
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csproj.CopyComplete
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Tests\Nop.Core.Tests\obj\Debug\netcoreapp2.1\Nop.Core.Tests.csprojAssemblyReference.cache

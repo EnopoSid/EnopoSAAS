@@ -1,0 +1,228 @@
+<style>
+.form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem;
+    padding-bottom: 20px;
+}
+.form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 0;
+    width: 15px; /*Desired width*/
+  height: 15px;
+}
+
+
+
+</style>
+
+
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+ <div class="page_content">
+<h3>Plan Conversion Form</h3>
+
+ <div >
+    <div class="row pt-10 pb-20">
+          
+            <div class="form-check-inline pos-user">
+                <input class="form-check-input" id="user-1" (click)="clkRadioBtn(0)" checked="checked" type="radio" name="radio01" value="option11">
+                <label for="user-1"> Member</label>            
+            </div>
+           
+        
+      
+            <div class="form-check-inline pos-user">
+                <input class="form-check-input" id="user-2" (click)="clkRadioBtn(1)" type="radio" name="radio01" value="option12">
+                <label for="user-2"> Non Member</label>
+            </div>
+           
+
+     
+       
+            <div class="form-check-inline pos-user">
+                <input class="form-check-input" id="user-4" type="radio" (click)="clkRadioBtn(2)" name="radio01" value="option14">
+                <label for="user-4"> Free Member</label>
+            </div>
+          
+            <div *ngIf="!AddPlanConversionFlag" class="form-check-inline pb-10 pull-right">
+              <mat-dialog-actions  *ngIf="memberFlag">
+                <div style="float: right;">
+                  <button  mat-button class="mat-button green"  (click)="exportToExcel()">Export to Excel</button>
+              <button mat-button class="mat-button green" (click)="convertToNonMem(0)" [disabled]="this.selectedConvertion.length ==0 && memberFlag"> M -> NM</button>&nbsp;
+            </div>
+            </mat-dialog-actions>
+            <mat-dialog-actions  *ngIf="nonmemberFlag">
+              <div style="float: right;">
+                <button  mat-button class="mat-button green"  (click)="exportToExcel()">Export to Excel</button>
+              <button mat-button class="mat-button cyan"  (click)="convertTofreeMem(1)" [disabled]="this.selectedConvertion.length ==0 && nonmemberFlag">NM -> FM</button>
+            </div>
+          </mat-dialog-actions>
+            <mat-dialog-actions  *ngIf=" freeMembersFlag" >
+              <div style="float: right;">
+                <button  mat-button class="mat-button green"  (click)="exportToExcel()">Export to Excel</button>
+              <button mat-button class="mat-button cyan" (click)="convertToNonMem(1)" [disabled]="this.selectedConvertion.length ==0 && freeMembersFlag">FM -> NM</button>
+            </div>
+          </mat-dialog-actions>
+        </div>
+    </div>
+       <form [formGroup]="PlanConversionForm"  (ngSubmit)="onPlanConversionFormSubmit()">
+<mat-card class="edit-class" *ngIf="!!AddPlanConversionFlag">
+        <mat-card-title>
+           <div > Convert to Free Member </div>
+        </mat-card-title>
+        <mat-card-content>
+                     <mat-form-field class="input-flex-25">  
+                          <input (click)="clkFromDate(picker)" matInput [formControl]="PlanConversionForm.controls['fromDate']"
+                            [matDatepicker]="picker" uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event)" [min]="minDate"
+                             onkeypress="return false" placeholder="From date" readonly displayFormat="yyyy mm dd">
+                          <mat-datepicker-toggle matSuffix [for]="picker" disabled></mat-datepicker-toggle>
+                          <mat-datepicker #picker ></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="input-flex-25">
+                          <mat-select placeholder="Duration in Months"  (ngModelChange)="onChangeDuration($event)"
+                          [formControl]="PlanConversionForm.controls['Duration']">
+                            <mat-option *ngFor="let duration of durationList" [value]="duration.Value">
+                            {{ duration.Value | uppercase }}
+                            </mat-option>
+                        </mat-select>
+                 <mat-error *ngIf="PlanConversionForm.controls['Duration'].hasError('required') && PlanConversionForm.controls['Duration'].touched">
+                    Please Select Duration
+                 </mat-error>
+              </mat-form-field>
+                        <mat-form-field class="input-flex-25">
+                          <input matInput
+                          type="text"
+                          style="text-transform: uppercase"
+                          [formControl]="PlanConversionForm.controls['toDate']"
+                          placeholder="To Date" required [value]="maxDateforToDate" />
+                          <mat-error *ngIf="PlanConversionForm.controls['toDate'].hasError('required') && PlanConversionForm.controls['toDate'].touched">
+                              Date is required!
+                          </mat-error>
+                  </mat-form-field>   
+        </mat-card-content>
+        <mat-card-footer>
+                <mat-dialog-actions>
+                        <button mat-button class="mat-button green" [disabled]="PlanConversionForm.invalid" type="submit">Convert free Member</button>
+                        <button mat-button class="mat-button cyan" type="button" (click)="onCancel()">Cancel</button>
+                </mat-dialog-actions>
+        </mat-card-footer>
+</mat-card>
+</form>
+
+</div> 
+
+<div class="clear-both"></div>
+<div class="mat-elevation-z8">
+    <div class="mat-datagrid">
+    <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+      <ng-container matColumnDef="sno">
+        <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            S.No  
+          </label>
+          <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+        </th>
+        <td mat-cell *matCellDef="let row"> 
+          {{row.sno}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="MemberId">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              Member ID
+            </label>
+            <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+          <b style="color:#962a20;">{{row.MemberId | uppercase}}</b>
+      </td>
+    </ng-container>
+      <ng-container matColumnDef="FullName">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+             Member Name
+            </label>
+            <input type="text"   (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[2].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> {{row.FullName | uppercase}} </td>
+    </ng-container>
+      <ng-container matColumnDef="EmailId">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+               Email
+              </label>
+              <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[3].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> {{row.Email }} </td>
+      </ng-container>
+      <ng-container matColumnDef="MobileNumber">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+             Mobile #
+            </label>
+            <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[4].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> {{row.MobileNumber | uppercase}} </td>
+    </ng-container>
+    <ng-container matColumnDef="SubscriptionDate">
+      <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header *ngIf="memberFlag">
+            Start Date
+          </label>
+          <label mat-sort-header *ngIf="nonmemberFlag">
+            Registered Date
+          </label>
+          <label mat-sort-header *ngIf="freeMembersFlag">
+            Start Date
+          </label>
+          <input type="text" [(ngModel)]="filterData.filterColumnNames[5].Value" [filter]="filterData"/>
+        </th>
+    <td mat-cell *matCellDef="let row"> {{row.SubscriptionDate | uppercase | date: 'yyyy/MM/dd'}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndDate">
+    <th mat-header-cell *matHeaderCellDef >
+        <label mat-sort-header *ngIf="memberFlag">
+          Due Date
+        </label>
+        <label mat-sort-header *ngIf="freeMembersFlag">
+          End Date
+        </label>
+        <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[5].Value" *ngIf="!nonmemberFlag" [filter]="filterData"/>
+      </th>
+  <td mat-cell *matCellDef="let row"> {{row.EndDate | uppercase | date: 'yyyy/MM/dd'}} </td>
+</ng-container>
+    <ng-container matColumnDef="Actions">
+      <th mat-header-cell *matHeaderCellDef>
+              <label > Conversion <br> &nbsp; </label>
+          </th>
+  <td mat-cell *matCellDef="let row" > 
+      <mat-checkbox  value="radioconversion{{row.MemberId}}" (change)="planConvertSelected(row.MemberId, $event)" style="padding-left: 33px"></mat-checkbox>
+  </td>
+</ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+    <table *ngIf="!!this.filterData.dataSource">
+      <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+    </table>
+  </div>
+    <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+  </div>
+</div>
+<div class="clear-both"></div>
+</div>
+

@@ -1,0 +1,53 @@
+<ngx-spinner bdColor="rgba(227,227,227,0.8)" size="medium" color="#ffb4b4" opacity="0.5" loadingText="Loading..."
+    type="ball-scale-multiple">
+</ngx-spinner>
+<mat-card>
+    <div class="container">
+        <div class="page_content">
+            <h3> {{ newsLetterTitle }}</h3>
+            <div class="height-20"></div>
+           
+            <form [formGroup]="NewsLetter" (ngSubmit)="onNewsLetterSubmit()">
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="text" placeholder="Article Title Name" id="titlename" size="50" maxlength="50"
+                        value="" [formControl]="NewsLetter.controls['titleName']" required>
+                    <mat-error
+                        *ngIf="NewsLetter.controls['titleName'].hasError('required') && NewsLetter.controls['titleName'].touched"
+                        class="alert alert-danger">Enter Article Title Name</mat-error>
+                    <mat-error
+                        *ngIf="NewsLetter.controls['titleName'].hasError('pattern') && NewsLetter.controls['titleName'].touched"
+                        class="alert alert-danger">Please enter Alphabets</mat-error>
+                </mat-form-field>
+                
+                <div class="clear-both"></div>
+               
+                 <div>
+                    <div>
+                        <angular-editor [formControl]="NewsLetter.controls['fullDescription']" [(ngModel)]="fullDescription"
+                            [config]="fullDescriptionEditor"></angular-editor>
+                    </div>
+                    <div class="html" *ngIf="dfd">
+                        {{ FullDescription }}
+                    </div>
+                    <div *ngIf="submitted && f.fullDescription.errors" class="alert-danger">
+                        <div >This field is required</div>
+                    </div>
+                </div> 
+                
+               
+                <div class="clear-both"></div>
+                <mat-card-footer>
+                    <mat-dialog-actions>
+                        <button mat-button class="mat-button orange" 
+                            *ngIf="saveUser">Save</button>&nbsp;
+                        <button mat-button class="mat-button orange" 
+                            *ngIf="updateUser && !isOnView">Update</button>
+                        <button mat-button class="mat-button skyblue" (click)="onGoBack()">Back</button>
+                    </mat-dialog-actions>
+                    <div class="clear-both"></div>
+                </mat-card-footer>
+            </form>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>

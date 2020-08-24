@@ -1,0 +1,24 @@
+<mat-card class="p-0">
+        <mat-card-title class="">
+            <div class="card-title-text">
+                <a class="f-right close-icon" (click)="dialogRef.close(false)">
+                    <i class="material-icons close-icon" color="pink"> clear </i>
+                </a>
+                <h3>{{data}}</h3>
+            </div>
+            <mat-divider></mat-divider>
+        </mat-card-title>
+        <mat-card-content>
+            <div class="pb-1">
+               {{message | translate}}
+            </div>
+            <div style="text-align: center">
+                        <button mat-button class="mat-button green" type="button" ng-transclude=""
+                        (click)="dialogRef.close(true)"><span class="ng-scope">Yes</span></button> &nbsp;
+                        <button mat-button class="mat-button green" type="button" ng-transclude=""
+                        (click)="dialogRef.close(false)"><span class="ng-scope">No</span></button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    
+    

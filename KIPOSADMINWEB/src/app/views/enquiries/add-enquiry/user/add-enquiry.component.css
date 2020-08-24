@@ -1,0 +1,3 @@
+textarea.mat-input-element:disabled {
+    min-height: 5em;
+}

@@ -1,0 +1,168 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+    <div class="page_content">
+    <h3>Corp Domain</h3>
+    <div class="f-right" *ngIf="!AddDiscountFlag"> 
+        <button mat-button class="mat-button green" *ngIf="!!pagePermissions.Add" (click)="addMenu()" type="button" ng-transclude=""><span class="ng-scope">Add Domain</span></button>
+        <div style="float: right;">
+          <button  mat-button class="mat-button green"  (click)="exportToExcel()">Export to Excel</button>
+      </div>  
+        <br>
+    </div>
+    <div *ngIf="AddDiscountFlag">
+            <form [formGroup]="Domainform"  (ngSubmit)="onDomainSubmit()">
+    <mat-card class="edit-class">
+            <mat-card-title>
+               <div *ngIf="title =='Save'"> Add Domain </div>
+               <div *ngIf="title =='Update'"> Edit Menu </div>
+            </mat-card-title> 
+            <mat-card-content>
+                            <mat-form-field class="input-flex-31">
+                                    <input matInput
+                                    type="text" cmsRestrictInput="onlyAlphabets"
+                                    style="text-transform: uppercase"
+                                    [formControl]="Domainform.controls['CompanyName']"
+                                    placeholder="Company Name" required/>
+                                    <mat-error *ngIf="Domainform.controls['CompanyName'].hasError('required') && Domainform.controls['CompanyName'].touched">
+                                        Company name is required!
+                                    </mat-error>
+                                    <mat-error *ngIf="Domainform.controls['CompanyName'].hasError('duplicateCompanyValue')">
+                                        Company name already Exists!
+                                    </mat-error>
+                                    <mat-error *ngIf="Domainform.controls['CompanyName'].hasError('pattern') && Domainform.controls['CompanyName'].touched">
+                                      Enter alphabets only
+                                  </mat-error>
+                            </mat-form-field>   
+                            <mat-form-field class="Mat-block input-flex-31">
+                                    <input matInput
+                                    type="text"  cmsRestrictInput="DOMAIN"
+                                    [formControl]="Domainform.controls['DoMain']"
+                                    placeholder="Domain" required/>
+                                    <mat-error *ngIf="Domainform.controls['DoMain'].hasError('required') && Domainform.controls['DoMain'].touched">
+                                        Domain is required!
+                                    </mat-error>
+                                    <mat-error *ngIf="Domainform.controls['DoMain'].hasError('duplicateDomainValue')">
+                                      Domain already Exists!
+                                  </mat-error>
+                                    <mat-error *ngIf="Domainform.controls['DoMain'].hasError('pattern') && Domainform.controls['DoMain'].touched" class="alert alert-danger">
+                                        Please enter Domain  Like(GMAIL.COM)</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="input-flex-31">
+                                <mat-select  placeholder="Select Coupon"  [formControl]="Domainform.controls['Discount']" name="Discount">
+                                <mat-option>
+                                    Select Coupon
+                                </mat-option>
+                                    <mat-option  *ngFor="let DisList of Discounts"  [value]="DisList.Name">
+                                        {{ DisList.Name| uppercase }}  
+                                    </mat-option>
+                                </mat-select>
+                                <mat-error *ngIf="Domainform.controls['Discount'].touched">
+                                  Please select Coupon
+                              </mat-error>
+                        </mat-form-field>
+                       
+            </mat-card-content>
+            <mat-card-footer>
+                    <mat-dialog-actions>
+                            <button type="submit" mat-button class="mat-button green"  [disabled]="Domainform.invalid">{{title}}</button>
+                            <button type="button" class="mat-button cyan"  mat-button (click)="onCancel()">Cancel</button>
+                    </mat-dialog-actions>
+            </mat-card-footer>
+    </mat-card>
+    </form>
+    </div>
+    <br>
+<div class="clear-both"></div>
+<div class="clear-both"></div>
+<div class="mat-elevation-z8">
+    <div class="mat-datagrid">
+    <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+      <ng-container matColumnDef="sno">
+        <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            S.No  
+          </label>
+          <input type="text" (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+        </th>
+        <td mat-cell *matCellDef="let row"> 
+          {{row.sno}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="CompanyName">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                Company Name 
+              </label>
+              <input type="text" (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> 
+          {{row.CompanyName | uppercase}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="Domain">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              Domain
+            </label>
+            <input type="text" (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[2].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+        {{row.Domain }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="RegisteredDate">
+      <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            Register Date
+          </label>
+          <input type="text" (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[3].Value" [filter]="filterData"/>
+        </th>
+    <td mat-cell *matCellDef="let row"> 
+      {{row.RegisteredDate | date:'yyyy-MM-dd'}}
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="CouponCode">
+    <th mat-header-cell *matHeaderCellDef>
+        <label mat-sort-header>
+           Coupon Discount
+        </label>
+        <input type="text" (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[4].Value" [filter]="filterData"/>
+      </th>
+  <td mat-cell *matCellDef="let row"> 
+    {{row.CouponCode | uppercase}}
+  </td>
+</ng-container>
+    <ng-container matColumnDef="Actions"> 
+        <th mat-header-cell *matHeaderCellDef style="vertical-align:inherit !important">
+            <label > Actions <br> &nbsp; </label>
+        </th>
+        <td mat-cell *matCellDef="let row" > 
+            <a *ngIf="!!pagePermissions.Edit" mat-icon-button matTooltip="Edit" (click)="updateCorpMaster(row.Id)" >
+                <mat-icon  style="color: #1a646c ; padding: 3px 7px;">edit</mat-icon>
+            </a>
+              <a *ngIf="!!pagePermissions.Delete" mat-icon-button matTooltip="Delete" (click)="deleteDomain(row.Id)">
+              <mat-icon  style="color:#d75498;">delete</mat-icon>
+            </a>
+        </td>
+    </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+    <table *ngIf="!!this.filterData.dataSource">
+      <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+    </table>
+  </div>
+    <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+  </div>
+    <div class="clear-both"></div>
+</div>
+<div class="clear-both"></div>
+</div>

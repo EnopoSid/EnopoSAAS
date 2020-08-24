@@ -1,0 +1,313 @@
+
+
+body {
+    padding-top: 54px;
+    font-family: 'AvenirNextLTPro-Regular', sans-serif !important;
+    color: #254941;
+}
+
+
+.bg-kipos {
+    background-color: #09cac7 !important;
+}
+
+.btn-kipos {     
+	background-color: #09cac7;
+    border-color: #09cac7;
+    border-radius: 10px;
+    padding: 4px 30px;
+	border-width:3px;
+	color: #fff;
+	font-weight:600;
+	}
+
+.btn-sign {     
+	background-color: #e35ea3;
+    border-color: #e35ea3;
+    border-radius: 10px;
+    padding: 4px 30px;
+	border-width:3px;
+	color: #fff;
+	font-weight:600;	
+			}
+.btn-sign:hover {     
+	background-color: #d75498;
+	border-color: #d75498;
+}
+
+.btn-login { 
+	background-color: transparent;
+	border-color: #fff;
+    border-radius: 10px;
+    padding: 4px 30px;
+	border-width:3px;
+	color: #fff;
+	font-weight:600;	
+	}
+.btn-login:hover {     
+	background-color: #d75498;
+	border-color: #d75498;
+}
+
+/* --------saiprashanna--------- */
+.color-yellow{
+    color:rgba(255, 255, 0, 0.918);
+}
+.img-fluid{
+    height: 95%;
+    padding-top: 46px;
+    width: 53%;
+
+}
+.img-fluidss{
+    height:15%;
+    width:20%
+}
+.products{
+    height:25%;
+    width: 74%;
+    min-width: 50%
+}
+.totalrate{
+    color: green;
+    padding-left: 231px;
+    font-size: 20px;
+}
+.customers{
+    background-color: #FFFFFF;
+   
+    padding-top: 20px;
+}
+.textabout{
+  color:gray;
+  height:25%;
+  
+text-align:center;
+}
+.column{
+    text-align: center
+}
+.chat{
+    background-color: #FFFFFF;
+}
+.maintext{
+
+text-align:center;
+ padding-left: 479px;
+
+
+}
+.clearfix {
+    overflow: auto;
+}
+.tabletext{
+    text-align: center;
+   
+    padding-top: 20px;
+}
+td:nth-child(2) { color: grey;
+ }
+.result td:nth-child(2) {width: 60%}
+
+td, th {
+   
+    text-align: center;
+    padding: 15px;
+}
+.news-letter{
+    background-color: #dddddd;
+    padding-top: 20px;
+    display: block
+}
+.Add{
+    color: #d75498;
+}
+
+.menu{
+    height:45px;
+    width: 45px;
+    color: transparent
+}
+.tribeca{
+    background-color: #FFFFFF;
+    width: 71%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    margin-top: 63px;
+   
+    height: 57%;
+   
+}
+.shipping{
+    padding-top: 93px;
+}
+.about{
+    color: #264a40;
+    padding-top: 20px;
+}
+.icons{
+    padding-top: 20px;
+    color:black;
+    padding-top: 85px;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.content{
+    padding-bottom: 48px;
+    background-color: #dddddd;
+}
+
+.message{
+    color: #fff;
+    background-color: #09cac7;
+    font-size: 38px;
+    padding-top: 17px;
+    text-align: center;
+}
+.main{
+    text-align: center;
+}
+.result{
+    font-size: 18px; 
+}
+.btn-sign {     
+	background-color:  #09cac7;
+    border-color: #09cac7;
+    border-radius: 10px;
+    padding: 4px 30px;
+	border-width:3px;
+	color: #fff;
+	font-weight:600;	
+			}
+
+.btn-account{
+        /* background-color: transparent; */
+     
+        border-radius: 10px;
+        border-color: rgba(0, 0, 0, 0.5);
+        padding: 4px 30px;
+        border-width: 3px;
+        /* color: #fff; */
+        font-weight: 600;
+
+        /* background-color: #e35ea3;
+        border-color: #e35ea3;
+        border-radius: 10px;
+        padding: 4px 30px;
+        border-width: 3px;
+        color: #fff;
+        font-weight: 600; */
+
+
+
+
+
+}
+.btn-sign:hover {     
+	background-color: #d75498;
+	border-color: #d75498;
+}
+.btn-account:hover {     
+	background-color: #d75498;
+	border-color: #d75498;
+}
+
+/* --------saiprashanna--------- */
+.btn-go { background-color:#264a40;
+		border-color: #264a40;
+			}
+
+.btn-go:hover, .btn-go:focus { background-color:#22443a;
+		border-color: #22443a;
+		}	
+
+.font-size-70 { font-size:70%;}
+
+.category { background:#eee;}
+.category h1 { font-size:50px; margin:0px; }
+
+
+
+hr {border-top: 1px solid grey;}
+
+
+.footer-links ul {  padding:0px; margin:0px; }
+.footer-links ul li{ list-style:none; font-size:14px; line-height:24px;}
+
+
+
+
+
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+  width:80%;
+}
+
+
+
+
+
+
+
+	
+	
+/***** Login page styles *****/	
+
+.modal-header { background:#e5e5e5; padding: 2rem 10%;}
+.form-signin  { padding: 1rem 10%;}
+.has-float-label .form-control:placeholder-shown:not(:focus)+* {
+    font-size: 100%;
+    opacity: .5;
+    top: 0.9em;
+    font-weight: 400;
+}
+.has-float-label label, .has-float-label>span {
+	top: -1.2em; left: 2px;
+}
+.form-signin .modal-title { margin-bottom:7px;}
+
+.form-group {
+    margin-bottom: 2.5rem;
+}
+
+.modal-content { width:100%; margin:0px auto;}
+.modal-body {
+    min-height: 370px;
+}
+
+.form-signin .form-control { border:none; border-bottom:1px solid #ced4da; }
+
+/***** Login page styles *****/	
+
+	
+	
+/***** Coming soon page styles *****/	
+
+/***** Coming soon page styles *****/	
+	
+
+
+	
+				
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .rating {
+    width: 70%;
+	}
+	
+.modal-header { background:#e5e5e5; padding: 2rem 5%;}
+.form-signin  { padding: 1rem 5%;}
+.modal-content { width:80%; margin:0px auto;}
+
+}
+

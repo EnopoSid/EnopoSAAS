@@ -1,0 +1,14 @@
+.user-add-complaint-component  md-dialog-actions.mat-dialog-actions {
+    margin-right: 0px;
+}
+
+.user-add-complaint-component .mat-card-content{
+    padding: 0 !important;
+}
+textarea.mat-input-element:disabled {
+    min-height: 5em;
+}
+
+.mat-radio-button{
+    margin-left: 10px;
+}

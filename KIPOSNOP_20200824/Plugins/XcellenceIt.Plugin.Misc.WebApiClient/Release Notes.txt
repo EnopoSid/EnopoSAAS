@@ -1,0 +1,103 @@
+﻿Release Date: Aug 31, 2018
+nopAccelerate REST Web Services API Plugin Version: 2.5.0
+
+Feature:
+Added support for nopCommerce 4.10
+
+CustomerID Replace with CustomerGUID. It means now in webAPI request you need to pass CustomerGUID instead of CustomerID (nopCommerce 4.10)
+APISecretKey moved from API header to body (nopCommerce 4.10)
+
+--------------------------------------------------------------------------------------------
+Release Date: Feb 8,2018
+nopAccelerate REST Web Services API Plugin Version: 2.5.0
+
+Feature:
+1. Added new method GetProductByVendorId.
+
+Bug:
+1. Fixed Language and store issue
+--------------------------------------------------------------------------------------------
+
+Release Date: July 31,2017
+nopAccelerate REST Web Services API Plugin Version: 2.4.0
+
+Bug:
+1.Topmenu method does not return category image url. 
+
+Feature:
+1.Added new method "Advanced search" 
+--------------------------------------------------------------------------------------------
+
+Release Date: June 27,2017
+nopAccelerate REST Web Services API Plugin Version: 2.3.2
+
+Bug:
+1. Price With Discount value always Zero.
+2. Product Detail not working in Secure Mode.
+3. Applied Discount Method used current customer instead of workcontext.
+4. Migrate Shopping cart on register customer.
+
+Feature:
+1. Created Get Payment Method.
+--------------------------------------------------------------------------------------------
+
+Release Date: May 29, 2017
+nopAccelerate REST Web Services API Plugin Version: 2.3.1
+
+Bug:
+1. Multi store setting not working.
+2. Secure-Mode sub parameter not working.
+
+--------------------------------------------------------------------------------------------
+
+Release Date: March 16, 2017
+nopAccelerate REST Web Services API Plugin Version: 2.3.0
+
+Features:
+1. Upgraded to nopCommerce 3.90.
+
+--------------------------------------------------------------------------------------------
+
+Release Date: March 01, 2017
+nopAccelerate REST Web Services API Plugin Version: 2.2.0
+
+Features:
+1. Added new method RemoveFromWishList for remove item from Wishlist.
+
+Fixed Bugs:
+1. Fixed bug in Manufacturer method
+2. Fixed bug in GetOrderDetail method
+3. Fixed bug in ApplyFilter method
+
+--------------------------------------------------------------------------------------------
+
+Release Date: February 3, 2017
+nopAccelerate REST Web Services API Plugin Version: 2.1.0
+
+Features:
+1. Added new method GetAllSetting for get all setting.
+2. Added new method GetAllExternalAuthentications for get all external authentication methods.
+3. Added new method WishList for get customer's wish list items.
+4. Added new method AddProductReview for add reivew to product.
+5. Added new method ProductReviews for get product's all reviews.
+6. Added new method LoadFilter2 for load filters on category.
+7. Added new method UpdateCartWithMultipleItems for update cart with multple items.
+8. Update GetAddress method and add AddressId in response result.
+
+Fixed Bugs:
+1. Fixed bug in ApplyFilter service
+2. Fixed bug in DetailAddProductToCart
+
+--------------------------------------------------------------------------------------------
+Release Date: November 29, 2016
+nopAccelerate REST Web Services API Plugin Version: 2.0.0
+
+Features:
+1. Added support for to nopCommerce 3.80
+
+--------------------------------------------------------------------------------------------
+
+Release Date: November 23, 2015
+nopAccelerate REST Web Services API Plugin Version: 1.0.0
+
+Initial release

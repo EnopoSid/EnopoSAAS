@@ -1,0 +1,104 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+ <div class="container">
+<div class="page_content">
+<h3>Communication</h3>
+<div class="f-right" *ngIf="!AddCommunicationFlag">
+    <button mat-button class="mat-button green" *ngIf="!!pagePermissions.Add" (click)="addCommunication()" type="button" ng-transclude=""><span class="ng-scope">Add Communication</span><div class="mat-ripple-container"></div></button>
+
+</div>
+<div *ngIf="AddCommunicationFlag">
+        <form [formGroup]="CommunicationForm"  (ngSubmit)="onCommunicationFormSubmit()">
+<mat-card class="edit-class">
+       
+        <mat-card-title>
+           <div *ngIf="title =='Save'"> Add Communication </div>
+           <div *ngIf="title =='Update'"> Edit Communication </div>
+        </mat-card-title>
+        <mat-card-content>
+                        <mat-form-field class="mat-block input-flex-50">
+                                <input matInput
+                                type="text" 
+                                class="mat-input" style="text-transform: uppercase" cmsRestrictInput="onlyAlphabets"
+                                [formControl]="CommunicationForm.controls['communicationName']"
+                                placeholder="Communication Name" required/>
+                                <mat-error *ngIf="CommunicationForm.controls['communicationName'].hasError('required') && CommunicationForm.controls['communicationName'].touched">
+                                    Communication Name is required!
+                                </mat-error>
+                                <mat-error *ngIf="CommunicationForm.controls['communicationName'].hasError('pattern') && CommunicationForm.controls['communicationName'].touched">
+                                  Enter alphabets only
+                              </mat-error>
+                                <mat-error *ngIf="CommunicationForm.controls['communicationName'].hasError('duplicateCommunicationName')">
+                                    Communication Name  already exists!
+                                </mat-error>
+                        </mat-form-field>
+
+        </mat-card-content>
+        <mat-card-footer>
+                <mat-dialog-actions>
+                        <button mat-button class="mat-button green" type="submit" [disabled]="CommunicationForm.invalid">{{title}}</button>
+                        <button mat-button class="mat-button cyan" type="button" (click)="onCancel()">Cancel</button>
+                </mat-dialog-actions>
+        </mat-card-footer>
+</mat-card>
+
+</form>
+</div>
+<div class="clear-both"></div>
+<div class="mat-elevation-z8">  
+        <div class="mat-datagrid">
+        <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+          <ng-container matColumnDef="sno">
+            <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                S.No  
+              </label>
+              <input type="text" [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+            </th>
+            <td mat-cell *matCellDef="let row"> 
+              {{row.sno}} 
+            </td>
+          </ng-container> 
+          <ng-container matColumnDef="CommunicationName">
+              <th mat-header-cell *matHeaderCellDef>
+                  <label mat-sort-header>
+                    Communication Name
+                  </label>
+                  <input type="text" [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+                </th>
+            <td mat-cell *matCellDef="let row">
+                 {{row.CommunicationName | uppercase}}
+          </ng-container>
+          <ng-container matColumnDef="Actions">
+            <th mat-header-cell *matHeaderCellDef style="vertical-align:inherit !important">
+              <label > Actions <br> &nbsp; </label>
+            </th>
+            <td mat-cell *matCellDef="let row" > 
+                <a *ngIf="!!pagePermissions.Edit" mat-icon-button matTooltip="Edit" (click)="updateCommunication(row.CommunicationId)" >
+                    <mat-icon  style="color: rgb(0, 145, 234); padding: 3px 7px;">edit</mat-icon>
+                </a>
+                  <a *ngIf="!!pagePermissions.Delete" mat-icon-button matTooltip="Delete" (click)="deleteCommunication(row.CommunicationId)">
+                  <mat-icon  style="color:#962a20;">delete</mat-icon>
+                </a>
+            </td>
+        </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+          </tr>
+        </table>
+        <table *ngIf="!!this.filterData.dataSource">
+          <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+        </table>
+      </div>
+        <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]" itemsPerPageLabel="No.of records"></mat-paginator>
+      </div>
+    </div>
+<div class="clear-both"></div>
+</div>
+

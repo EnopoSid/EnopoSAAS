@@ -1,0 +1,421 @@
+﻿<Language Name="English" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Name">
+    <Value>Configuration - Client WebAPI</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Version">
+    <Value>Version - {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.HelpDocument">
+    <Value>Help</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.LicenseKey">
+    <Value>License Key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.LicenseKey.Hint">
+    <Value>Please provide your license key.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.StoreId">
+    <Value>Store</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.StoreId.Hint">
+    <Value>Select your store URL.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.PrimaryLicenseStoreLocaleResource">
+    <Value>Primary License Store</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.PrimaryLicenseStore.Hint">
+    <Value>Select your store URL.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.RestApi">
+    <Value>Enable</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.RestApi.Hint">
+    <Value>Enable Rest API</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.WebApiClient.Hint">
+    <Value>Enable REST API.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.DebugMode">
+    <Value>Debug Mode</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.DebugMode.Hint">
+    <Value>Debug mode allows you to make requests without using JWT.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.APIKey">
+    <Value>API Key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.APIKey.Hint">
+    <Value>Generate API Key.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.AppID">
+    <Value>Application ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.AppID.Hint">
+    <Value>Application ID is used to identify request orginating application, a valid Application ID is required in all requests without which request will not be authenticated.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.SecretKey">
+    <Value>Secret Key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Field.SecretKey.Hint">
+    <Value>A Secret Key used to generate signed token.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.APIKeyButton">
+    <Value>Get API Key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckApi">
+    <Value>Unauthorized Request. Please check System Logs for more details or contact your System Administrator.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Login.Invalid">
+    <Value>Login was unsuccessful. Please correct the errors and try again.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Login.Success">
+    <Value>Login was Successful</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ReOrder.NullOrDeleted">
+    <Value>Order not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ReOrder.Success">
+    <Value>Re-Order was Successful</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NotRegister">
+    <Value>Customer is not registered</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.InfoEdit.Success">
+    <Value>Personal Information updated successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressAdd.Success">
+    <Value>Address added successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressEdit.NotFound">
+    <Value>Address not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressEdit.Update">
+    <Value>Address updated successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressDelete.Delete">
+    <Value>Address deleted successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressDelete.NotDeleted">
+    <Value>Address not deleted</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.OrderNotFound">
+    <Value>Order not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ProductNotFound">
+    <Value>No product found with id : {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SimpleProductOnly">
+    <Value>Only simple products could be added to the cart</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckWishList">
+    <Value>Please check wishlist</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.MinimumQtyRequired">
+    <Value>Minimum quantity required</Value>
+  </LocaleResource>
+
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.RequiredStartEndDate">
+    <Value>Rental product required start and end date</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckProductAttribute">
+    <Value>Please check the product attribute</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SettingUpdate.NotAuthorize">
+    <Value>You are not authorized</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CartRemove">
+    <Value>Item remove successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CartUpdate">
+    <Value>Item update successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CustomerNotAvailable">
+    <Value>Customer not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.RemoveCoupon">
+    <Value>Removed coupon successfully.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.RemoveGiftcard">
+    <Value>Remove giftcard successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckCart">
+    <Value>Please check shopping cart</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CustomerEnterPrice">
+    <Value>Please enter a customer price</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SelectQuantity">
+    <Value>Please select quantity from available quantity</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.EmptyCart">
+    <Value>Cart is empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.EmptyCartModel">
+    <Value>Cart Model is empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.EmptyWishList">
+    <Value>Wishlist is empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.EmptyWishListModel">
+    <Value>Wishlist Model is empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AddressNotFound">
+    <Value>Address not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoShippingRequired">
+    <Value>Shipping is not required</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.PickUpInStore">
+    <Value>Customer will pick up item from store</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.OnlyOneShippingMethod">
+    <Value>Only one shipping method available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckShippingMethod">
+    <Value>Check next step payment method</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoShippingOption">
+    <Value>Shipping option not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.PaymentFlowNotrequired">
+    <Value>Payment work flow not required</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoPaymentMethod">
+    <Value>Payment method not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.PaymentMethodSelect">
+    <Value>Payment method selected</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ConfirmOrder">
+    <Value>Your order has been successfully processed!</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.DisableOrderCompletedPage">
+    <Value>Order confirm page is disable</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.RecentlyAddedProduct">
+    <Value>Recently added products not enable</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.TopicDetails.TopicNotFound">
+    <Value>Topic not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.TopicDetails.ModelNotFound">
+    <Value>Model not found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Vote.NotFound">
+    <Value>No poll answer found with the specified id</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Vote.NotAvailable">
+    <Value>Poll is not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.GetLanguage">
+    <Value>Only one language available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.LanguageSet">
+    <Value>Language set successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.LanguageNotAvaialable">
+    <Value>Language not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.UrlNotFound">
+    <Value>Url not found for nivo slider</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.GetCurrency">
+    <Value>Only one currency available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CurrencySet">
+    <Value>Currency set successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ContactUs.Email">
+    <Value>No email account could be loaded</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SettingUpdate.NoSetting">
+    <Value>No setting could be loaded with the specified ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SettingUpdate.NoName">
+    <Value>No setting exist with such name</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SettingUpdate.Success">
+    <Value>Setting update successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Manufacturer.StoreAvailability">
+    <Value>In this store manufacturer not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Manufacturer.NotAuthorize">
+    <Value>Not authorize</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Manufacturer.NotPermission">
+    <Value>No permission</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.Manufacturer.NotAvailable">
+    <Value>Product not available for manufacturer</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ItemNotMatch">
+    <Value>Custmerid and itemid does not match</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CheckOutAttribute">
+    <Value>Checkout attribute set successfully </Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.ExternalAuthentication.NotInstall">
+    <Value>External authentication plugin is not install</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.RemoveExternalAuthentication.Deleted">
+    <Value>User deleted successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.ExternalAuthentication.AlreadyRegistered">
+    <Value>User already registered</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.RemoveExternalAuthentication.NotRegisteredOrAvailable">
+    <Value>Customer not registered for external authentication or not available</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.AppIdRequired">
+    <Value>Application ID required.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SecretKeyRequired">
+    <Value>Secret Key required.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SecureApi.NotValidAppId">
+    <Value>Not valid Application ID.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.SecureApi.AppSecretNotAvailable">
+    <Value>AppSecret not available.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ReviewModelEmpty">
+    <Value>Product Review model is Empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.RestApiAdmin.ApiKeyButton">
+    <Value>Get API</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.MultipleCartUpdate">
+    <Value>Cart is successfully updated. Failed update to item ids: {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.PaymentMethodNotActive">
+    <Value>Paymenmt Method Not active.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NULLReview">
+    <Value>Product Review is null.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.WishListRemove">
+    <Value>Item remove successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ShowBestsellersOnHomepage">
+    <Value>ShowBestsellersOnHomepage setting is disable or NumberOfBestsellersOnHomepage is 0</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CartCount">
+    <Value>Total cart item count is {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.WishListCount">
+    <Value>Total Wishlist item count is {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ExternalAuthenticationNotFound">
+    <Value>No records found for specified customerId</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.MessageCannotBeEmpty">
+    <Value>Request cannot be empty</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoCustomerFound">
+    <Value>No customer found with id {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoOrderFound">
+    <Value>No order found with id {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ProductNotDeleted">
+    <Value>Product not deleted with id {0}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NotAuthorised">
+    <Value> Not authorize.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ProductNotpublished">
+    <Value>Product not published.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NotAssociatedProduct">
+    <Value>Not an associated product</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NotAvailableForRent">
+    <Value>Not available for rent</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ProductNotFoundInStore">
+    <Value>Product not found in current store</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoProductFoundOnHomePage">
+    <Value>No Product found on home page.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoRelatedProductFound">
+    <Value>No related product found for product id {0}.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoProductTagFound">
+    <Value>No Product tags found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Products.ProductHasBeenAddedToTheWishlist">
+    <Value>The product has been added to your wishlist. UpdatedWishlistSectionHtml = {0} </Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Products.ProductHasBeenAddedToTheCart">
+    <Value>The product has been added to your Cart. UpdatedCartSectionHtml = {0} </Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CategoryEmptyOrDeleted">
+    <Value>Category is empty or deleted</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CategoryNotPublishedOrUnauthorized">
+    <Value>Category is not published or unauthorize</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoAccessToCategory">
+    <Value>Not authorized to access category</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.StoreMappinUnauthorized">
+    <Value>Store mapping unauthorized for this category</Value>
+  </LocaleResource>
+  <LocaleResource Name="plugins.xcellenceit.restapi.message.manufactureremptyordeleted">
+    <Value>Manufacturer not found.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ApplyGiftCard">
+    <Value>Applied giftcard successfully</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.NoStoreFound">
+    <Value>No store found</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.ManufacturerEmptyOrDeleted">
+    <Value>Manufacturer is empty or deleted</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ManufacturerNotPublishedOrUnauthorized">
+    <Value>Manufacturer is not published or unauthorizes</Value>
+  </LocaleResource>
+  <!--Added for external authentication-->
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.UserAlreadyAuthenticated">
+    <Value>User already authenticated</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AccountAlreadyAssigned">
+    <Value>Account is already assigned</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AutoRegisteredEmailValidation">
+    <Value>Auto registered email validation</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AutoRegisteredAdminApproval">
+    <Value>Auto registered admin approval</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AutoRegisteredStandard">
+    <Value>Auto registered standard</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AssociateOnLogon">
+    <Value>Associate on logon</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.RegistrationIsDisabled">
+    <Value>Registration is disabled</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Xcellenceit.Webapiclient.Message.AlreadyAuthenticated">
+    <Value>Already authenticated</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.TopicDetails.NotAuthorized">
+    <Value>Not authorize to access this topic page or topic page not available for this store</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.TopicDetails.NotACL">
+    <Value>Not authorize in ACL permission</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.ItemNotExist">
+    <Value>Item not exist in cart.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CustomerNotExist">
+    <Value>Customer not exist.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.XcellenceIT.WebApiClient.Message.CustomerExist">
+    <Value>Customer exist.</Value>
+  </LocaleResource>
+</Language>

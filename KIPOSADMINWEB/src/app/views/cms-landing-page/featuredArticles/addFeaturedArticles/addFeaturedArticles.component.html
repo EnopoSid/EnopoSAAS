@@ -1,0 +1,84 @@
+<ngx-spinner bdColor="rgba(227,227,227,0.8)" size="medium" color="#ffb4b4" opacity="0.5" loadingText="Loading..."
+    type="ball-scale-multiple">
+</ngx-spinner>
+<mat-card>
+    <div class="container">
+        <div class="page_content">
+
+            <h3> {{ title }}</h3>
+            <div class="height-20"></div>
+            <form [formGroup]="featuredArticlesFormGroup" novalidate (ngSubmit)="onFeaturedArticlesSubmit()">
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="text" placeholder="Article Title Name" id="titlename" size="50" maxlength="50"
+                        value="" [formControl]="featuredArticlesFormGroup.controls['titleName']" required>
+                    <mat-error
+                        *ngIf="featuredArticlesFormGroup.controls['titleName'].hasError('required') && featuredArticlesFormGroup.controls['titleName'].touched"
+                        class="alert alert-danger">Enter Article Title Name</mat-error>
+                    <mat-error
+                        *ngIf="featuredArticlesFormGroup.controls['titleName'].hasError('pattern') && featuredArticlesFormGroup.controls['titleName'].touched"
+                        class="alert alert-danger">Please enter Alphabets</mat-error>
+                </mat-form-field>
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="text" id="postedby" placeholder="Article Posted By" size="50" maxlength="50"
+                        value="" [formControl]="featuredArticlesFormGroup.controls['postedby']" required>
+                    <mat-error
+                        *ngIf="featuredArticlesFormGroup.controls['postedby'].hasError('required') && featuredArticlesFormGroup.controls['postedby'].touched"
+                        class="alert alert-danger">Enter Article Posted By.</mat-error>
+                    <mat-error
+                        *ngIf="featuredArticlesFormGroup.controls['postedby'].hasError('pattern') && featuredArticlesFormGroup.controls['postedby'].touched"
+                        class="alert alert-danger">Please enter Alphabets </mat-error>
+                </mat-form-field>
+                <div class="clear-both"></div>
+                <div>
+                    <div>
+                        <angular-editor [formControl]="featuredArticlesFormGroup.controls['shortDescription']"
+                            [(ngModel)]="shortDescription" [config]="subDescriptionEditor"></angular-editor>
+                    </div>
+                    <div class="html" *ngIf="dfd" [innerHTML]="ArticleDescription">
+                    </div>
+                    <div *ngIf="submitted && f.shortDescription?.errors" class="alert alert-danger">
+                        <div *ngIf="f.shortDescription.errors.required">This field is required</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <angular-editor [formControl]="featuredArticlesFormGroup.controls['fullDescription']"
+                            [(ngModel)]="fullDescription" [config]="fullDescriptionEditor"></angular-editor>
+                    </div>
+                    <div class="html" *ngIf="dfd">
+                        {{ FullDescription }}
+                    </div>
+                    <div *ngIf="submitted && f.fullDescription?.errors" class="alert-danger">
+                        <div *ngIf="f.fullDescription.errors.required">This field is required</div>
+                    </div>
+                </div>
+                <div class="clear-both"></div>
+                <mat-card-content>
+                    <div>
+                        <div class="brandimage-icon mr-1">
+                            <img [src]="editImage" for="customFile" />
+                        </div>
+                        <input type="file" placeholder="select File" 
+                        [formControl]="featuredArticlesFormGroup.controls['File']"
+                        multiple (change)="upload($event)" name="file"
+                            style=" vertical-align:text-bottom; 
+                                      padding-top: 20px; display: inline-block;" required accept="image/*" />
+                    </div>
+                    <div *ngIf="submitted && f.File?.errors" class="alert-danger">
+                        <div *ngIf="f.File.errors.required">This field is required</div>
+                    </div>
+                </mat-card-content>
+                <div class="clear-both"></div>
+                <mat-card-footer>
+                    <mat-dialog-actions>
+                        <button mat-button class="mat-button" *ngIf="saveUser">Save</button>&nbsp;
+                        <button mat-button class="mat-button orange" *ngIf="updateUser && !isOnView">Update</button>
+                        <button mat-button class="mat-button skyblue" (click)="onGoBack()">Back</button>
+                    </mat-dialog-actions>
+                    <div class="clear-both"></div>
+                </mat-card-footer>
+            </form>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>

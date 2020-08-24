@@ -1,0 +1,67 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<mat-card>
+    <div class="container">
+        <div class="page_content">
+
+            <h3> {{ title }}</h3>
+            <div class="height-20"></div>
+
+            <form [formGroup]="posPlanFormGroup" novalidate (ngSubmit)="onFeaturedArticlesSubmit()">
+                
+                <div>
+                    <mat-form-field class=" input-flex-50">
+              
+                        <input matInput type="text"
+                        id="plan" placeholder="Plan Type" cmsRestrictInput="onlyAlphabetsWithoutSpaces" size="50" maxlength="50" value="" [formControl]="posPlanFormGroup.controls['plans']" required>
+                        <mat-error *ngIf="posPlanFormGroup.controls['plans'].hasError('required') && posPlanFormGroup.controls['plans'].touched" class="alert alert-danger">Enter plans.</mat-error>
+                        <mat-error *ngIf="posPlanFormGroup.controls['plans'].hasError('pattern') && posPlanFormGroup.controls['plans'].touched" class="alert alert-danger">Please enter Alphabets without Spaces</mat-error>
+                 
+                    </mat-form-field>
+                </div>
+                <div class="clear-both"></div>
+             
+
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="number" placeholder="Subscription Amount" id="targetBowlsCount"
+                        onKeyPress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"
+                        value="" [formControl]="posPlanFormGroup.controls['targetBowlsCount']" required>
+                    <mat-error
+                        *ngIf="posPlanFormGroup.controls['targetBowlsCount'].hasError('required') && posPlanFormGroup.controls['targetBowlsCount'].touched"
+                        class="alert alert-danger">Subscription Amount is required</mat-error>
+
+                </mat-form-field>
+                <mat-form-field class=" input-flex-50">
+                    <input matInput type="number" id="targetSalesAmt" placeholder="Discount Percentage"
+                        onKeyPress="return (event.charCode == 8 || event.charCode == 0) ? null : (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 46"
+                        value="" [formControl]="posPlanFormGroup.controls['targetSalesAmt']" required>
+                    <mat-error
+                        *ngIf="posPlanFormGroup.controls['targetSalesAmt'].hasError('required') && posPlanFormGroup.controls['targetSalesAmt'].touched"
+                        class="alert alert-danger">Discount Percentage is required</mat-error>
+
+                </mat-form-field>
+   
+
+
+
+
+                <div class="clear-both"></div>
+                <mat-card-footer>
+                    <mat-dialog-actions>
+                        <button mat-button class="mat-button" *ngIf="saveUser">Save</button>&nbsp;
+                        <button mat-button class="mat-button orange" *ngIf="updateUser && !isOnView">Update</button>
+                        <button mat-button class="mat-button skyblue" (click)="onGoBack()">Back</button>
+                    </mat-dialog-actions>
+                    <div class="clear-both"></div>
+                </mat-card-footer>
+            </form>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</mat-card>

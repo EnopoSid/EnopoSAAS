@@ -1,0 +1,47 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+        <div class="page_content">      
+        <h3>Reports</h3>
+        <form [formGroup]="SearchForm" > 
+<mat-card-content>
+    <mat-form-field class="input-flex-31">  
+            <input (click)="clkFromDate(picker)" matInput  [formControl]="SearchForm.controls['fromDate']"
+              [matDatepicker]="picker" uib-datepicker-popup="only" (ngModelChange)="onChangeFromDate($event)" [max]="maxDate"
+               onkeypress="return false" placeholder="From Date"> 
+            <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="input-flex-31">
+        <input (click)="clkToDate(picker2)" matInput [formControl]="SearchForm.controls['toDate']"
+         [matDatepicker]="picker2" uib-datepicker-popup="only"  (ngModelChange)="onChangeToDate($event)" [min]="minDate" [max]="maxDate"
+         onkeypress="return false" placeholder="To Date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="input-flex-31" >
+       
+      <mat-select  placeholder=" Select Store *" 
+      [formControl]="SearchForm.controls['store']"  style="width: 100%;" name="store">
+      
+         <mat-option *ngFor="let store of storeList" [value]="store.StoreId">
+             {{ store.StoreName | uppercase }}
+         </mat-option>
+     </mat-select>
+     <mat-error *ngIf="SearchForm.controls['store'].hasError('required') && SearchForm.controls['store'].touched" class="alert alert-danger">
+      Store Name is required!
+     </mat-error>
+</mat-form-field>
+<div class="clear-both"></div>
+<button  mat-button class="mat-button green"  (click)="getAllSearchedOrders()">Export to Excel</button>
+
+</mat-card-content>
+<div class="clear-both"></div>
+
+</form>

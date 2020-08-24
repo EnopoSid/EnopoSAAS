@@ -1,0 +1,95 @@
+<mat-toolbar class="topbar">
+<div class="container">
+    
+  <div  class="search-bar1">
+      <div class="branding theme-bg menubar-shading">
+          <a (click)="onLogoClick()" style="cursor: pointer;" > <img src="assets/images/kipos-logo1.png" alt="" class="app-logo-big">
+          </a>
+      </div>
+      <div class="clear-both"></div>
+  </div>
+  
+  <div class="title-sec">
+      <h1 class="title-section" style="color:#d75498"> Kipos Admin </h1>
+      <div class="clear-both"></div>
+  </div>
+
+  <div class="title-right">
+  <div *ngIf="!isFromConsumer">
+  <button mat-icon-button [matMenuTriggerFor]="accountMenu" class="topbar-button-right img-button"
+          style="height: auto; width: auto">
+          <label  style="color:#d75498; font-weight:600;">{{now | date: 'MM/dd/yyyy HH:mm'}}
+        </label>
+          <label style="color:#333; font-weight:600;">{{text}} 
+              </label>
+          <mat-icon class="icon-md text-muted">arrow_drop_down</mat-icon>
+  </button>
+  <mat-menu #accountMenu="matMenu" >
+      <div class="app-user">
+          <div class="app-user-photo" style="background: #d1e6b5">
+              <avatar *ngIf="!!avatarDataCircle3.text" [avatardata]="avatarDataCircle3"></avatar>
+          </div>
+          <span class="app-user-name mb-05">
+              <mat-icon class="icon-xs text-muted">account_circle</mat-icon>
+              <b>Name: </b>{{userName}} 
+          </span>
+          <span class="app-user-name mb-05">
+              <mat-icon class="icon-xs text-muted">verified_user</mat-icon>
+              <b>Role: </b>{{roleName}} 
+          </span>
+          <div class="app-user-controls" style="display:none">
+              <button class="text-muted" mat-icon-button mat-xs-button [matMenuTriggerFor]="appUserMenu">
+                  <mat-icon>settings</mat-icon>
+              </button>
+              <button class="text-muted" mat-icon-button mat-xs-button matTooltip="Inbox" routerLink="/inbox">
+                  <mat-icon>email</mat-icon>
+              </button>
+              <button class="text-muted" mat-icon-button mat-xs-button matTooltip="Sign Out"
+                      routerLink="/sessions/signin">
+                  <mat-icon>exit_to_app</mat-icon>
+              </button>
+              <mat-menu #appUserMenu="matMenu">
+                  <button style="display:none" mat-menu-item routerLink="/profile/overview">
+                      <mat-icon>account_box</mat-icon>
+                      <span>Profile</span>
+                  </button>
+                  <button style="display:none" mat-menu-item style="display:none" routerLink="/profile/settings">
+                      <mat-icon>settings</mat-icon>
+                      <span>Account Settings</span>
+                  </button>
+                  <button mat-menu-item style="display:none">
+                      <mat-icon>notifications_off</mat-icon>
+                      <span>Disable alerts</span>
+                  </button>
+                  <button mat-menu-item (click)="logout()">
+                      <mat-icon>exit_to_app</mat-icon>
+                      <span>Sign out</span>
+                  </button>
+              </mat-menu>
+          </div>
+      </div>
+      <button mat-menu-item routerLink="/change_password">
+          <mat-icon>spellcheck</mat-icon>
+          <span>Change Password</span>
+      </button>
+      <button mat-menu-item (click)="ViewUser()">
+          <mat-icon>spellcheck</mat-icon>
+          <span>View Profile</span>
+      </button>
+      <button mat-menu-item (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Sign out</span>
+      </button>
+  </mat-menu>
+</div>
+<div *ngIf="!!isFromConsumer && !isFromAnonymous">
+  <button mat-button type="button" class="mat-button cyan"  (click)="onSignInClick()" ng-transclude=""> Sign In </button> 
+</div>
+
+<div *ngIf="!!isFromConsumer && isFromAnonymous">
+    <button mat-button type="button" class="mat-button green"  [routerLink]="['/']" ng-transclude=""> Home </button>
+</div>
+<div class="clear-both"></div>
+</div>
+</div>
+</mat-toolbar>

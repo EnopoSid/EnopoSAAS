@@ -1,0 +1,29 @@
+#right_nav button, #right_nav .mat-button {
+    border-radius: none !important;
+    color: #f1f1f1 !important;
+    cursor: pointer;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    align-items: inherit;
+    line-height: 30px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px 16px;
+    text-align: left;
+    text-decoration: none;
+    white-space: normal;
+    background-color:transparent !important;
+    border: 0;
+    outline: none;
+    unicode-bidi: embed;
+    text-align: center;
+    margin-right: 4px;
+    font-size: 16px;
+    
+}
+
+
+#right_nav button {
+    font-size: 16px;
+    line-height: 30px !important;
+}

@@ -1,0 +1,172 @@
+﻿<style>
+    .form-signin {
+        padding: 1rem 0%;
+    }
+    .checkout {
+        background: url(../../../assets/images/kipos-gourment-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow:3px 3px 5px #242424;
+
+    }
+    .rounded-25{border-radius:15px;}
+    .banner-padding{padding:10px 20px;}
+    .account-wall {
+        padding: 5px 20px 0;
+    }
+    .has-float-label label, .has-float-label > span {
+        top: -1.2em;
+    }
+    .checkout .form-control {
+        margin-top: 5px;
+    }
+
+    @media (min-width: 992px) {
+        body {
+                padding-top: 0px;
+                min-height: 600px;
+            }
+        .otp-mobileview {
+            width: 96% !important;
+        }
+        }
+
+        @media(max-width:768px) {
+            .banner-padding {
+                margin-top: 62px;
+                box-shadow: 3px 3px 4px #8e8080;
+            }
+
+            .checkout {
+                background: url(../../../assets/images/footer-bowle-1.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-size:100%;
+            }
+
+            .otp-mobileview {
+                width: 85% !important;
+                display: inline-block;
+            }
+
+            .mobile-spacing-0 {
+                padding: 0px;
+            }
+
+            .mobile-btn {
+                width: 100%;
+                display: inline-grid !important;
+            }
+
+            .helpbutton {
+                display: none
+            }
+        }
+
+        @media (max-width: 500px) {
+            .otp-mobileview {
+                width: 85% !important;
+
+            }
+        }
+
+        @media(max-width:450px) {
+            .otp-mobileview {
+                width: 85% !important;
+            }
+            .banner-padding {
+                margin-top: 150px;
+                box-shadow: 3px 3px 4px #8e8080;
+            }
+        }
+
+            @media(max-width:400px) {
+
+                .banner-padding {
+                    margin-top: 180px;
+                    box-shadow: 3px 3px 4px #8e8080;
+                }
+            }
+
+        @media(max-width:360px) {
+            .banner-padding {
+                margin-top: 150px;
+                box-shadow: 3px 3px 4px #8e8080;
+            }
+
+            .otp-mobileview {
+                width: 83% !important;
+            }
+        }
+
+    
+</style>
+<div class="checkout pt-50 pb-50" >
+    <div class="container">
+        <div class="clear"></div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-sm-6 offset-sm-1 banner-padding bg-white rounded-25">
+                    <h3 class="pt-2" style="padding-left:20px;">
+                       Registration Form
+                    </h3>
+                    <div class="clearfix"></div>
+
+
+                    <div class="account-wall">
+                        <form class="form-signin" id="vm.RegistrationForm" name="vm.RegistrationForm" novalidate>
+                            <div class="form-group has-float-label">
+                                <label for="signup-fullname">Name<span class="required">*</span></label>
+                                <input class="form-control" type="text" placeholder="Name" id="fullname"
+                                       name="fullname" required ng-model="vm.userData.UserName" maxlength="60" check-pattern=myConstants.ValidationPatterns.Alphabets 
+                                        />
+                            </div>
+                            <span class="text-danger small" ng-if="vm.RegistrationForm.fullname.$touched && vm.RegistrationForm.fullname.$invalid
+                            ||(vm.RegistrationForm.fullname.$invalid && vm.RegistrationForm.$submitted)">Enter your Full Name</span>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group has-float-label">
+                                <label for="email">Email<span class="required">*</span></label>
+                                    <input class="form-control" type="email" placeholder="email@example.com"
+                                           name="email" required ng-pattern="myConstants.ValidationPatterns.Email" ng-model="vm.userData.EmailId" maxlength="60" id="signup-email" />
+                            </div>
+                            <span class="text-danger small" ng-if="vm.RegistrationForm.email.$touched && vm.RegistrationForm.email.$invalid && !vm.RegistrationForm.email.$error.pattern
+                            ||(vm.RegistrationForm.email.$invalid && vm.RegistrationForm.$submitted)">Enter your Email</span>
+                            <span class="text-danger small" ng-if="vm.RegistrationForm.email.$error.pattern">Invalid Email</span>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group has-float-label">
+                                <label for="number">Phone Number<span class="required">*</span></label>
+                                <div class="row">
+                                    <div class="form-group required col-lg-3 col-4">
+                                        <select class="form-control  btn-sec bg-gray" 
+                                                name="country_code" id="exampleSelect1" 
+                                                ng-model="vm.selectedCountryCode" 
+                                                ng-options="globalCountryCode as globalCountryCode.Value for globalCountryCode in vm.globalCountryCodes" 
+                                                style="font-size:0.75rem; padding: 0px !important; height:30px;" 
+                                                ng-disabled="true"></select>
+                                    </div>
+                                    <div class="col-lg-9 col-8 mobile-spacing-0">
+                                        <div class="otp-mobileview center-sel-phone has-float-label w-100" style="position:relative">
+                                            <input  class="form-control" type="text" placeholder="Phone Number" name="telephone" 
+                                            id="telephone" required maxlength="8" ng-model="vm.userData.PhoneNumber"
+                                            check-pattern="myConstants.ValidationPatterns.Numbers"
+                                            ng-keyup="vm.validateMobileNumber(vm.selectedCountryCode,vm.userData.PhoneNumber)" />
+                                    </div>
+                                    <span class="text-danger small col-md-12" style="padding-left: 14px;" ng-if="!!vm.patternError && vm.userData.PhoneNumber>0">The No.of Digits should be {{vm.maxdigits}}</span>
+                                    <span class="text-danger small" style="padding-left: 14px;" ng-if="(vm.RegistrationForm.telephone.$touched && vm.RegistrationForm.telephone.$invalid && !vm.userData.PhoneNumber.length)
+                                                  ||(vm.RegistrationForm.telephone.$invalid && vm.RegistrationForm.$submitted)">Enter PhoneNumber</span>
+                                </div>
+                            </div>
+                           
+                            <div class="form-group mobile-btn " style="padding-bottom: 10px; margin-right:1px; display: table; float: right; padding-top: 10px;;">
+                                <button class="pull-right btn-action btn btn-cart btn-kipos2 " type="button" ng-disabled="vm.userData.PhoneNumber.length<8"  ng-click="vm.Register(vm.RegistrationForm)" > Register </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

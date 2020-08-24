@@ -1,0 +1,120 @@
+@model XcellenceIt.Plugin.CustomProductAttribute.Models.ProductAttributeSearchModel
+@{
+    Layout = "_AdminLayout";
+}
+
+@{ 
+    
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("CustomProductAttribute list");
+}
+
+<nop-antiforgery-token />
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">  
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="settings-grid"></div>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#settings-grid").kendoGrid({
+                                dataSource: {
+                                    type: "json",
+                                    transport: {
+                                        read: {
+                                            url: "@Html.Raw(Url.Action("ProductAttributeList", "CustomProductAttribute"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: function() {
+                                                var data = {
+                                                    
+                                                };
+                                                addAntiForgeryToken(data);
+                                                return data;
+                                            }
+                                        }
+                                        ,
+                                        destroy: {
+                                            url: "@Html.Raw(Url.Action("ProductAttribute_Delete", "CustomProductAttribute"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: addAntiForgeryToken
+                                        }
+                                    },
+                                    schema: {
+                                        data: "Data",
+                                        total: "Total",
+                                        errors: "Errors",
+                                        model: {
+                                            id: "Id",
+                                            fields: {
+                                                Name: { editable: false, type: "string" },
+                                                PriceAdjustment: { editable: true, type: "number" },
+                                                WeightAdjustment: { editable: true, type: "number" },
+                                                Id: { editable: false, type: "number" }
+                                            }
+                                        }
+                                    },
+                                    requestEnd: function(e) {
+                                        if (e.type == "create" || e.type == "update") {
+                                            this.read();
+                                        }
+                                    },
+                                    error: function(e) {
+                                        display_kendoui_grid_error(e);
+                                        // Cancel the changes
+                                        this.cancelChanges();
+                                    },
+                                    pageSize: @(Model.PageSize),
+                                    serverPaging: true,
+                                    serverFiltering: true,
+                                    serverSorting: true
+                                },
+                                pageable: {
+                                    refresh: true,
+                                    pageSizes: [@(Model.AvailablePageSizes)],
+                                    @await Html.PartialAsync("_GridPagerMessages")
+                                },
+                                editable: {
+                                    confirmation: "@T("Admin.Common.DeleteConfirmation")",
+                                    mode: "inline"
+                                },
+                                scrollable: false,
+                                columns: [
+                                    {
+                                        field: "Name",
+                                        title: "@T("Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Name")",
+                                        width: 300
+                                    },
+                                   
+                                    @*{
+                                        field: "WeightAdjustment",
+                                        title: "@T("Admin.Configuration.Settings.AllSettings.Fields.StoreName")",
+                                        width: 150,
+                                        editor: storeDropDownEditor,
+                                        template: "#:Store#"
+                                    },*@
+                                    {
+                                        command: [
+                                             {
+                                                name: "destroy",
+                                                text: "@T("Admin.Common.Delete")"
+                                            }
+                                        ],
+                                        width: 200
+                                    }
+                                ]
+                            });
+                        });
+                    </script>
+
+                   
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</div>

@@ -1,0 +1,207 @@
+
+@model XcellenceIt.Plugin.CustomProductAttribute.Models.CustomAttributeValueSearchModel
+@{
+    Layout = "_AdminLayout";
+}
+
+@*@{ //page title
+    ViewBag.Title = T("Admin.Configuration.Settings.AllSettings").Text;
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("All settings"); }*@
+
+<nop-antiforgery-token />
+@*<div class="content-header clearfix">
+        <h1 class="pull-left">
+            @T("Admin.Configuration.Settings.AllSettings")
+        </h1>
+        <div class="pull-right">
+            &nbsp;
+            @await Component.InvokeAsync("AdminWidget", new { widgetZone = AdminWidgetZones.AllSettingListButtons })
+        </div>
+    </div>*@
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">
+            @await Component.InvokeAsync("AdminWidget", new { widgetZone = AdminWidgetZones.ProductAttributePredefinedValuesDetailsTop, additionalData = Model })
+            <div class="panel panel-default panel-search">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <nop-label asp-for="SearchProductAttributeValueName" />
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="SearchProductAttributeValueName" />
+                                </div>
+                            </div>
+                            @*<div class="form-group">
+                                    <div class="col-md-4">
+                                        <nop-label asp-for="SearchPriceAdjustment" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <nop-editor asp-for="SearchPriceAdjustment" />
+                                    </div>
+                                </div>*@
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-4">
+                                    <button type="button" id="search-settings" class="btn btn-primary btn-search">
+                                        <i class="fa fa-search"></i>
+                                        @T("Admin.Common.Search")
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="settings-grid"></div>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#settings-grid").kendoGrid({
+                                dataSource: {
+                                    type: "json",
+                                    transport: {
+                                        read: {
+                                            url: "@Html.Raw(Url.Action("List", "CustomProductAttribute"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: function() {
+                                                var data = {
+                                                    SearchProductAttributeValueName: $('#@Html.IdFor(model => model.SearchProductAttributeValueName)').val()
+                                                };
+                                                addAntiForgeryToken(data);
+                                                return data;
+                                            }
+                                        },
+                                        update:
+                                        {
+                                            url: "@Html.Raw(Url.Action("CustomProductAttribute_Update", "CustomProductAttribute"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: addAntiForgeryToken
+                                        }
+                                        ,
+                                        destroy: {
+                                            url: "@Html.Raw(Url.Action("CustomProductAttribute_Delete", "CustomProductAttribute"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: addAntiForgeryToken
+                                        }
+                                    },
+                                    schema: {
+                                        data: "Data",
+                                        total: "Total",
+                                        errors: "Errors",
+                                        model: {
+                                            id: "Id",
+                                            fields: {
+                                                Name: { editable: false, type: "string" },
+                                                PriceAdjustment: { editable: true, type: "number" },
+                                                WeightAdjustment: { editable: true, type: "number" },
+                                                Id: { editable: false, type: "number" },
+                                                ProductAttributeName: { editable: false, type: "string" }
+                                            }
+                                        }
+                                    },
+                                    requestEnd: function(e) {
+                                        if (e.type == "create" || e.type == "update") {
+                                            this.read();
+                                        }
+                                    },
+                                    error: function(e) {
+                                        display_kendoui_grid_error(e);
+                                        // Cancel the changes
+                                        this.cancelChanges();
+                                    },
+                                    pageSize: @(Model.PageSize),
+                                    serverPaging: true,
+                                    serverFiltering: true,
+                                    serverSorting: true
+                                },
+                                pageable: {
+                                    refresh: true,
+                                    pageSizes: [@(Model.AvailablePageSizes)],
+                                    @await Html.PartialAsync("_GridPagerMessages")
+                                },
+                                editable: {
+                                    confirmation: "@T("Admin.Common.DeleteConfirmation")",
+                                    mode: "inline"
+                                },
+                                scrollable: false,
+                                columns: [
+                                    {
+                                        field: "ProductAttributeName",
+                                        title: "@T("Admin.Catalog.Products.SpecificationAttributes.Fields.AttributeType")",
+                                        width: 300
+                                    },
+                                    {
+                                        field: "Name",
+                                        title: "@T("Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Name")",
+                                        width: 300
+                                    },
+                                    {
+                                        field: "PriceAdjustment",
+                                        title: "@T("Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.PriceAdjustment")",
+                                        width: 300
+                                    },
+                                    {
+                                        field: "WeightAdjustment",
+                                        title: "@T("Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.WeightAdjustment")",
+                                        width: 300
+                                    },
+                                    @*{
+                                        field: "WeightAdjustment",
+                                        title: "@T("Admin.Configuration.Settings.AllSettings.Fields.StoreName")",
+                                        width: 150,
+                                        editor: storeDropDownEditor,
+                                        template: "#:Store#"
+                                    },*@
+                                    {
+                                        command: [
+                                            {
+                                                name: "edit",
+                                                text: {
+                                                    edit: "@T("Admin.Common.Edit")",
+                                                    update: "@T("Admin.Common.Update")",
+                                                    cancel: "@T("Admin.Common.Cancel")"
+                                                }
+                                            }, {
+                                                name: "destroy",
+                                                text: "@T("Admin.Common.Delete")"
+                                            }
+                                        ],
+                                        width: 200
+                                    }
+                                ]
+                            });
+                        });
+                    </script>
+
+                    <script>
+                        $(document).ready(function() {
+                            $('#search-settings').click(function() {
+                                var grid = $('#settings-grid').data('kendoGrid');
+                                grid.dataSource.page(1);
+                                return false;
+                            });
+                        });
+
+                        $("".concat("#@Html.IdFor(model => model.SearchProductAttributeValueName)")).keydown(function(event) {
+                                if (event.keyCode === 13) {
+                                    $("#search-settings").click();
+                                    return false;
+                                }
+                            });
+                    </script>
+                </div>
+            </div>
+            @await Component.InvokeAsync("AdminWidget", new { widgetZone = AdminWidgetZones.ProductAttributePredefinedValuesDetailsBottom, additionalData = Model })
+        </div>
+    </div>
+</div>

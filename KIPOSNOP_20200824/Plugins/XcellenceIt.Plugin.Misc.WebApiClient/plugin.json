@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Misc",
+  "FriendlyName": "nopAccelerate WebApi Client Plugin",
+  "SystemName": "XcellenceIt.WebApiClient",
+  "Version": "2.7.1",
+  "SupportedVersions": [ "4.10" ],
+  "Author": "Xcellence-It",
+  "DisplayOrder": 1,
+  "FileName": "XcellenceIt.Plugin.Misc.WebApiClient.dll",
+  "Description": "Access client side services as standard Web architecture securely"
+}

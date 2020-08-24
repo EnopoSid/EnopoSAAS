@@ -1,0 +1,11 @@
+<mat-sidenav-container class="app-side-nav-container">
+
+    <topbar [sidenav]="sidenav" [notificPanel]="notificationPanel" [isFromConsumer]="true" (onLangChange)="translate.use($event)"></topbar>
+    
+    <div class="">
+      <router-outlet></router-outlet>
+    </div>
+    
+    <footer></footer>
+  </mat-sidenav-container>
+  

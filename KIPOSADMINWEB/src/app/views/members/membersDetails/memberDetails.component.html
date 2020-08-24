@@ -1,0 +1,148 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+    <div class="page_content">
+    <h3>Member Details </h3>
+<div class="f-right">
+    <button  mat-button class="mat-button green"  [routerLink]="['/members']" type="button" ng-transclude=""><span class="ng-scope">BACK to Members</span></button> 
+    <br>
+</div> 
+<div >
+                   <div  class="input-flex-100 pl-20">
+                    <div class="input-flex-50">
+                        <p> <b> Member Id : </b> {{this.memberinformation.MemberId}} </p>
+                        <p> <b> Member Name :</b> {{this.memberinformation.FullName}} </p>
+                       
+
+                    </div>  
+                    <div class="input-flex-50">
+                      <p> <b> Total SpendAmount (GST included) :</b> {{this.memberinformation.TotalSpendAmount}} </p>
+                        <p> <b> Total Reward Points :</b> {{this.memberinformation.TotalRewardPoints}} </p>
+                        <p> <b> Total Consumed kpoints :</b> {{this.memberinformation.TotalConsumedkpoints}} </p>
+
+              </div>  
+                   
+                </div>
+ 
+<div class="clear-both"></div>
+<div class="mat-elevation-z8">
+    <div class="mat-datagrid">
+    <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+      <ng-container matColumnDef="sno">
+        <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            S.No  
+          </label>
+          <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+        </th>
+        <td mat-cell *matCellDef="let row"> 
+          {{row.sno}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="OrderId">
+          <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                OrderId
+              </label>
+              <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+            </th>
+        <td mat-cell *matCellDef="let row"> 
+            <b style="color:#962a20;">{{row.OrderId}}</b>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="StoreName">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              StoreName
+            </label>
+            <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[2].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+           {{row.StoreName }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="PickUpInStore">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              PickUpInStore
+            </label>
+            <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[3].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+           {{row.PickUpInStore}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="OrderDate">
+      <th mat-header-cell *matHeaderCellDef>
+          <label mat-sort-header>
+            OrderDate
+          </label>
+          <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[4].Value" [filter]="filterData"/>
+        </th>
+    <td mat-cell *matCellDef="let row"> 
+         {{row.OrderDate | date: 'yyyy/MM/dd'}}
+    </td>
+  </ng-container>
+    <ng-container matColumnDef="CouponCode">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              CouponCode
+            </label>
+            <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[5].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+           {{row.CouponCode}}
+      </td>
+    </ng-container>
+<ng-container matColumnDef="AppliedKpoints">
+  <th mat-header-cell *matHeaderCellDef>
+      <label mat-sort-header>
+        AppliedKpoints
+      </label>
+      <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[6].Value" [filter]="filterData"/>
+    </th>
+<td mat-cell *matCellDef="let row"> 
+     {{row.AppliedKpoints}}
+</td>
+</ng-container>
+<ng-container matColumnDef="OrderAmount">
+  <th mat-header-cell *matHeaderCellDef>
+      <label mat-sort-header>
+        OrderAmount (GST included)
+      </label>
+      <input type="text"  (keyup) ="updatePagination()" [(ngModel)]="filterData.filterColumnNames[7].Value" [filter]="filterData"/>
+    </th>
+<td mat-cell *matCellDef="let row"> 
+     {{row.OrderAmount}}
+</td>
+</ng-container>
+    <ng-container matColumnDef="GainedKpoints">
+        <th mat-header-cell *matHeaderCellDef>
+            <label mat-sort-header>
+              GainedKpoints            </label>
+            <input type="text" (keyup) ="updatePagination()"  [(ngModel)]="filterData.filterColumnNames[8].Value" [filter]="filterData"/>
+          </th>
+      <td mat-cell *matCellDef="let row"> 
+           {{row.GainedKpoints}}
+      </td>
+    </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+    <table *ngIf="!!this.filterData.dataSource">
+      <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+    </table>
+  </div>
+    <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+  </div>
+    <div class="clear-both"></div>
+</div>
+<div class="clear-both"></div>
+</div>

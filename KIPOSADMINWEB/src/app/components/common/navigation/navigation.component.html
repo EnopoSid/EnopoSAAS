@@ -1,0 +1,43 @@
+
+<div class="main-content main-bar">
+    <mat-toolbar color="primary" class="main-menu">
+        <div class="container">
+      <div id="right_nav" class="right-top-nav">
+        <span *ngFor="let item of menuItems">
+          <button mat-button (click)="onMenuClick(item)" id="menu_{{item.MenuURL}}" class="admin-menu">
+            {{item.MenuName|uppercase }}</button>
+        </span>
+      </div>
+      </div>
+    </mat-toolbar>
+    
+    <mat-toolbar color="primary" class="sub-menu" *ngIf="!!subMenuItems.length" style="height:45px;">
+        <div class="container">
+        <div id="right_nav">
+          <span *ngFor="let item of subMenuItems">
+            <button mat-button (click)="onSubmenuClick(item)" id="submenu_{{item.SubMenuUrl}}" class="admin-menu" [matTooltip]="item.tooltip">
+              {{item.SubMenuName|titlecase }}
+            </button>
+          </span>
+        </div>
+      </div>
+      </mat-toolbar>
+  </div>
+
+<!-- Mobile View -->
+<div class="mobile-bar">
+  <mat-toolbar color="primary">
+    <ul>
+    <li *ngFor="let item of menuItems">
+       <div  (click)="onMenuClick(item)"> {{item.MenuName|titlecase }}</div>
+        <ul  *ngIf="!!subMenuItems.length && item.MenuURL == masterMenuUrl">
+        <li *ngFor="let item of subMenuItems" >
+          <div  (click)="onSubmenuClick(item)">  {{item.SubMenuName|titlecase }}</div>
+        </li>
+      </ul> 
+     
+    </li>
+  </ul>
+  </mat-toolbar>
+</div>
+<!-- Mobile View End -->

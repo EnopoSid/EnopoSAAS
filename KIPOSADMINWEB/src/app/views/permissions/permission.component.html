@@ -1,0 +1,104 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+<div class="page_content">
+                <h3>Permissions</h3>
+
+<div class="f-right" *ngIf="!addPermissionFlag">
+    <button mat-button class="mat-button green" *ngIf="!!pagePermissions.Add" (click)="addPermission()" type="button" ng-transclude=""><span class="ng-scope">Add Permission</span><div class="mat-ripple-container"></div></button>
+    <br>
+</div>
+<div *ngIf="addPermissionFlag">
+        <form [formGroup]="PermissionForm"  (ngSubmit)="onPermissionFormSubmit()">
+<mat-card class="edit-class">
+       
+        <mat-card-title>
+           <div *ngIf="title =='Save'"> Add Permission </div>
+           <div *ngIf="title =='Update'"> Edit Permission </div>
+        </mat-card-title>
+        <mat-card-content>
+                        <mat-form-field class="mat-block input-flex-50">
+                                <input matInput
+                                type="text" style="text-transform: uppercase" cmsRestrictInput="onlyAlphabets"
+                                class="mat-input" [attr.disabled]="title =='Update'"
+                                [formControl]="PermissionForm.controls['PermissionName']"
+                                placeholder="Permission Name" required/>
+                                
+                                <mat-error *ngIf="PermissionForm.controls['PermissionName'].hasError('required') && PermissionForm.controls['PermissionName'].touched">
+                                    Permission Name is required!
+                                </mat-error>
+                                <mat-error *ngIf="PermissionForm.controls['PermissionName'].hasError('duplicatePermissionName')">
+                                    Permission Name is already exist!
+                                </mat-error>
+                                <mat-error *ngIf="PermissionForm.controls['PermissionName'].hasError('pattern') && PermissionForm.controls['PermissionName'].touched">
+                                  Enter alphabets only
+                              </mat-error>
+                        </mat-form-field>   
+                        
+        </mat-card-content>
+        <mat-card-footer>
+                <mat-dialog-actions>
+                        <button mat-button class="mat-button green" type="submit"  [disabled]="PermissionForm.invalid">{{title}}</button>
+                        <button mat-button class="mat-button cyan" type="button"(click)="onCancel()">Cancel</button>
+                </mat-dialog-actions>
+        </mat-card-footer>
+</mat-card>
+
+</form>
+</div>
+<div class="clear-both"></div>
+<div class="mat-elevation-z8">   
+        <div class="mat-datagrid">
+        <table mat-table [dataSource]="this.filterData.dataSource" matSort>
+          <ng-container matColumnDef="sno">
+            <th mat-header-cell *matHeaderCellDef>
+              <label mat-sort-header>
+                SNo  
+              </label>
+              <input type="text" [(ngModel)]="filterData.filterColumnNames[0].Value" [filter]="filterData"/>
+            </th>
+            <td mat-cell *matCellDef="let row"> 
+              {{row.sno}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="PermissionName">
+              <th mat-header-cell *matHeaderCellDef>
+                  <label mat-sort-header>
+                        Permission Name
+                  </label>
+                  <input type="text" [(ngModel)]="filterData.filterColumnNames[1].Value" [filter]="filterData"/>
+                </th>
+            <td mat-cell *matCellDef="let row"> {{row.PermissionName | uppercase}} </td>
+          </ng-container>
+          <ng-container matColumnDef="Actions">
+              <th mat-header-cell *matHeaderCellDef style="vertical-align:inherit !important">
+                  <label > Actions <br> &nbsp; </label>
+                </th>
+            <td mat-cell *matCellDef="let row" > 
+                <a *ngIf="!!pagePermissions.Edit" mat-icon-button matTooltip="Edit" (click)="updatePermission(row.PermissionId)" >
+                    <mat-icon  style="color: #1a646c; padding: 3px 7px;">edit</mat-icon>
+                </a>
+                  <a *ngIf="!!pagePermissions.Delete" mat-icon-button matTooltip="Delete" (click)="deletePermission(row.PermissionId)">
+                  <mat-icon  style="color:#d75498;">delete</mat-icon>
+                </a>
+            </td>
+        </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+          </tr>
+        </table>
+        <table *ngIf="!!this.filterData.dataSource">
+          <tr *ngIf="this.filterData.dataSource.filteredData.length == 0"><td class="no-records">No Records Found</td></tr>
+        </table>
+      </div>
+        <mat-paginator [pageSizeOptions]="[10,15,20,25,30,50,75,100]"></mat-paginator>
+      </div>
+    </div>
+<div class="clear-both"></div>
+</div>

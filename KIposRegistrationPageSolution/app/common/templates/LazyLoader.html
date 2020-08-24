@@ -1,0 +1,107 @@
+﻿<style>
+        u {
+            display: block;
+            width: 175px;
+            height: 128px;
+            border-radius: 50%;
+            /*border-top: 5px solid #151919;*/
+            position: fixed;
+            top: 48%;
+            left: 50%;
+            margin: -48px 0 0 -64px;
+            overflow: hidden;
+            box-sizing: border-box;
+            /*animation: 2s Rotate ease-in-out infinite;
+        -webkit-animation: 2s Rotate ease-in-out infinite;*/
+            color: #f9f9f9;
+            line-height: 128px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        @keyframes Rotate {
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes Rotate {
+            50% {
+                -webkit-transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        u:before,
+        u:after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 128px;
+            height: 128px;
+            top: -5px;
+            left: 0;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        /*u:before {
+      border-top: 5px solid #89c759;
+      transform: rotate(120deg)
+    }
+
+
+
+    u:after {
+        border-top: 5px solid #100f0f;
+        transform: rotate(240deg);
+    }*/
+
+        u i {
+            animation: 2s deRotate linear infinite;
+            -webkit-animation: 2s deRotate linear infinite;
+            display: block;
+            width: 128px;
+            height: 128px;
+            position: absolute;
+            top: -5px;
+            left: 0;
+        }
+
+        @keyframes deRotate {
+            50% {
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @-webkit-keyframes deRotate {
+            50% {
+                -webkit-transform: rotate(-180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        .hide{
+            display:none !important;
+        }
+</style>
+<div class="bg-body" style="position:fixed; width:100%; height:100%;  padding:0px; top:0px; z-index:+99999; display:block;background-color: #fff;opacity: 0.80;" id="lazyLoaderRoot" name="lazyLoaderRoot" ng-cloak>
+    <u>
+        <img class="preloader-image" alt="Loading.." src="../../../assets/images/lazy-loader.gif" style="width:70%" />
+    </u>
+</div>
+
+

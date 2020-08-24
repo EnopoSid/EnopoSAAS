@@ -1,0 +1,74 @@
+<ngx-spinner
+ bdColor="rgba(227,227,227,0.8)"
+ size="medium"
+ color="#ffb4b4"
+ opacity="0.5"
+ loadingText="Loading..."
+ type="ball-scale-multiple">
+ </ngx-spinner>
+<div class="container">
+        <div class="page_content">      
+        <h3>Reports</h3>
+        <form [formGroup]="SearchForm"  > 
+<mat-card-content>
+    <mat-form-field class="input-flex-31">  
+            <input #fromInput (click)="clkFromDate(picker)"  matInput  [formControl]="SearchForm.controls['fromDate']"
+              [matDatepicker]="picker" uib-datepicker-popup="only"  (ngModelChange)="onChangeFromDate($event)" [max]="maxDate"
+               onkeypress="return false" placeholder="From Date"> 
+            <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="submitted==true && SearchForm.controls['fromDate'].touched">
+                Please select from date
+            </mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-flex-31">
+        <input #fromInput2 (click)="clkToDate(picker2)" matInput [formControl]="SearchForm.controls['toDate']"
+         [matDatepicker]="picker2" uib-datepicker-popup="only"   (ngModelChange)="onChangeToDate($event)" [min]="minDate" [max]="maxDate"
+         onkeypress="return false" placeholder="To Date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+        <mat-error *ngIf="submitted==true && SearchForm.controls['toDate'].touched">
+            Please select to date
+        </mat-error>
+    </mat-form-field>
+<mat-form-field class="input-flex-31" >
+    <mat-select  placeholder="Select store pickup point" (ngModelChange)="onChangeStoreStatusSelect($event)" [formControl]="SearchForm.controls['storedata']" name="storedata">
+    <mat-option>
+        Select store pickup point
+    </mat-option>
+        <mat-option  *ngFor="let storedata of StorePickupPontsList"  [value]="storedata.Id">
+            {{ storedata.Name }}  
+        </mat-option>
+    </mat-select>
+    <mat-error *ngIf="submitted==true && SearchForm.controls['storedata'].touched">
+      Please Select store pickup point
+  </mat-error>
+</mat-form-field>
+<mat-form-field class="input-flex-31" >
+  <mat-select  placeholder="Select category" (ngModelChange)="changeCategorySelection($event)" [formControl]="SearchForm.controls['category']" name="category">
+  <mat-option>
+      Select category
+  </mat-option>
+      <mat-option  *ngFor="let category of allMenus"   [value]="category">
+          {{ category.Name }}  
+      </mat-option>
+  </mat-select>
+  <mat-error *ngIf="submitted==true && SearchForm.controls['category'].touched">
+    Please Select category
+</mat-error>
+</mat-form-field>
+<mat-form-field class="input-flex-31" *ngIf="!!subcategoryEnable">
+  <mat-select  placeholder="Select subCategory" (ngModelChange)="changeSubCategorySelection($event)" [formControl]="SearchForm.controls['subCategory']" name="subCategory">
+  <mat-option>
+      Select subCategory
+  </mat-option>
+      <mat-option  *ngFor="let subCategory of SubMenus"  [value]="subCategory">
+          {{ subCategory.Name }}  
+      </mat-option>
+  </mat-select>
+</mat-form-field>
+<button  mat-button class="mat-button green" (click)="getIngradientReport()">Export To Excel</button>
+</mat-card-content>
+</form>
+        </div>
+</div>

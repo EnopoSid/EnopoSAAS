@@ -1,0 +1,80 @@
+﻿@model XcellenceIt.Plugin.Misc.WebApiClient.Models.ConfigurationModel
+
+@{
+    Layout = "_AdminLayout";
+    Html.SetActiveMenuItemSystemName("XcellenceIt.WebApiClient.Configure");
+}
+
+<div class="content-header clearfix">
+    <h1 class="pull-left">
+        @T("Plugins.XcellenceIT.WebApiClient.Name")
+    </h1>
+    <span class="pull-right">@string.Format(T("Plugins.XcellenceIT.WebApiClient.Version").ToString(), Model.VersionNumber)</span>
+</div>
+<div class="content">
+    <div class="form-horizontal">
+        <form asp-controller="WebApiClient" asp-action="Configure" method="post">
+            @if (!@Model.IsLicenseActive)
+            {
+                <div>
+                    @Html.Raw(@Model.RegistrationForm)
+                </div>
+            }
+            else
+            {
+                @await Component.InvokeAsync("StoreScopeConfiguration")
+
+                <div>
+                    @Html.Raw(@Model.LicenseInformation)
+                </div>
+                @if (ViewBag.RefreshPage == true)
+                {
+                    <script type="text/javascript">
+                try {window.opener.document.forms['@(ViewBag.formId)'].@(ViewBag.btnId).click();}
+                catch (e){}
+                window.opener.location.reload();
+                window.close();
+                    </script>
+                }
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <nop-label asp-for="RestApi" />
+                                </div>
+                                <div class="col-md-9">
+                                    <nop-editor asp-for="RestApi" />
+                                    <span asp-validation-for="RestApi"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <nop-label asp-for="DebugMode" />
+                                </div>
+                                <div class="col-md-9">
+                                    <nop-editor asp-for="DebugMode" />
+                                    <span asp-validation-for="DebugMode"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <nop-label asp-for="APIKey" />
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="button" class="k-button" value="@T("Plugins.XcellenceIT.WebApiClient.APIKeyButton")" onclick="javascript:OpenWindow('@Url.Action("GenerateAPIKey", new { btnId="btnRefreshProducts" , formId="appSecret-form" })', 450, 400, true)" />
+                                    @Model.APIKey
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-md-offset-3">
+                                    <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </form>
+    </div>
+</div>

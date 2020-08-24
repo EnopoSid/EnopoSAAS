@@ -1,0 +1,180 @@
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\KIPOSTest\nopCommerce_4.10_Source (1)\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\KIPOS_DOTNET\deployment\03_11_2018\KIPOSNOPCommerce\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\Kipos_Site\KIPOSNOP\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\TEST_IIS\Kipos_NOP_9092\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+E:\Prod_TEST_IIS\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\IIS\FromQA\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\Kipos_NOP_8056\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\SVN\Kipos-NOP\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.deps.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.runtimeconfig.dev.json
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Core.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Data.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Services.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\bin\Debug\netcoreapp2.1\Nop.Web.Framework.pdb
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csprojAssemblyReference.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CoreCompileInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfoInputs.cache
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.AssemblyInfo.cs
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.csproj.CopyComplete
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.dll
+D:\SVN\KIPOSECOMMERCEAPI\Source\Presentation\Nop.Web\obj\Debug\netcoreapp2.1\Nop.Web.pdb
